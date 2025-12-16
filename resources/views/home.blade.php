@@ -7,15 +7,126 @@
         <!-- HERO 1 -->
 
 
+        <section class="section py-20 h-[88vh] place-content-center"
+            style="background-image: url('{{ asset('assets/img/banner/sample-1.webp') }}')">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 place-items-center">
+                    <div class="section__content">
+                        <h1 class="text-white mb-3 font-semibold text-6xl">
+                            Lorem ipsum dolor sit amet.
+                        </h1>
+                        <p class="text-white ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, minus!
+                            Vitae eos vero ullam odit recusandae dignissimos, architecto sunt provident!</p>
+                        <button
+                            class="mt-3 group relative overflow-hidden rounded-full bg-indigo-600 px-8 py-4 text-white shadow-xl transition-all duration-300 hover:bg-indigo-700 hover:shadow-2xl hover:shadow-indigo-500/40 hover:-translate-y-1 active:translate-y-0 active:scale-95">
+                            <div
+                                class="absolute top-0 -left-[100%] h-full w-full skew-x-12 bg-gradient-to-r from-transparent via-white/30 to-transparent transition-all duration-700 ease-in-out group-hover:left-[100%]">
+                            </div>
 
-         <section class="h-[84vh] flex items-center" style="background-image: url('{{ asset('assets/img/banner/banner-img-1.jpg') }}');    background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
+                            <span class="relative z-10 flex items-center gap-2 font-semibold tracking-wide">
+                                Get Started
+
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="2.5" stroke="currentColor"
+                                    class="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-[#111111] text-white min-h-screen flex items-center relative overflow-hidden font-sans">
+
+            <div class="absolute top-20 right-20 opacity-20 pointer-events-none">
+                <svg width="100" height="100" viewBox="0 0 100 100" fill="none" stroke="white" stroke-width="2">
+                    <path d="M10 10 L30 30 M50 10 L70 30 M90 10 L110 30" />
+                    <path d="M10 50 L30 70 M50 50 L70 70 M90 50 L110 70" />
+                </svg>
+            </div>
+
+            <div class="container mx-auto px-6 lg:px-16 py-12 flex flex-col lg:flex-row items-center z-10">
+
+                <div class="lg:w-1/2 mb-16 lg:mb-0 relative z-20">
+                    <h1 class="text-5xl lg:text-7xl font-serif font-medium leading-tight mb-6">
+                        Find your <br>
+                        quality <span class="relative inline-block">leads
+                            <svg class="absolute w-full h-3 bottom-2 left-0 text-pink-500 -z-10" viewBox="0 0 100 10"
+                                preserveAspectRatio="none">
+                                <path d="M0 5 Q 50 10 100 5" stroke="currentColor" stroke-width="4" fill="none" />
+                            </svg>
+                        </span> in <br>
+                        single click.
+                    </h1>
+
+                    <p class="text-gray-400 text-lg mb-10 max-w-lg leading-relaxed">
+                        Turn your business into a sales machine today <span class="text-white font-semibold">3x
+                            faster</span> revenue than the other market.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-start sm:items-center gap-6 mb-16">
+                        <a href="#"
+                            class="group flex items-center gap-3 px-8 py-4 border border-yellow-400 text-yellow-400 rounded-full transition-all hover:bg-yellow-400 hover:text-black">
+                            <span class="font-semibold">Request a demo</span>
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="h-5 w-5 transition-transform group-hover:translate-x-1" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                        </a>
+                        <span class="text-gray-400 text-sm">Already using Jano? <a href="#"
+                                class="text-yellow-400 hover:underline">Sign in</a></span>
+                    </div>
+
+                    <div class="flex items-center gap-5">
+                        <div class="text-5xl font-serif text-white">A+</div>
+                        <div>
+                            <div class="text-lg font-semibold text-white">Rating</div>
+                            <div class="text-gray-500 text-sm">Avg rating 4.8 makes us world best apps.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:w-1/2 relative h-[600px] w-full flex items-center justify-center lg:justify-end">
+
+                    <div
+                        class="absolute right-0 bottom-0 w-72 h-[480px] lg:w-80 lg:h-[520px] bg-[#fddea6] rounded-t-full overflow-hidden z-0 border-b-0">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                            alt="Man in Yellow"
+                            class="w-full h-full object-cover mix-blend-multiply opacity-90 hover:scale-105 transition-transform duration-700">
+                    </div>
+
+                    <div
+                        class="absolute top-10 right-48 lg:right-64 w-56 h-56 bg-[#fbcfe8] rounded-tl-[80px] rounded-br-[80px] overflow-hidden z-10 shadow-2xl border-4 border-[#111111]">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                            alt="Woman in Pink"
+                            class="w-full h-full object-cover mix-blend-multiply opacity-90 hover:scale-105 transition-transform duration-700">
+                    </div>
+
+                    <div
+                        class="absolute bottom-20 right-56 lg:right-72 w-44 h-44 bg-[#99f6e4] rounded-full overflow-hidden z-20 shadow-2xl border-4 border-[#111111]">
+                        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                            alt="Man in Green"
+                            class="w-full h-full object-cover mix-blend-multiply opacity-90 hover:scale-105 transition-transform duration-700">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="h-[84vh] flex items-center"
+            style="background-image: url('{{ asset('assets/img/banner/banner-img-1.jpg') }}');    background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
             <div class="max-w-7xl mx-auto">
                 <div class="grid grid-cols-1 md:grid-cols-2 md:gap-30">
                     <div class="">
                         <p class="text-white mb-2">Excellent</p>
-                        <h1 class="text-[30px] font-bold text-white sm:text-[60px] lg:text-[80px] leading-[1.1]">Stronger. Healthier. You.
+                        <h1 class="text-[30px] font-bold text-white sm:text-[60px] lg:text-[80px] leading-[1.1]">Stronger.
+                            Healthier. You.
                         </h1>
-                        <p class="text-white text-lg">Transform your body and mindset with expert online coaching. Personalized
+                        <p class="text-white text-lg">Transform your body and mindset with expert online coaching.
+                            Personalized
                             training, real results, and full support — wherever you are.</p>
                     </div>
                 </div>
@@ -65,7 +176,7 @@
             <img src="https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/hero/hero-section-showcase-4.png"
                 alt="hero" class="max-w-xs sm:max-w-sm lg:max-w-md transition-all duration-300">
         </section>
- <section class="section" style="background-image: url('{{ asset('assets/img/banner/banner-img-4.jpg') }}')">
+        <section class="section" style="background-image: url('{{ asset('assets/img/banner/banner-img-4.jpg') }}')">
             <div class="max-w-7xl mx-auto py-20">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-40">
                     <div>

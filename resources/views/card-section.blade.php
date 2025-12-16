@@ -3,6 +3,621 @@
         <title>Card Section - Frontend</title>
     @endsection
     @section('content')
+    <section class="py-24 px-4 sm:px-6 lg:px-8 bg-white font-sans text-gray-900">
+
+            <div class="max-w-7xl mx-auto mb-20 text-center">
+                <h2 class="text-3xl md:text-5xl font-extrabold tracking-tight mb-4">
+                    Crafted for <span class="text-indigo-600 relative inline-block">
+                        Excellence
+                        <svg class="absolute bottom-1 left-0 w-full h-2 text-indigo-200 -z-10" viewBox="0 0 100 10"
+                            preserveAspectRatio="none">
+                            <path d="M0 5 Q 50 10 100 5" stroke="currentColor" stroke-width="6" fill="none" />
+                        </svg>
+                    </span>
+                </h2>
+                <p class="text-lg text-gray-500 max-w-2xl mx-auto">
+                    Explore our diverse range of categories. Designed with clarity and precision to highlight what matters
+                    most.
+                </p>
+            </div>
+
+            <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+                <div
+                    class="group relative flex flex-col bg-white border border-gray-100 rounded-[2rem] shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 overflow-hidden">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://picsum.photos/seed/workspace/800/600" alt="Workspace"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-60"></div>
+                        <div
+                            class="absolute top-6 left-6 bg-white/90 backdrop-blur-sm px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider text-indigo-700 shadow-sm">
+                            Productivity
+                        </div>
+                    </div>
+
+                    <div class="p-8 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold mb-3 group-hover:text-indigo-600 transition-colors">
+                            Modern Workspaces
+                        </h3>
+                        <p class="text-gray-500 leading-relaxed mb-8 line-clamp-3">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam.
+                        </p>
+
+                        <div class="mt-auto flex items-center justify-between border-t border-gray-100 pt-6">
+                            <span class="text-sm font-medium text-gray-400">June 24, 2024</span>
+                            <a href="#"
+                                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-50 text-gray-900 transition-all duration-300 group-hover:w-28 group-hover:bg-indigo-600 group-hover:text-white">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                </svg>
+                                <span
+                                    class="hidden group-hover:block ml-2 text-sm font-semibold whitespace-nowrap">Read</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="group relative flex flex-col bg-white border border-gray-100 rounded-[2rem] shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 overflow-hidden">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://picsum.photos/seed/creative/800/600" alt="Creative"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-60"></div>
+                        <div
+                            class="absolute top-6 left-6 bg-white/90 backdrop-blur-sm px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider text-rose-600 shadow-sm">
+                            Design
+                        </div>
+                    </div>
+
+                    <div class="p-8 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold mb-3 group-hover:text-rose-600 transition-colors">
+                            Creative Solutions
+                        </h3>
+                        <p class="text-gray-500 leading-relaxed mb-8 line-clamp-3">
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur. Excepteur sint occaecat cupidatat non proident.
+                        </p>
+
+                        <div class="mt-auto flex items-center justify-between border-t border-gray-100 pt-6">
+                            <span class="text-sm font-medium text-gray-400">June 20, 2024</span>
+                            <a href="#"
+                                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-50 text-gray-900 transition-all duration-300 group-hover:w-28 group-hover:bg-rose-600 group-hover:text-white">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                </svg>
+                                <span
+                                    class="hidden group-hover:block ml-2 text-sm font-semibold whitespace-nowrap">Read</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="group relative flex flex-col bg-white border border-gray-100 rounded-[2rem] shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 overflow-hidden">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://picsum.photos/seed/strategy/800/600" alt="Strategy"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-60"></div>
+                        <div
+                            class="absolute top-6 left-6 bg-white/90 backdrop-blur-sm px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider text-emerald-600 shadow-sm">
+                            Business
+                        </div>
+                    </div>
+
+                    <div class="p-8 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold mb-3 group-hover:text-emerald-600 transition-colors">
+                            Strategic Growth
+                        </h3>
+                        <p class="text-gray-500 leading-relaxed mb-8 line-clamp-3">
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit.
+                        </p>
+
+                        <div class="mt-auto flex items-center justify-between border-t border-gray-100 pt-6">
+                            <span class="text-sm font-medium text-gray-400">June 18, 2024</span>
+                            <a href="#"
+                                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-50 text-gray-900 transition-all duration-300 group-hover:w-28 group-hover:bg-emerald-600 group-hover:text-white">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                </svg>
+                                <span
+                                    class="hidden group-hover:block ml-2 text-sm font-semibold whitespace-nowrap">Read</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="relative min-h-screen py-20 px-4 sm:px-6 lg:px-8 bg-slate-900 overflow-hidden font-sans">
+
+            <div class="absolute top-0 right-1/4 w-96 h-96 bg-cyan-600/20 rounded-full blur-3xl -z-10"></div>
+            <div class="absolute bottom-0 left-1/4 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl -z-10"></div>
+
+            <div class="max-w-7xl mx-auto mb-16 text-center z-10 relative">
+                <span class="text-cyan-400 font-semibold tracking-wider uppercase text-sm drop-shadow-md">World-Class
+                    Care</span>
+                <h2 class="text-4xl md:text-5xl font-bold text-white mt-2 mb-4 tracking-tight">Medical Services</h2>
+                <p class="text-xl text-slate-400 max-w-2xl mx-auto">
+                    Combining advanced technology with compassionate care. Explore our specialized departments designed for
+                    your well-being.
+                </p>
+            </div>
+
+            <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 relative z-10">
+
+                <div
+                    class="flex flex-col group bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl overflow-hidden shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:shadow-rose-500/20 hover:border-rose-500/30">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="https://picsum.photos/seed/heart/800/600" alt="Cardiology"
+                            class="w-full h-full object-cover transition duration-700 group-hover:scale-110 opacity-90 group-hover:opacity-100">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 to-transparent"></div>
+
+                        <div
+                            class="absolute -bottom-6 right-6 h-12 w-12 bg-rose-500 rounded-lg shadow-lg flex items-center justify-center transform group-hover:rotate-6 transition duration-300">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="p-6 pt-8 flex-1 flex flex-col">
+                        <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-rose-400 transition-colors">
+                            Cardiology</h3>
+                        <p class="text-slate-400 text-sm mb-4 font-medium uppercase tracking-wide">Heart & Vascular Care</p>
+
+                        <p class="text-slate-300 mb-6 flex-grow leading-relaxed">
+                            Comprehensive care for heart conditions using state-of-the-art diagnostic tools. From prevention
+                            to complex surgery.
+                        </p>
+
+                        <div class="h-px w-full bg-white/10 mb-4"></div>
+
+                        <div class="flex items-center justify-between mt-auto">
+                            <span
+                                class="text-xs font-semibold text-rose-400 bg-rose-400/10 px-2 py-1 rounded border border-rose-400/20">24/7
+                                Available</span>
+                            <a href="#"
+                                class="text-white hover:text-rose-400 text-sm font-semibold flex items-center gap-2 group-hover:gap-3 transition-all">
+                                Details <span class="text-lg">→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="flex flex-col group bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl overflow-hidden shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:shadow-cyan-500/20 hover:border-cyan-500/30">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="https://picsum.photos/seed/brain/800/600" alt="Neurology"
+                            class="w-full h-full object-cover transition duration-700 group-hover:scale-110 opacity-90 group-hover:opacity-100">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 to-transparent"></div>
+
+                        <div
+                            class="absolute -bottom-6 right-6 h-12 w-12 bg-cyan-500 rounded-lg shadow-lg flex items-center justify-center transform group-hover:rotate-6 transition duration-300">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="p-6 pt-8 flex-1 flex flex-col">
+                        <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors">Neurology
+                        </h3>
+                        <p class="text-slate-400 text-sm mb-4 font-medium uppercase tracking-wide">Brain & Spine Center</p>
+
+                        <p class="text-slate-300 mb-6 flex-grow leading-relaxed">
+                            Advanced treatment for neurological disorders. Expert care for stroke, epilepsy, and spine
+                            health using MRI technology.
+                        </p>
+
+                        <div class="h-px w-full bg-white/10 mb-4"></div>
+
+                        <div class="flex items-center justify-between mt-auto">
+                            <span
+                                class="text-xs font-semibold text-cyan-400 bg-cyan-400/10 px-2 py-1 rounded border border-cyan-400/20">Top
+                                Rated</span>
+                            <a href="#"
+                                class="text-white hover:text-cyan-400 text-sm font-semibold flex items-center gap-2 group-hover:gap-3 transition-all">
+                                Details <span class="text-lg">→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="flex flex-col group bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl overflow-hidden shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:shadow-blue-500/20 hover:border-blue-500/30">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="https://picsum.photos/seed/ambulance/800/600" alt="Emergency"
+                            class="w-full h-full object-cover transition duration-700 group-hover:scale-110 opacity-90 group-hover:opacity-100">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 to-transparent"></div>
+
+                        <div
+                            class="absolute -bottom-6 right-6 h-12 w-12 bg-blue-600 rounded-lg shadow-lg flex items-center justify-center transform group-hover:rotate-6 transition duration-300">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="p-6 pt-8 flex-1 flex flex-col">
+                        <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">Emergency
+                        </h3>
+                        <p class="text-slate-400 text-sm mb-4 font-medium uppercase tracking-wide">Trauma & Urgent Care</p>
+
+                        <p class="text-slate-300 mb-6 flex-grow leading-relaxed">
+                            Rapid response teams ready for critical situations. Equipped with modern life-support systems
+                            and trauma specialists.
+                        </p>
+
+                        <div class="h-px w-full bg-white/10 mb-4"></div>
+
+                        <div class="flex items-center justify-between mt-auto">
+                            <span
+                                class="text-xs font-semibold text-red-400 bg-red-400/10 px-2 py-1 rounded border border-red-400/20 animate-pulse">Urgent</span>
+                            <a href="#"
+                                class="text-white hover:text-blue-400 text-sm font-semibold flex items-center gap-2 group-hover:gap-3 transition-all">
+                                Contact <span class="text-lg">→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="min-h-screen py-20 px-4 sm:px-6 lg:px-8">
+
+            <div class="max-w-7xl mx-auto mb-16 text-center">
+                <span class="text-indigo-600 font-semibold tracking-wider uppercase text-sm">Our Blog</span>
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mt-2 mb-4">Latest Insights</h2>
+                <p class="text-xl text-gray-500 max-w-2xl mx-auto">
+                    Discover the latest trends, strategies, and stories from our team. Curated for designers and
+                    developers.
+                </p>
+            </div>
+
+            <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <article
+                    class="flex flex-col bg-white rounded-2xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://picsum.photos/seed/tech/800/600" alt="Technology"
+                            class="w-full h-full object-cover transition duration-500 hover:scale-110">
+                        <div
+                            class="absolute top-4 left-4 bg-indigo-600 text-white text-xs font-bold uppercase px-3 py-1 rounded-full shadow-md">
+                            Technology
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <div class="flex items-center text-sm text-gray-500 mb-2">
+                            <span><svg class="w-4 h-4 inline mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg> 5 min read</span>
+                            <span class="mx-2">•</span>
+                            <span>Oct 12, 2023</span>
+                        </div>
+                        <h3
+                            class="text-2xl font-bold text-gray-900 mb-3 leading-tight hover:text-indigo-600 transition cursor-pointer">
+                            The Future of Artificial Intelligence in Design
+                        </h3>
+                        <p class="text-gray-600 mb-6 flex-grow">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                        </p>
+                        <div class="flex items-center justify-between mt-auto border-t pt-4 border-gray-100">
+                            <div class="flex items-center">
+                                <img class="w-10 h-10 rounded-full object-cover mr-3"
+                                    src="https://randomuser.me/api/portraits/women/44.jpg" alt="Author">
+                                <div>
+                                    <p class="text-sm font-semibold text-gray-900">Sarah Jenkins</p>
+                                    <p class="text-xs text-gray-500">Lead Designer</p>
+                                </div>
+                            </div>
+                            <a href="#"
+                                class="text-indigo-600 hover:text-indigo-800 font-medium text-sm flex items-center group">
+                                Read More
+                                <svg class="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article
+                    class="flex flex-col bg-white rounded-2xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://picsum.photos/seed/nature/800/600" alt="Nature"
+                            class="w-full h-full object-cover transition duration-500 hover:scale-110">
+                        <div
+                            class="absolute top-4 left-4 bg-emerald-500 text-white text-xs font-bold uppercase px-3 py-1 rounded-full shadow-md">
+                            Lifestyle
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <div class="flex items-center text-sm text-gray-500 mb-2">
+                            <span><svg class="w-4 h-4 inline mr-1" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg> 3 min read</span>
+                            <span class="mx-2">•</span>
+                            <span>Oct 10, 2023</span>
+                        </div>
+                        <h3
+                            class="text-2xl font-bold text-gray-900 mb-3 leading-tight hover:text-emerald-600 transition cursor-pointer">
+                            Finding Balance in a Remote World
+                        </h3>
+                        <p class="text-gray-600 mb-6 flex-grow">
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.
+                        </p>
+                        <div class="flex items-center justify-between mt-auto border-t pt-4 border-gray-100">
+                            <div class="flex items-center">
+                                <img class="w-10 h-10 rounded-full object-cover mr-3"
+                                    src="https://randomuser.me/api/portraits/men/32.jpg" alt="Author">
+                                <div>
+                                    <p class="text-sm font-semibold text-gray-900">Mark Thompson</p>
+                                    <p class="text-xs text-gray-500">Wellness Coach</p>
+                                </div>
+                            </div>
+                            <a href="#"
+                                class="text-emerald-600 hover:text-emerald-800 font-medium text-sm flex items-center group">
+                                Read More
+                                <svg class="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article
+                    class="flex flex-col bg-white rounded-2xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://picsum.photos/seed/arch/800/600" alt="Architecture"
+                            class="w-full h-full object-cover transition duration-500 hover:scale-110">
+                        <div
+                            class="absolute top-4 left-4 bg-orange-500 text-white text-xs font-bold uppercase px-3 py-1 rounded-full shadow-md">
+                            Architecture
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <div class="flex items-center text-sm text-gray-500 mb-2">
+                            <span><svg class="w-4 h-4 inline mr-1" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg> 8 min read</span>
+                            <span class="mx-2">•</span>
+                            <span>Sep 28, 2023</span>
+                        </div>
+                        <h3
+                            class="text-2xl font-bold text-gray-900 mb-3 leading-tight hover:text-orange-600 transition cursor-pointer">
+                            Minimalist Structures in Urban Spaces
+                        </h3>
+                        <p class="text-gray-600 mb-6 flex-grow">
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                            commodo consequat. Duis aute irure dolor in reprehenderit.
+                        </p>
+                        <div class="flex items-center justify-between mt-auto border-t pt-4 border-gray-100">
+                            <div class="flex items-center">
+                                <img class="w-10 h-10 rounded-full object-cover mr-3"
+                                    src="https://randomuser.me/api/portraits/women/65.jpg" alt="Author">
+                                <div>
+                                    <p class="text-sm font-semibold text-gray-900">Emily Chen</p>
+                                    <p class="text-xs text-gray-500">Architect</p>
+                                </div>
+                            </div>
+                            <a href="#"
+                                class="text-orange-600 hover:text-orange-800 font-medium text-sm flex items-center group">
+                                Read More
+                                <svg class="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+        <section class="relative min-h-screen py-20 px-4 sm:px-6 lg:px-8 bg-slate-900 overflow-hidden font-sans">
+
+            <div class="absolute top-0 left-1/4 w-96 h-96 bg-indigo-600/30 rounded-full blur-3xl -z-10"></div>
+            <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-emerald-600/20 rounded-full blur-3xl -z-10"></div>
+
+            <div class="max-w-7xl mx-auto mb-16 text-center z-10 relative">
+                <span class="text-emerald-400 font-semibold tracking-wider uppercase text-sm drop-shadow-md">Dark Mode
+                    Design</span>
+                <h2 class="text-4xl md:text-5xl font-bold text-white mt-2 mb-4 tracking-tight">Glass UI Cards</h2>
+                <p class="text-xl text-slate-400 max-w-2xl mx-auto">
+                    A modern dark UI featuring frosted glass effects, high contrast typography, and smooth
+                    micro-interactions.
+                </p>
+            </div>
+
+            <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 relative z-10">
+
+                <article
+                    class="flex flex-col group bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl overflow-hidden shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:shadow-emerald-500/20 hover:border-white/20">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://picsum.photos/seed/cyberpunk/800/600" alt="Cyberpunk City"
+                            class="w-full h-full object-cover transition duration-700 group-hover:scale-110 opacity-90 group-hover:opacity-100">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent"></div>
+                        <div
+                            class="absolute top-4 left-4 bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs font-bold uppercase px-3 py-1 rounded-full">
+                            Cyberpunk
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <div class="flex items-center text-sm text-slate-400 mb-3">
+                            <span class="flex items-center"><svg class="w-4 h-4 mr-1" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg> 4 min read</span>
+                            <span class="mx-2 text-slate-600">•</span>
+                            <span>Nov 24, 2023</span>
+                        </div>
+                        <h3
+                            class="text-2xl font-bold text-white mb-3 leading-tight group-hover:text-emerald-400 transition-colors">
+                            Neon Lights & Nightlife
+                        </h3>
+                        <p class="text-slate-300 mb-6 flex-grow leading-relaxed">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum
+                            vestibulum. Cras venenatis euismod malesuada.
+                        </p>
+
+                        <div class="h-px w-full bg-gradient-to-r from-transparent via-white/20 to-transparent mb-4"></div>
+
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <div class="h-9 w-9 rounded-full bg-gradient-to-tr from-emerald-400 to-indigo-500 p-[1px]">
+                                    <img class="h-full w-full rounded-full object-cover border-2 border-slate-900"
+                                        src="https://randomuser.me/api/portraits/women/63.jpg" alt="Author">
+                                </div>
+                                <div class="ml-3">
+                                    <p class="text-sm font-medium text-white">Alice V.</p>
+                                </div>
+                            </div>
+                            <a href="#"
+                                class="text-emerald-400 hover:text-emerald-300 text-sm font-semibold flex items-center gap-1 transition-all group-hover:gap-2">
+                                Read
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article
+                    class="flex flex-col group bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl overflow-hidden shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:shadow-indigo-500/20 hover:border-white/20">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://picsum.photos/seed/code/800/600" alt="Code Screen"
+                            class="w-full h-full object-cover transition duration-700 group-hover:scale-110 opacity-90 group-hover:opacity-100">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent"></div>
+                        <div
+                            class="absolute top-4 left-4 bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs font-bold uppercase px-3 py-1 rounded-full">
+                            Development
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <div class="flex items-center text-sm text-slate-400 mb-3">
+                            <span class="flex items-center"><svg class="w-4 h-4 mr-1" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg> 6 min read</span>
+                            <span class="mx-2 text-slate-600">•</span>
+                            <span>Nov 20, 2023</span>
+                        </div>
+                        <h3
+                            class="text-2xl font-bold text-white mb-3 leading-tight group-hover:text-indigo-400 transition-colors">
+                            The Art of Clean Code
+                        </h3>
+                        <p class="text-slate-300 mb-6 flex-grow leading-relaxed">
+                            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco.
+                        </p>
+
+                        <div class="h-px w-full bg-gradient-to-r from-transparent via-white/20 to-transparent mb-4"></div>
+
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <div class="h-9 w-9 rounded-full bg-gradient-to-tr from-indigo-400 to-purple-500 p-[1px]">
+                                    <img class="h-full w-full rounded-full object-cover border-2 border-slate-900"
+                                        src="https://randomuser.me/api/portraits/men/85.jpg" alt="Author">
+                                </div>
+                                <div class="ml-3">
+                                    <p class="text-sm font-medium text-white">David K.</p>
+                                </div>
+                            </div>
+                            <a href="#"
+                                class="text-indigo-400 hover:text-indigo-300 text-sm font-semibold flex items-center gap-1 transition-all group-hover:gap-2">
+                                Read
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article
+                    class="flex flex-col group bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl overflow-hidden shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:shadow-purple-500/20 hover:border-white/20">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://picsum.photos/seed/abstract/800/600" alt="Abstract Art"
+                            class="w-full h-full object-cover transition duration-700 group-hover:scale-110 opacity-90 group-hover:opacity-100">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent"></div>
+                        <div
+                            class="absolute top-4 left-4 bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs font-bold uppercase px-3 py-1 rounded-full">
+                            Design
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <div class="flex items-center text-sm text-slate-400 mb-3">
+                            <span class="flex items-center"><svg class="w-4 h-4 mr-1" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg> 3 min read</span>
+                            <span class="mx-2 text-slate-600">•</span>
+                            <span>Nov 15, 2023</span>
+                        </div>
+                        <h3
+                            class="text-2xl font-bold text-white mb-3 leading-tight group-hover:text-purple-400 transition-colors">
+                            Designing for the Future
+                        </h3>
+                        <p class="text-slate-300 mb-6 flex-grow leading-relaxed">
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                            id est laborum.
+                        </p>
+
+                        <div class="h-px w-full bg-gradient-to-r from-transparent via-white/20 to-transparent mb-4"></div>
+
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <div class="h-9 w-9 rounded-full bg-gradient-to-tr from-purple-400 to-pink-500 p-[1px]">
+                                    <img class="h-full w-full rounded-full object-cover border-2 border-slate-900"
+                                        src="https://randomuser.me/api/portraits/women/33.jpg" alt="Author">
+                                </div>
+                                <div class="ml-3">
+                                    <p class="text-sm font-medium text-white">Sarah M.</p>
+                                </div>
+                            </div>
+                            <a href="#"
+                                class="text-purple-400 hover:text-purple-300 text-sm font-semibold flex items-center gap-1 transition-all group-hover:gap-2">
+                                Read
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
         <!-- Features Section -->
         <section class="py-20 bg-gray-50">
             <div class="container mx-auto px-6">
@@ -485,81 +1100,84 @@
             </div>
         </section>
         <!-- ====== Cards Section Start -->
-  <section class="bg-gray-300 pb-10 pt-20 lg:pb-20 lg:pt-[120px] ">
-    <div class="container mx-auto">
-      <div class="-mx-4 flex flex-wrap">
-        <div class="w-full px-4 md:w-1/2 xl:w-1/3">
-          <div
-            class="mb-10 overflow-hidden rounded-lg bg-white shadow-1 duration-300 hover:shadow-3 dark:bg-dark-2 dark:shadow-card dark:hover:shadow-3">
-            <img src="https://cdn.tailgrids.com/assets/images/application/cards/card-01/image-01.jpg" alt="image" class="w-full" />
-            <div class="p-8 text-center sm:p-9 md:p-7 xl:p-9">
-              <h3>
-                <a href="javascript:void(0)"
-                  class="mb-4 block text-xl font-semibold text-dark hover:text-primary sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px] dark:text-white">
-                  50+ Best creative website themes & templates
-                </a>
-              </h3>
-              <p class="mb-7 text-base leading-relaxed text-body-color dark:text-dark-6">
-                Lorem ipsum dolor sit amet pretium consectetur adipiscing
-                elit. Lorem consectetur adipiscing elit.
-              </p>
+        <section class="bg-gray-300 pb-10 pt-20 lg:pb-20 lg:pt-[120px] ">
+            <div class="container mx-auto">
+                <div class="-mx-4 flex flex-wrap">
+                    <div class="w-full px-4 md:w-1/2 xl:w-1/3">
+                        <div
+                            class="mb-10 overflow-hidden rounded-lg bg-white shadow-1 duration-300 hover:shadow-3 dark:bg-dark-2 dark:shadow-card dark:hover:shadow-3">
+                            <img src="https://cdn.tailgrids.com/assets/images/application/cards/card-01/image-01.jpg"
+                                alt="image" class="w-full" />
+                            <div class="p-8 text-center sm:p-9 md:p-7 xl:p-9">
+                                <h3>
+                                    <a href="javascript:void(0)"
+                                        class="mb-4 block text-xl font-semibold text-dark hover:text-primary sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px] dark:text-white">
+                                        50+ Best creative website themes & templates
+                                    </a>
+                                </h3>
+                                <p class="mb-7 text-base leading-relaxed text-body-color dark:text-dark-6">
+                                    Lorem ipsum dolor sit amet pretium consectetur adipiscing
+                                    elit. Lorem consectetur adipiscing elit.
+                                </p>
 
-              <a href="javascript:void(0)"
-                class="inline-block rounded-full border border-gray-3 px-7 py-2 text-base font-medium text-body-color transition hover:border-primary hover:bg-primary hover:text-white dark:border-dark-3 dark:text-dark-6">
-                View Details
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="w-full px-4 md:w-1/2 xl:w-1/3">
-          <div
-            class="mb-10 overflow-hidden rounded-lg bg-white shadow-1 duration-300 hover:shadow-3 dark:bg-dark-2 dark:shadow-card dark:hover:shadow-3">
-            <img src="https://cdn.tailgrids.com/assets/images/application/cards/card-01/image-02.jpg" alt="image" class="w-full" />
-            <div class="p-8 text-center sm:p-9 md:p-7 xl:p-9">
-              <h3>
-                <a href="javascript:void(0)"
-                  class="mb-4 block text-xl font-semibold text-dark hover:text-primary sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px] dark:text-white">
-                  The ultimate UX and UI guide to card design
-                </a>
-              </h3>
-              <p class="mb-7 text-base leading-relaxed text-body-color">
-                Lorem ipsum dolor sit amet pretium consectetur adipiscing
-                elit. Lorem consectetur adipiscing elit.
-              </p>
+                                <a href="javascript:void(0)"
+                                    class="inline-block rounded-full border border-gray-3 px-7 py-2 text-base font-medium text-body-color transition hover:border-primary hover:bg-primary hover:text-white dark:border-dark-3 dark:text-dark-6">
+                                    View Details
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full px-4 md:w-1/2 xl:w-1/3">
+                        <div
+                            class="mb-10 overflow-hidden rounded-lg bg-white shadow-1 duration-300 hover:shadow-3 dark:bg-dark-2 dark:shadow-card dark:hover:shadow-3">
+                            <img src="https://cdn.tailgrids.com/assets/images/application/cards/card-01/image-02.jpg"
+                                alt="image" class="w-full" />
+                            <div class="p-8 text-center sm:p-9 md:p-7 xl:p-9">
+                                <h3>
+                                    <a href="javascript:void(0)"
+                                        class="mb-4 block text-xl font-semibold text-dark hover:text-primary sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px] dark:text-white">
+                                        The ultimate UX and UI guide to card design
+                                    </a>
+                                </h3>
+                                <p class="mb-7 text-base leading-relaxed text-body-color">
+                                    Lorem ipsum dolor sit amet pretium consectetur adipiscing
+                                    elit. Lorem consectetur adipiscing elit.
+                                </p>
 
-              <a href="javascript:void(0)"
-                class="inline-block rounded-full border border-gray-3 px-7 py-2 text-base font-medium text-body-color transition hover:border-primary hover:bg-primary hover:text-white dark:border-dark-3 dark:text-dark-6">
-                View Details
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="w-full px-4 md:w-1/2 xl:w-1/3">
-          <div
-            class="mb-10 overflow-hidden rounded-lg bg-white shadow-1 duration-300 hover:shadow-3 dark:bg-dark-2 dark:shadow-card dark:hover:shadow-3">
-            <img src="https://cdn.tailgrids.com/assets/images/application/cards/card-01/image-03.jpg" alt="image" class="w-full" />
-            <div class="p-8 text-center sm:p-9 md:p-7 xl:p-9">
-              <h3>
-                <a href="javascript:void(0)"
-                  class="mb-4 block text-xl font-semibold text-dark hover:text-primary sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px] dark:text-white">
-                  Creative Card Component designs graphic elements
-                </a>
-              </h3>
-              <p class="mb-7 text-base leading-relaxed text-body-color">
-                Lorem ipsum dolor sit amet pretium consectetur adipiscing
-                elit. Lorem consectetur adipiscing elit.
-              </p>
+                                <a href="javascript:void(0)"
+                                    class="inline-block rounded-full border border-gray-3 px-7 py-2 text-base font-medium text-body-color transition hover:border-primary hover:bg-primary hover:text-white dark:border-dark-3 dark:text-dark-6">
+                                    View Details
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full px-4 md:w-1/2 xl:w-1/3">
+                        <div
+                            class="mb-10 overflow-hidden rounded-lg bg-white shadow-1 duration-300 hover:shadow-3 dark:bg-dark-2 dark:shadow-card dark:hover:shadow-3">
+                            <img src="https://cdn.tailgrids.com/assets/images/application/cards/card-01/image-03.jpg"
+                                alt="image" class="w-full" />
+                            <div class="p-8 text-center sm:p-9 md:p-7 xl:p-9">
+                                <h3>
+                                    <a href="javascript:void(0)"
+                                        class="mb-4 block text-xl font-semibold text-dark hover:text-primary sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px] dark:text-white">
+                                        Creative Card Component designs graphic elements
+                                    </a>
+                                </h3>
+                                <p class="mb-7 text-base leading-relaxed text-body-color">
+                                    Lorem ipsum dolor sit amet pretium consectetur adipiscing
+                                    elit. Lorem consectetur adipiscing elit.
+                                </p>
 
-              <a href="javascript:void(0)"
-                class="inline-block rounded-full border border-gray-3 px-7 py-2 text-base font-medium text-body-color transition hover:border-primary hover:bg-primary hover:text-white dark:border-dark-3 dark:text-dark-6">
-                View Details
-              </a>
+                                <a href="javascript:void(0)"
+                                    class="inline-block rounded-full border border-gray-3 px-7 py-2 text-base font-medium text-body-color transition hover:border-primary hover:bg-primary hover:text-white dark:border-dark-3 dark:text-dark-6">
+                                    View Details
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- ====== Cards Section End -->
+        </section>
+        <!-- ====== Cards Section End -->
     @endsection
 </x-app-layout>
