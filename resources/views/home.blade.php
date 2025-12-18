@@ -415,88 +415,46 @@
             </div>
         </section>
 
-        <section class="py-10">
-            <div class="mx-auto max-w-7xl">
-                <div>
-                    <div class="bg-gray-100 relative rounded-sm overflow-hidden mt-4 py-10">
-                        <div class="grid md:grid-cols-2 items-center max-md:gap-10 py-32 border-y-8 border-orange-400">
-                            <div class="text-center px-6">
-                                <h2 class="font-extrabold text-5xl text-orange-500 leading-tight"><span
-                                        class="text-slate-900">Special</span> Offer</h2>
-                                <h6 class="text-2xl text-slate-900 mt-2">Limited Time Deal</h6>
-                                <p class="text-slate-900 text-base leading-relaxed mt-4">Discover amazing discounts and
-                                    deals. Don't miss out on our exclusive offers for a limited time.</p>
+<section class="py-20 px-6 max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
+    <div class="w-full lg:w-1/2 order-2 lg:order-1 text-center lg:text-left">
+        <h1 class="text-4xl md:text-6xl font-serif font-bold leading-tight mb-6">
+            Live With <span class="text-indigo-900 block md:inline">Creative Soul</span>
+        </h1>
+        <p class="text-gray-700 text-base md:text-lg mb-8 max-w-lg mx-auto lg:mx-0">
+            ArtistryHaus curates a collection that transforms your home into a personal gallery.
+        </p>
+        <div class="flex flex-wrap justify-center lg:justify-start gap-4 mb-12">
+            <button class="bg-indigo-900 text-white px-8 py-4 rounded-lg hover:shadow-xl transition">Shop Artworks</button>
+            <button class="border border-gray-300 text-gray-700 px-8 py-4 rounded-lg hover:bg-slate-50 transition">Browse Styles</button>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+            <div><span class="text-2xl font-bold text-indigo-900 block">30+</span><span class="text-xs text-gray-500 uppercase font-bold">Featured Artists</span></div>
+            <div><span class="text-2xl font-bold text-indigo-900 block">200+</span><span class="text-xs text-gray-500 uppercase font-bold">Curated Pieces</span></div>
+            <div class="col-span-2 md:col-span-1"><span class="text-2xl font-bold text-indigo-900 block">Global</span><span class="text-xs text-gray-500 uppercase font-bold">Network</span></div>
+        </div>
+    </div>
+    <div class="w-full lg:w-1/2 order-1 lg:order-2 relative">
+        <div class="rounded-2xl overflow-hidden shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-500">
+            <img src="https://images.unsplash.com/photo-1497032205916-ac775f0649ae" class="w-full object-cover" alt="">
+        </div>
+        <div class="absolute -top-6 -right-2 md:-right-6 bg-white p-3 md:p-5 rounded-xl shadow-xl w-32 md:w-40 border border-slate-100">
+            <h4 class="font-bold text-indigo-950 text-sm md:text-base">Original</h4>
+            <p class="text-[10px] md:text-xs text-slate-500">Unique pieces only</p>
+        </div>
+    </div>
+</section>
 
-                                <button type="button"
-                                    class="bg-gradient-to-r hover:bg-gradient-to-l from-orange-400 to-orange-600 hover:bg-orange-500 text-white tracking-wide font-medium text-[15px] py-3 px-6 rounded-lg w-max cursor-pointer mt-12">
-                                    Get Started
-                                </button>
-                            </div>
-
-                            <div
-                                class="bg-gradient-to-tr from-orange-400 to-orange-600 rounded-tl-full rounded-bl-full w-full h-max">
-                                <div class="p-2">
-                                    <img src="https://readymadeui.com/team-image.webp"
-                                        class="h-64 w-64 rounded-full object-cover border-4 border-white"
-                                        alt="img" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="py-10">
-            <div class="max-w-7xl mx-auto">
-                <div class="bg-gray-50 relative shadow-lg shadow-[#e9d9f3] mx-auto rounded overflow-hidden">
-                    <div class="grid md:grid-cols-2 max-md:gap-6 py-32">
-                        <div class="text-center p-6 flex flex-col justify-center items-center">
-                            <h2 class="font-extrabold text-5xl text-[#4e0083] leading-tight"><span
-                                    class="text-slate-900">Special</span> Offer</h2>
-                            <h6 class="text-lg text-slate-900 mt-4">Discover amazing discounts, for limited time</h6>
-
-                            <button type="button"
-                                class="bg-[#4e0083] hover:bg-[#4f0083cc] text-white tracking-wide font-medium text-sm py-3 px-6 rounded-xl cursor-pointer mt-10">
-                                Get Started
-                            </button>
-
-                            <ul class="flex flex-wrap justify-center gap-6 mt-8">
-                                <li class="flex items-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill='#4e0083'
-                                        viewBox="0 0 482.6 482.6">
-                                        <path
-                                            d="M98.339 320.8c47.6 56.9 104.9 101.7 170.3 133.4 24.9 11.8 58.2 25.8 95.3 28.2 2.3.1 4.5.2 6.8.2 24.9 0 44.9-8.6 61.2-26.3.1-.1.3-.3.4-.5 5.8-7 12.4-13.3 19.3-20 4.7-4.5 9.5-9.2 14.1-14 21.3-22.2 21.3-50.4-.2-71.9l-60.1-60.1c-10.2-10.6-22.4-16.2-35.2-16.2-12.8 0-25.1 5.6-35.6 16.1l-35.8 35.8c-3.3-1.9-6.7-3.6-9.9-5.2-4-2-7.7-3.9-11-6-32.6-20.7-62.2-47.7-90.5-82.4-14.3-18.1-23.9-33.3-30.6-48.8 9.4-8.5 18.2-17.4 26.7-26.1 3-3.1 6.1-6.2 9.2-9.3 10.8-10.8 16.6-23.3 16.6-36s-5.7-25.2-16.6-36l-29.8-29.8c-3.5-3.5-6.8-6.9-10.2-10.4-6.6-6.8-13.5-13.8-20.3-20.1-10.3-10.1-22.4-15.4-35.2-15.4-12.7 0-24.9 5.3-35.6 15.5l-37.4 37.4c-13.6 13.6-21.3 30.1-22.9 49.2-1.9 23.9 2.5 49.3 13.9 80 17.5 47.5 43.9 91.6 83.1 138.7zm-72.6-216.6c1.2-13.3 6.3-24.4 15.9-34l37.2-37.2c5.8-5.6 12.2-8.5 18.4-8.5 6.1 0 12.3 2.9 18 8.7 6.7 6.2 13 12.7 19.8 19.6 3.4 3.5 6.9 7 10.4 10.6l29.8 29.8c6.2 6.2 9.4 12.5 9.4 18.7s-3.2 12.5-9.4 18.7c-3.1 3.1-6.2 6.3-9.3 9.4-9.3 9.4-18 18.3-27.6 26.8l-.5.5c-8.3 8.3-7 16.2-5 22.2.1.3.2.5.3.8 7.7 18.5 18.4 36.1 35.1 57.1 30 37 61.6 65.7 96.4 87.8 4.3 2.8 8.9 5 13.2 7.2 4 2 7.7 3.9 11 6 .4.2.7.4 1.1.6 3.3 1.7 6.5 2.5 9.7 2.5 8 0 13.2-5.1 14.9-6.8l37.4-37.4c5.8-5.8 12.1-8.9 18.3-8.9 7.6 0 13.8 4.7 17.7 8.9l60.3 60.2c12 12 11.9 25-.3 37.7-4.2 4.5-8.6 8.8-13.3 13.3-7 6.8-14.3 13.8-20.9 21.7-11.5 12.4-25.2 18.2-42.9 18.2-1.7 0-3.5-.1-5.2-.2-32.8-2.1-63.3-14.9-86.2-25.8-62.2-30.1-116.8-72.8-162.1-127-37.3-44.9-62.4-86.7-79-131.5-10.3-27.5-14.2-49.6-12.6-69.7z"
-                                            data-original="#000000" />
-                                    </svg>
-                                    <a href="javascript:void(0)" class="text-[#4e0083] text-sm ml-2">180-548-2588</a>
-                                </li>
-                                <li class="flex items-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill='#4e0083'
-                                        viewBox="0 0 479.058 479.058">
-                                        <path
-                                            d="M434.146 59.882H44.912C20.146 59.882 0 80.028 0 104.794v269.47c0 24.766 20.146 44.912 44.912 44.912h389.234c24.766 0 44.912-20.146 44.912-44.912v-269.47c0-24.766-20.146-44.912-44.912-44.912zm0 29.941c2.034 0 3.969.422 5.738 1.159L239.529 264.631 39.173 90.982a14.902 14.902 0 0 1 5.738-1.159zm0 299.411H44.912c-8.26 0-14.971-6.71-14.971-14.971V122.615l199.778 173.141c2.822 2.441 6.316 3.655 9.81 3.655s6.988-1.213 9.81-3.655l199.778-173.141v251.649c-.001 8.26-6.711 14.97-14.971 14.97z"
-                                            data-original="#000000" />
-                                    </svg>
-                                    <a href="javascript:void(0)" class="text-[#4e0083] text-sm ml-2">info@example.com</a>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div
-                            class="flex justify-end items-center p-2 bg-gradient-to-b from-[#4e0083] to-[#796089] rounded-bl-[230px] w-full h-full">
-                            <div class="h-72 w-72 rounded-full bg-gradient-to-tr from-[#4e0083] to-[#c19ed6] p-5">
-                                <img src="https://readymadeui.com/team-image.webp"
-                                    class="w-full h-full rounded-full object-cover border-8 border-white"
-                                    alt="img" />
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        class="absolute -top-[50px] -left-[50px] w-28 h-28 rounded-full bg-[#4e0083] opacity-40 shadow-lg">
-                    </div>
-                    <div class="absolute -top-10 -left-10 w-28 h-28 rounded-full bg-[#4e0083] opacity-40 shadow-lg"></div>
-                </div>
-            </div>
-        </section>
+<section class="py-16 px-6 bg-slate-50">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center bg-white rounded-3xl overflow-hidden shadow-2xl border border-slate-100">
+        <div class="p-10 text-center md:text-left">
+            <h2 class="text-3xl md:text-5xl font-black text-slate-900 mb-4">Special <span class="text-orange-500">Offer</span></h2>
+            <p class="text-slate-600 mb-8 max-w-sm mx-auto md:mx-0">Discover exclusive deals for a limited time. Don't miss out!</p>
+            <button class="bg-orange-500 hover:bg-orange-600 text-white px-10 py-4 rounded-xl font-bold transition shadow-lg">Get Started</button>
+        </div>
+        <div class="bg-gradient-to-br from-orange-400 to-orange-600 h-full flex items-center justify-center p-12">
+            <img src="https://readymadeui.com/team-image.webp" class="size-48 md:size-64 rounded-full object-cover border-8 border-white/30 shadow-2xl" alt="">
+        </div>
+    </div>
+</section>
     @endsection
 </x-app-layout>
