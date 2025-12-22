@@ -57,3 +57,28 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+# Tailwind UI Components for Laravel
+
+
+A collection of **reusable Tailwind CSS UI sections**
+built with **Laravel Blade**, designed for **multi-page websites,
+SaaS products, and admin panels**.
+
+This project focuses on **clean architecture**, **reusability**, and
+**real-world Laravel development practices**.
+
+
+
+## 🚀 About This Project
+
+This repository contains a **page-based + component-based Blade structure**
+where:
+
+- Each page is built using multiple reusable sections
+- Sections can be reused across different pages
+- Layouts are shared for consistency
+- No premium or copyrighted assets are used
+
+The goal is to demonstrate **production-ready frontend structure**
+for Laravel applications.
