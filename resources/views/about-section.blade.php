@@ -3,539 +3,221 @@
         <title>About Section - Frontend</title>
     @endsection
     @section('content')
-        <section class="py-10 bg-white">
-            <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
-                <div class="relative">
-                    <img src="{{ asset('assets/img/about/1.jpg') }}" class="rounded-3xl shadow-xl w-[90%]">
-                    <img src="{{ asset('assets/img/about/2.jpg') }}"
-                        class="absolute -top-10 -left-[100px] rounded-3xl shadow-xl border-4 border-white w-[70%]">
-                    <div
-                        class="absolute -top-10 right-0 w-28 h-28 rounded-full bg-purple-600 text-white
-                        flex items-center justify-center text-center text-sm font-semibold
-                        shadow-lg border-4 border-white rotate-12">
-                        Contact Us
+        <section class="py-12 md:py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 md:px-6">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 items-center">
+                    <div class="relative px-4 md:px-0">
+                        <img src="{{ asset('assets/img/about/about-img-6.jpg') }}" class="rounded-xl w-full" alt="">
+                        <div
+                            class="absolute -bottom-6 -right-4 md:-bottom-10 md:-right-10 w-2/3 border-[6px] md:border-[12px] border-white rounded-xl shadow-2xl">
+                            <img src="{{ asset('assets/img/about/about-img-7.jpg') }}" class="rounded-lg w-full"
+                                alt="">
+                        </div>
+                        <div
+                            class="absolute top-1/2 left-0 md:left-[80px] -translate-y-1/2 -translate-x-1/2 w-24 h-24 md:w-36 md:h-36 bg-[#7c877f] text-white rounded-full flex flex-col items-center justify-center text-center border-4 md:border-[6px] border-white shadow-xl z-20">
+                            <span class="text-xl md:text-3xl font-bold">15+</span>
+                            <p class="text-[8px] md:text-[10px] uppercase font-bold leading-tight">Years Of<br>Experience
+                            </p>
+                        </div>
                     </div>
-                    <div class="absolute -bottom-6 -left-4 w-20 h-20 opacity-40">
-                        <svg width="100%" height="100%" viewBox="0 0 100 100">
-                            <circle cx="10" cy="10" r="4" fill="#805ad5" />
-                            <circle cx="30" cy="10" r="4" fill="#805ad5" />
-                            <circle cx="50" cy="10" r="4" fill="#805ad5" />
-                            <circle cx="70" cy="10" r="4" fill="#805ad5" />
-                            <circle cx="90" cy="10" r="4" fill="#805ad5" />
 
-                            <circle cx="10" cy="30" r="4" fill="#805ad5" />
-                            <circle cx="30" cy="30" r="4" fill="#805ad5" />
-                            <circle cx="50" cy="30" r="4" fill="#805ad5" />
-                            <circle cx="70" cy="30" r="4" fill="#805ad5" />
-                            <circle cx="90" cy="30" r="4" fill="#805ad5" />
-                        </svg>
-                    </div>
-                </div>
-                <div>
-                    <p class="text-purple-600 font-semibold mb-3">About Us</p>
-                    <h2 class="text-4xl md:text-5xl font-bold leading-tight mb-6">
-                        Your trusted partners in building exceptional event experiences
-                    </h2>
-                    <p class="text-gray-600 text-lg leading-relaxed mb-6">
-                        We combine creativity, strategy, and seamless execution to deliver events that make
-                        a powerful and lasting impression. From planning to production, our team works closely
-                        with you to craft experiences that inspire audiences and elevate your brand.
-                    </p>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
-                        <div class="flex items-start gap-3">
-                            <div class="w-6 h-6 rounded-full flex items-center justify-center bg-purple-600 text-white">
-                                ✓
-                            </div>
-                            <p class="text-gray-700">Creating purpose-driven experiences</p>
+                    <div class="about__content mt-12 lg:mt-0">
+                        <div class="flex items-center gap-2 mb-4">
+                            <span class="w-8 h-[2px] bg-[#7c877f]"></span>
+                            <span class="text-[#7c877f] font-bold uppercase tracking-widest text-xs md:text-sm">About
+                                Us</span>
                         </div>
-                        <div class="flex items-start gap-3">
-                            <div class="w-6 h-6 rounded-full flex items-center justify-center bg-purple-600 text-white">
-                                ✓
-                            </div>
-                            <p class="text-gray-700">Creative strategy & planning</p>
-                        </div>
-                    </div>
-                    <div class="bg-gray-100 rounded-2xl p-6 flex items-center justify-between mb-8">
-                        <p class="font-semibold text-gray-700">
-                            Trusted by Thousands of Attendees Across Our Events
+                        <h2 class="text-3xl md:text-5xl font-extrabold text-[#111111] leading-tight mb-6">
+                            Our passion for design, your <br> <span class="text-gray-400">vision realized</span>
+                        </h2>
+                        <p class="text-gray-600 leading-relaxed mb-8 text-sm md:text-base">
+                            Our dedicated team of designers works closely with you to understand your vision and bring it to
+                            life with thoughtful attention to detail.
                         </p>
-                        <div class="flex items-center">
-                            <img src="https://i.pravatar.cc/40?img=3"
-                                class="w-10 h-10 rounded-full -ml-2 border-2 border-white">
-                            <img src="https://i.pravatar.cc/40?img=14"
-                                class="w-10 h-10 rounded-full -ml-2 border-2 border-white">
-                            <img src="https://i.pravatar.cc/40?img=22"
-                                class="w-10 h-10 rounded-full -ml-2 border-2 border-white">
-                            <img src="https://i.pravatar.cc/40?img=44"
-                                class="w-10 h-10 rounded-full -ml-2 border-2 border-white">
+                        <ul class="space-y-3 mb-10">
+                            <li class="flex items-center gap-3 text-gray-700 font-medium text-sm md:text-base">
+                                <span
+                                    class="w-5 h-5 bg-[#7c877f] rounded-full flex-shrink-0 flex items-center justify-center text-white text-[10px]">✓</span>
+                                creative expertise
+                            </li>
+                            <li class="flex items-center gap-3 text-gray-700 font-medium text-sm md:text-base">
+                                <span
+                                    class="w-5 h-5 bg-[#7c877f] rounded-full flex-shrink-0 flex items-center justify-center text-white text-[10px]">✓</span>
+                                client-centered approach
+                            </li>
+                        </ul>
+
+                        <div class="relative inline-block group w-full sm:w-auto">
                             <div
-                                class="bg-purple-600 text-white rounded-full text-xs font-bold w-10 h-10 flex items-center justify-center -ml-2">
-                                50+
+                                class="absolute -top-1 -left-1 w-full h-full bg-[#FCDB66] rounded-2xl md:rounded-r-[100px] md:rounded-bl-[100px] md:rounded-tl-none -z-10 transition-transform">
                             </div>
-                        </div>
-                    </div>
-                    <div class="flex flex-wrap gap-4 items-center">
-                        <a href="#" class="px-6 py-3 rounded-full bg-purple-600 text-white font-semibold shadow-md">
-                            More About Us
-                        </a>
-                        <div class="flex flex-col">
-                            <span class="font-semibold text-gray-800">Email To Book Events</span>
-                            <span class="text-gray-500">info@domainname.com</span>
+                            <div
+                                class="bg-[#111111] p-6 md:p-8 md:pr-12 rounded-2xl md:rounded-r-[100px] md:rounded-bl-[100px] md:rounded-tl-none flex flex-col sm:flex-row items-center gap-6 md:gap-10 text-white">
+                                <div class="flex items-start">
+                                    <span class="text-5xl md:text-6xl font-bold text-[#FCDB66]">30</span>
+                                    <span class="text-2xl md:text-3xl font-bold text-[#FCDB66] mt-1">+</span>
+                                </div>
+                                <div class="text-center sm:text-left">
+                                    <p class="text-xs md:text-sm font-semibold text-gray-300 leading-snug mb-4">Industrial
+                                        Years of Experience</p>
+                                    <a href="#"
+                                        class="inline-flex items-center bg-[#FCDB66] text-black px-5 py-2 rounded-full text-xs font-bold hover:bg-yellow-500 transition-colors">
+                                        More Details
+                                        <span
+                                            class="ml-3 bg-black text-white w-6 h-6 rounded-full flex items-center justify-center text-[8px]">●●</span>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="overflow-hidden bg-white pb-8 pt-8 lg:pb-[40px] lg:pt-[40px] dark:bg-dark">
-            <div class="container mx-auto">
-                <div class="-mx-4 flex flex-wrap items-center justify-between">
-                    <div class="w-full px-4 lg:w-6/12">
-                        <div class="-mx-3 flex items-center sm:-mx-4">
-                            <div class="w-full px-3 sm:px-4 xl:w-1/2">
-                                <div class="py-3 sm:py-4">
-                                    <img src="https://cdn.tailgrids.com/assets/images/marketing/about/about-01/image-1.jpg"
-                                        alt="" class="w-full rounded-2xl" />
-                                </div>
-                                <div class="py-3 sm:py-4">
-                                    <img src="https://cdn.tailgrids.com/assets/images/marketing/about/about-01/image-2.jpg"
-                                        alt="" class="w-full rounded-2xl" />
-                                </div>
-                            </div>
-                            <div class="w-full px-3 sm:px-4 xl:w-1/2">
-                                <div class="relative z-10 my-4">
-                                    <img src="https://cdn.tailgrids.com/assets/images/marketing/about/about-01/image-3.jpg"
-                                        alt="" class="w-full rounded-2xl" />
-                                    <span class="absolute -bottom-7 -right-7 z-[-1]">
-                                        <svg width="134" height="106" viewBox="0 0 134 106" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="1.66667" cy="104" r="1.66667"
-                                                transform="rotate(-90 1.66667 104)" fill="#3056D3" />
-                                            <circle cx="16.3333" cy="104" r="1.66667"
-                                                transform="rotate(-90 16.3333 104)" fill="#3056D3" />
-                                            <circle cx="31" cy="104" r="1.66667"
-                                                transform="rotate(-90 31 104)" fill="#3056D3" />
-                                            <circle cx="45.6667" cy="104" r="1.66667"
-                                                transform="rotate(-90 45.6667 104)" fill="#3056D3" />
-                                            <circle cx="60.3334" cy="104" r="1.66667"
-                                                transform="rotate(-90 60.3334 104)" fill="#3056D3" />
-                                            <circle cx="88.6667" cy="104" r="1.66667"
-                                                transform="rotate(-90 88.6667 104)" fill="#3056D3" />
-                                            <circle cx="117.667" cy="104" r="1.66667"
-                                                transform="rotate(-90 117.667 104)" fill="#3056D3" />
-                                            <circle cx="74.6667" cy="104" r="1.66667"
-                                                transform="rotate(-90 74.6667 104)" fill="#3056D3" />
-                                            <circle cx="103" cy="104" r="1.66667"
-                                                transform="rotate(-90 103 104)" fill="#3056D3" />
-                                            <circle cx="132" cy="104" r="1.66667"
-                                                transform="rotate(-90 132 104)" fill="#3056D3" />
-                                            <circle cx="1.66667" cy="89.3333" r="1.66667"
-                                                transform="rotate(-90 1.66667 89.3333)" fill="#3056D3" />
-                                            <circle cx="16.3333" cy="89.3333" r="1.66667"
-                                                transform="rotate(-90 16.3333 89.3333)" fill="#3056D3" />
-                                            <circle cx="31" cy="89.3333" r="1.66667"
-                                                transform="rotate(-90 31 89.3333)" fill="#3056D3" />
-                                            <circle cx="45.6667" cy="89.3333" r="1.66667"
-                                                transform="rotate(-90 45.6667 89.3333)" fill="#3056D3" />
-                                            <circle cx="60.3333" cy="89.3338" r="1.66667"
-                                                transform="rotate(-90 60.3333 89.3338)" fill="#3056D3" />
-                                            <circle cx="88.6667" cy="89.3338" r="1.66667"
-                                                transform="rotate(-90 88.6667 89.3338)" fill="#3056D3" />
-                                            <circle cx="117.667" cy="89.3338" r="1.66667"
-                                                transform="rotate(-90 117.667 89.3338)" fill="#3056D3" />
-                                            <circle cx="74.6667" cy="89.3338" r="1.66667"
-                                                transform="rotate(-90 74.6667 89.3338)" fill="#3056D3" />
-                                            <circle cx="103" cy="89.3338" r="1.66667"
-                                                transform="rotate(-90 103 89.3338)" fill="#3056D3" />
-                                            <circle cx="132" cy="89.3338" r="1.66667"
-                                                transform="rotate(-90 132 89.3338)" fill="#3056D3" />
-                                            <circle cx="1.66667" cy="74.6673" r="1.66667"
-                                                transform="rotate(-90 1.66667 74.6673)" fill="#3056D3" />
-                                            <circle cx="1.66667" cy="31.0003" r="1.66667"
-                                                transform="rotate(-90 1.66667 31.0003)" fill="#3056D3" />
-                                            <circle cx="16.3333" cy="74.6668" r="1.66667"
-                                                transform="rotate(-90 16.3333 74.6668)" fill="#3056D3" />
-                                            <circle cx="16.3333" cy="31.0003" r="1.66667"
-                                                transform="rotate(-90 16.3333 31.0003)" fill="#3056D3" />
-                                            <circle cx="31" cy="74.6668" r="1.66667"
-                                                transform="rotate(-90 31 74.6668)" fill="#3056D3" />
-                                            <circle cx="31" cy="31.0003" r="1.66667"
-                                                transform="rotate(-90 31 31.0003)" fill="#3056D3" />
-                                            <circle cx="45.6667" cy="74.6668" r="1.66667"
-                                                transform="rotate(-90 45.6667 74.6668)" fill="#3056D3" />
-                                            <circle cx="45.6667" cy="31.0003" r="1.66667"
-                                                transform="rotate(-90 45.6667 31.0003)" fill="#3056D3" />
-                                            <circle cx="60.3333" cy="74.6668" r="1.66667"
-                                                transform="rotate(-90 60.3333 74.6668)" fill="#3056D3" />
-                                            <circle cx="60.3333" cy="30.9998" r="1.66667"
-                                                transform="rotate(-90 60.3333 30.9998)" fill="#3056D3" />
-                                            <circle cx="88.6667" cy="74.6668" r="1.66667"
-                                                transform="rotate(-90 88.6667 74.6668)" fill="#3056D3" />
-                                            <circle cx="88.6667" cy="30.9998" r="1.66667"
-                                                transform="rotate(-90 88.6667 30.9998)" fill="#3056D3" />
-                                            <circle cx="117.667" cy="74.6668" r="1.66667"
-                                                transform="rotate(-90 117.667 74.6668)" fill="#3056D3" />
-                                            <circle cx="117.667" cy="30.9998" r="1.66667"
-                                                transform="rotate(-90 117.667 30.9998)" fill="#3056D3" />
-                                            <circle cx="74.6667" cy="74.6668" r="1.66667"
-                                                transform="rotate(-90 74.6667 74.6668)" fill="#3056D3" />
-                                            <circle cx="74.6667" cy="30.9998" r="1.66667"
-                                                transform="rotate(-90 74.6667 30.9998)" fill="#3056D3" />
-                                            <circle cx="103" cy="74.6668" r="1.66667"
-                                                transform="rotate(-90 103 74.6668)" fill="#3056D3" />
-                                            <circle cx="103" cy="30.9998" r="1.66667"
-                                                transform="rotate(-90 103 30.9998)" fill="#3056D3" />
-                                            <circle cx="132" cy="74.6668" r="1.66667"
-                                                transform="rotate(-90 132 74.6668)" fill="#3056D3" />
-                                            <circle cx="132" cy="30.9998" r="1.66667"
-                                                transform="rotate(-90 132 30.9998)" fill="#3056D3" />
-                                            <circle cx="1.66667" cy="60.0003" r="1.66667"
-                                                transform="rotate(-90 1.66667 60.0003)" fill="#3056D3" />
-                                            <circle cx="1.66667" cy="16.3333" r="1.66667"
-                                                transform="rotate(-90 1.66667 16.3333)" fill="#3056D3" />
-                                            <circle cx="16.3333" cy="60.0003" r="1.66667"
-                                                transform="rotate(-90 16.3333 60.0003)" fill="#3056D3" />
-                                            <circle cx="16.3333" cy="16.3333" r="1.66667"
-                                                transform="rotate(-90 16.3333 16.3333)" fill="#3056D3" />
-                                            <circle cx="31" cy="60.0003" r="1.66667"
-                                                transform="rotate(-90 31 60.0003)" fill="#3056D3" />
-                                            <circle cx="31" cy="16.3333" r="1.66667"
-                                                transform="rotate(-90 31 16.3333)" fill="#3056D3" />
-                                            <circle cx="45.6667" cy="60.0003" r="1.66667"
-                                                transform="rotate(-90 45.6667 60.0003)" fill="#3056D3" />
-                                            <circle cx="45.6667" cy="16.3333" r="1.66667"
-                                                transform="rotate(-90 45.6667 16.3333)" fill="#3056D3" />
-                                            <circle cx="60.3333" cy="60.0003" r="1.66667"
-                                                transform="rotate(-90 60.3333 60.0003)" fill="#3056D3" />
-                                            <circle cx="60.3333" cy="16.3333" r="1.66667"
-                                                transform="rotate(-90 60.3333 16.3333)" fill="#3056D3" />
-                                            <circle cx="88.6667" cy="60.0003" r="1.66667"
-                                                transform="rotate(-90 88.6667 60.0003)" fill="#3056D3" />
-                                            <circle cx="88.6667" cy="16.3333" r="1.66667"
-                                                transform="rotate(-90 88.6667 16.3333)" fill="#3056D3" />
-                                            <circle cx="117.667" cy="60.0003" r="1.66667"
-                                                transform="rotate(-90 117.667 60.0003)" fill="#3056D3" />
-                                            <circle cx="117.667" cy="16.3333" r="1.66667"
-                                                transform="rotate(-90 117.667 16.3333)" fill="#3056D3" />
-                                            <circle cx="74.6667" cy="60.0003" r="1.66667"
-                                                transform="rotate(-90 74.6667 60.0003)" fill="#3056D3" />
-                                            <circle cx="74.6667" cy="16.3333" r="1.66667"
-                                                transform="rotate(-90 74.6667 16.3333)" fill="#3056D3" />
-                                            <circle cx="103" cy="60.0003" r="1.66667"
-                                                transform="rotate(-90 103 60.0003)" fill="#3056D3" />
-                                            <circle cx="103" cy="16.3333" r="1.66667"
-                                                transform="rotate(-90 103 16.3333)" fill="#3056D3" />
-                                            <circle cx="132" cy="60.0003" r="1.66667"
-                                                transform="rotate(-90 132 60.0003)" fill="#3056D3" />
-                                            <circle cx="132" cy="16.3333" r="1.66667"
-                                                transform="rotate(-90 132 16.3333)" fill="#3056D3" />
-                                            <circle cx="1.66667" cy="45.3333" r="1.66667"
-                                                transform="rotate(-90 1.66667 45.3333)" fill="#3056D3" />
-                                            <circle cx="1.66667" cy="1.66683" r="1.66667"
-                                                transform="rotate(-90 1.66667 1.66683)" fill="#3056D3" />
-                                            <circle cx="16.3333" cy="45.3333" r="1.66667"
-                                                transform="rotate(-90 16.3333 45.3333)" fill="#3056D3" />
-                                            <circle cx="16.3333" cy="1.66683" r="1.66667"
-                                                transform="rotate(-90 16.3333 1.66683)" fill="#3056D3" />
-                                            <circle cx="31" cy="45.3333" r="1.66667"
-                                                transform="rotate(-90 31 45.3333)" fill="#3056D3" />
-                                            <circle cx="31" cy="1.66683" r="1.66667"
-                                                transform="rotate(-90 31 1.66683)" fill="#3056D3" />
-                                            <circle cx="45.6667" cy="45.3333" r="1.66667"
-                                                transform="rotate(-90 45.6667 45.3333)" fill="#3056D3" />
-                                            <circle cx="45.6667" cy="1.66683" r="1.66667"
-                                                transform="rotate(-90 45.6667 1.66683)" fill="#3056D3" />
-                                            <circle cx="60.3333" cy="45.3338" r="1.66667"
-                                                transform="rotate(-90 60.3333 45.3338)" fill="#3056D3" />
-                                            <circle cx="60.3333" cy="1.66683" r="1.66667"
-                                                transform="rotate(-90 60.3333 1.66683)" fill="#3056D3" />
-                                            <circle cx="88.6667" cy="45.3338" r="1.66667"
-                                                transform="rotate(-90 88.6667 45.3338)" fill="#3056D3" />
-                                            <circle cx="88.6667" cy="1.66683" r="1.66667"
-                                                transform="rotate(-90 88.6667 1.66683)" fill="#3056D3" />
-                                            <circle cx="117.667" cy="45.3338" r="1.66667"
-                                                transform="rotate(-90 117.667 45.3338)" fill="#3056D3" />
-                                            <circle cx="117.667" cy="1.66683" r="1.66667"
-                                                transform="rotate(-90 117.667 1.66683)" fill="#3056D3" />
-                                            <circle cx="74.6667" cy="45.3338" r="1.66667"
-                                                transform="rotate(-90 74.6667 45.3338)" fill="#3056D3" />
-                                            <circle cx="74.6667" cy="1.66683" r="1.66667"
-                                                transform="rotate(-90 74.6667 1.66683)" fill="#3056D3" />
-                                            <circle cx="103" cy="45.3338" r="1.66667"
-                                                transform="rotate(-90 103 45.3338)" fill="#3056D3" />
-                                            <circle cx="103" cy="1.66683" r="1.66667"
-                                                transform="rotate(-90 103 1.66683)" fill="#3056D3" />
-                                            <circle cx="132" cy="45.3338" r="1.66667"
-                                                transform="rotate(-90 132 45.3338)" fill="#3056D3" />
-                                            <circle cx="132" cy="1.66683" r="1.66667"
-                                                transform="rotate(-90 132 1.66683)" fill="#3056D3" />
-                                        </svg>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
+        <section class="py-12 md:py-20 bg-[#111111]">
+            <div class="max-w-7xl mx-auto px-4 md:px-6">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-24 items-center">
+                    <div class="relative z-[1] order-2 lg:order-1">
+                        <img class="rounded-2xl rounded-bl-[80px] md:rounded-bl-[220px] w-full relative z-[2]"
+                            src="{{ asset('assets/img/about/about-img-5.jpg') }}" alt="">
+                        <img class="absolute -bottom-6 -left-4 md:-bottom-[30px] md:-left-[30px] z-[-1] w-24 md:w-auto"
+                            src="{{ asset('assets/img/icon/shape-image.png') }}" alt="">
                     </div>
-                    <div class="w-full px-4 lg:w-1/2 xl:w-5/12">
-                        <div class="mt-10 lg:mt-0">
-                            <span class="mb-4 block text-lg font-semibold text-primary">
-                                Why Choose Us
-                            </span>
-                            <h2 class="mb-5 text-3xl font-bold text-dark sm:text-[40px]/[48px] ">
-                                Make your customers happy by giving services.
-                            </h2>
-                            <p class="mb-5 text-base text-body-color dark:text-dark-6">
-                                It is a long established fact that a reader will be distracted
-                                by the readable content of a page when looking at its layout.
-                                The point of using Lorem Ipsum is that it has a more-or-less.
-                            </p>
-                            <p class="mb-8 text-base text-body-color dark:text-dark-6">
-                                A domain name is one of the first steps to establishing your
-                                brand. Secure a consistent brand image with a domain name that
-                                matches your business.
-                            </p>
-                            <a href="javascript:void(0)"
-                                class="inline-flex items-center justify-center rounded-md border border-transparent bg-primary px-7 py-3 text-center text-base font-medium text-white hover:bg-primary/90">
-                                Get Started
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="py-10 bg-[#0d0d0d] text-white">
-            <div class="max-w-7xl mx-auto px-6">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
 
-                    <!-- LEFT CONTENT -->
-                    <div>
-                        <h2 class="text-[55px] md:text-[65px] font-semibold leading-[1.1] mb-6">
-                            Meet Your Financial<br>Partner in Growth
+                    <div class="about__content text-white order-1 lg:order-2">
+                        <div class="flex gap-2 items-center mb-5">
+                            <img class="w-4 h-4" src="{{ asset('assets/img/vector/Vector-2.png') }}" alt="">
+                            <p class="text-white text-base md:text-lg font-bold">About Your Agency</p>
+                        </div>
+                        <h2 class="text-3xl md:text-[40px] font-semibold leading-tight mb-8">
+                            Empowering Businesses with Innovation and Success.
                         </h2>
 
-                        <p class="text-xl opacity-90 leading-relaxed">
-                            With over 18 years of experience helping businesses unlock financial clarity and
-                            growth, I bring personalized strategy, practical insights, and ongoing support.
-                            Whether you're just starting out or scaling fast, I'm here to guide every step.
+                        <div
+                            class="w-full lg:w-[600px] p-6 md:p-8 bg-[#111111] relative lg:z-30 grid grid-cols-1 sm:grid-cols-2 mt-10 lg:-ml-[200px] rounded-3xl lg:rounded-[220px] lg:rounded-tl-none border-amber-300 border-2 md:border-[6px] shadow-lg">
+                            <div
+                                class="flex flex-col justify-center items-center sm:items-start border-b sm:border-b-0 sm:border-r border-amber-300/30 pb-4 sm:pb-0">
+                                <span class="text-5xl md:text-[60px] text-amber-300 font-bold">30 <sup>+</sup></span>
+                                <p class="font-bold text-sm text-white">Years of Exp.</p>
+                            </div>
+                            <div class="pt-4 sm:pt-0 sm:pl-6 text-center sm:text-left">
+                                <img src="{{ asset('assets/img/vector/icon-1.png') }}" class="mx-auto sm:mx-0"
+                                    alt="">
+                                <p class="mt-4 text-white text-sm">Our expert team delivers practical insights and support.
+                                </p>
+                                <button
+                                    class="mt-5 px-6 py-2 text-sm font-semibold text-black bg-amber-300 rounded-full hover:bg-amber-400 transition">Read
+                                    More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-12 md:py-20 bg-white overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 md:px-6">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+                    <div class="relative px-8 lg:px-0">
+                        <img src="{{ asset('assets/img/about/1.jpg') }}" class="rounded-3xl shadow-xl w-full"
+                            alt="">
+                        <img src="{{ asset('assets/img/about/2.jpg') }}"
+                            class="absolute -top-6 -left-6 md:-top-10 md:-left-[60px] rounded-3xl shadow-xl border-4 border-white w-[60%] md:w-[70%]">
+                        <div
+                            class="absolute -top-10 right-0 w-20 h-20 md:w-28 md:h-28 rounded-full bg-purple-600 text-white flex items-center justify-center text-center text-[10px] md:text-sm font-semibold shadow-lg border-4 border-white rotate-12">
+                            Contact Us
+                        </div>
+                    </div>
+
+                    <div class="mt-10 lg:mt-0">
+                        <p class="text-purple-600 font-semibold mb-3">About Us</p>
+                        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6">
+                            Trusted partners in building event experiences
+                        </h2>
+                        <p class="text-gray-600 text-sm md:text-lg leading-relaxed mb-6">
+                            We combine creativity, strategy, and seamless execution to deliver events that make a powerful
+                            and lasting impression.
                         </p>
 
-                        <!-- CARD GRID -->
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-10">
-
-                            <!-- GLASS CARD -->
-                            <div
-                                class="backdrop-blur-xl bg-white/5
-                        border border-white/10
-                        shadow-[0_0_30px_rgba(255,255,255,0.1)]
-                        rounded-2xl p-6 text-center relative overflow-hidden">
-
-                                <!-- gradient glow layer -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
+                            <div class="flex items-start gap-3">
                                 <div
-                                    class="absolute inset-0 bg-gradient-to-br from-purple-500/10 via-pink-500/10 to-blue-500/10 blur-xl">
-                                </div>
-
-                                <!-- content -->
-                                <div class="relative">
-                                    <h3 class="text-xl font-semibold mb-3 tracking-wide">Current Date & Time</h3>
-                                    <div id="date" class="text-lg leading-relaxed font-medium opacity-90"></div>
-                                    <div id="time" class="text-4xl mt-2 font-semibold"></div>
-                                </div>
+                                    class="w-6 h-6 rounded-full flex-shrink-0 flex items-center justify-center bg-purple-600 text-white text-xs">
+                                    ✓</div>
+                                <p class="text-gray-700 text-sm md:text-base">Creative strategy & planning</p>
                             </div>
-
-                            <!-- FEATURE CARD -->
-                            <div
-                                class="rounded-2xl p-6 bg-gradient-to-br from-blue-600/20 to-purple-600/20 border border-white/10 backdrop-blur-md shadow-lg">
-                                <h4 class="text-2xl font-bold mb-2">18+ Years</h4>
-                                <p class="opacity-80 text-lg">Experience in financial planning and growth strategy.</p>
+                            <div class="flex items-start gap-3">
+                                <div
+                                    class="w-6 h-6 rounded-full flex-shrink-0 flex items-center justify-center bg-purple-600 text-white text-xs">
+                                    ✓</div>
+                                <p class="text-gray-700 text-sm md:text-base">Purpose-driven experiences</p>
                             </div>
-
-                        </div>
-                    </div>
-
-                    <!-- RIGHT IMAGE -->
-                    <div class="flex justify-center">
-                        <div class="rounded-3xl overflow-hidden shadow-2xl hover:scale-[1.02] transition-all duration-300">
-                            <img class="w-full h-auto" src="{{ asset('assets/img/about/1.png') }}" alt="About Image">
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-        <section class="py-10">
-            <div class="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-
-                <!-- LEFT SIDE IMAGES -->
-                <div class="space-y-8">
-
-                    <!-- Top row -->
-                    <div class="flex gap-6">
-                        <!-- Image 1 -->
-                        <div class="w-1/2 h-48 rounded-xl overflow-hidden shadow-lg">
-                            <img src="{{ asset('assets/img/about/about-img-1.jpg') }}"
-                                class="w-full h-full object-cover" />
                         </div>
 
-                        <!-- Image 2 -->
-                        <div class="w-1/2 h-48 rounded-xl overflow-hidden shadow-lg">
-                            <img src="{{ asset('assets/img/about/about-img-3.jpg') }}"
-                                class="w-full h-full object-cover" />
-                        </div>
-                    </div>
-
-                    <!-- Bottom big image -->
-                    <div class="w-full h-60 rounded-xl overflow-hidden shadow-xl">
-                        <img src="{{ asset('assets/img/about/about-img-2.jpg') }}" class="w-full h-full object-cover" />
-                    </div>
-
-                </div>
-
-                <!-- RIGHT SIDE CONTENT -->
-                <div class="space-y-6">
-
-                    <!-- Label -->
-                    <span
-                        class="inline-block px-4 py-1 rounded-md border border-purple-500 text-purple-600 text-sm font-semibold">
-                        ABOUT THIS EVENT
-                    </span>
-
-                    <!-- Heading -->
-                    <h2 class="text-4xl font-bold leading-tight">
-                        Business Conference<br>
-                        For Solving Problems
-                    </h2>
-
-                    <!-- Description -->
-                    <p class="text-gray-600">
-                        Join 500 others in Manhattan, NY for a full day of inspiring keynotes and new connections at the
-                        premier conference for software Product Managers.
-                    </p>
-
-                    <!-- Features -->
-                    <div class="grid grid-cols-2 gap-6">
-
-                        <!-- Feature 1 -->
-                        <div class="flex items-start gap-3">
-                            <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
-                                <span class="text-purple-600 text-xl">👥</span>
-                            </div>
-                            <p class="font-semibold leading-tight">
-                                6,000+ People<br>
-                                <span class="text-gray-600 font-normal">In Person Meet-up</span>
-                            </p>
-                        </div>
-
-                        <!-- Feature 2 -->
-                        <div class="flex items-start gap-3">
-                            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
-                                <span class="text-blue-600 text-xl">⭐</span>
-                            </div>
-                            <p class="font-semibold leading-tight">
-                                Connect with<br>
-                                <span class="text-gray-600 font-normal">Industry Leaders</span>
-                            </p>
-                        </div>
-
-                    </div>
-
-                    <!-- Text -->
-                    <p class="text-gray-600 leading-relaxed">
-                        When an unknown printer took a galley type and scrambled a specimen book, it survived not only five
-                        centuries but also the leap into electronic typesetting.
-                    </p>
-
-                    <!-- Button -->
-                    <button
-                        class="px-6 py-3 bg-pink-500 text-white font-semibold rounded-xl shadow hover:bg-pink-600 transition">
-                        Read More →
-                    </button>
-                </div>
-            </div>
-        </section>
-        <section class="section py-10">
-            <div class="max-w-7xl mx-auto">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
-                    <div class="relative">
-                        <img class="rounded-[16px] w-full" src="{{ asset('assets/img/about/about-img-4.jpg') }}"
-                            alt="">
                         <div
-                            class="absolute w-[250px] bottom-0 left-0 rounded-[16px] px-[28px] py-[20px]
-                            border-2 border-white bg-white shadow-lg">
-                            <span class="text-lg font-bold flex items-center gap-2">
-                                <i class="fa-solid fa-award text-blue-600"></i>
-                                Experiences
-                            </span>
-                            <h4 class="font-bold text-[45px] leading-none mt-1">13+</h4>
-                            <span class="text-md text-gray-600">Decades of Experience, Endless Innovation</span>
+                            class="bg-gray-100 rounded-2xl p-4 md:p-6 flex flex-col md:flex-row items-center justify-between gap-4 mb-8 text-center md:text-left">
+                            <p class="font-semibold text-gray-700 text-sm md:text-base">Trusted by Thousands</p>
+                            <div class="flex items-center">
+                                <img src="https://i.pravatar.cc/40?img=3"
+                                    class="w-8 h-8 md:w-10 md:h-10 rounded-full border-2 border-white">
+                                <img src="https://i.pravatar.cc/40?img=14"
+                                    class="w-8 h-8 md:w-10 md:h-10 rounded-full -ml-3 border-2 border-white">
+                                <img src="https://i.pravatar.cc/40?img=22"
+                                    class="w-8 h-8 md:w-10 md:h-10 rounded-full -ml-3 border-2 border-white">
+                                <div
+                                    class="bg-purple-600 text-white rounded-full text-[10px] font-bold w-8 h-8 md:w-10 md:h-10 flex items-center justify-center -ml-3">
+                                    50+</div>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col sm:flex-row gap-6 items-center">
+                            <a href="#"
+                                class="w-full sm:w-auto text-center px-8 py-3 rounded-full bg-purple-600 text-white font-semibold shadow-md">More
+                                About Us</a>
+                            <div class="text-center sm:text-left">
+                                <span class="block font-semibold text-gray-800 text-sm">Email To Book Events</span>
+                                <span class="text-gray-500 text-sm">info@domainname.com</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="relative flex flex-col gap-8">
-                        <div>
-                            <span class="text-sm text-blue-600 font-semibold tracking-wide flex items-center gap-2">
-                                <i class="fa-solid fa-circle-info"></i> Get to Know Us
-                            </span>
+                </div>
+            </div>
+        </section>
 
-                            <h2 class="text-4xl font-bold leading-tight text-gray-900 mt-2">
-                                Empowering Businesses with Innovation,<br>
-                                Expertise, and Success.
-                            </h2>
-                            <p class="text-gray-600 max-w-lg mt-3">
-                                We help organizations grow faster with modern technologies, expert strategy,
-                                and a partnership built on trust and innovation.
-                            </p>
-                        </div>
-                        <div class="flex items-center gap-6">
-                            <a href="#"
-                                class="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-lg
-                  font-semibold hover:bg-blue-700 transition shadow-md">
-                                Learn More
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </a>
-                            <div class="flex items-center gap-4">
-                                <a href="#" class="text-gray-500 hover:text-blue-600 transition text-xl">
-                                    <i class="fa-brands fa-facebook"></i>
-                                </a>
-                                <a href="#" class="text-gray-500 hover:text-blue-400 transition text-xl">
-                                    <i class="fa-brands fa-twitter"></i>
-                                </a>
-                                <a href="#" class="text-gray-500 hover:text-pink-600 transition text-xl">
-                                    <i class="fa-brands fa-instagram"></i>
-                                </a>
-                                <a href="#" class="text-gray-500 hover:text-blue-700 transition text-xl">
-                                    <i class="fa-brands fa-linkedin"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="grid grid-cols-2 gap-4 mt-2">
+        <section class="py-12 md:py-20 bg-[#0d0d0d] text-white">
+            <div class="max-w-7xl mx-auto px-4 md:px-6">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                    <div class="text-center lg:text-left">
+                        <h2 class="text-4xl md:text-[55px] lg:text-[65px] font-semibold leading-tight mb-6">
+                            Meet Your Financial <br class="hidden md:block"> Partner in Growth
+                        </h2>
+                        <p class="text-base md:text-xl opacity-90 leading-relaxed mb-10">
+                            With over 18 years of experience helping businesses unlock financial clarity and growth, I guide
+                            every step.
+                        </p>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                             <div
-                                class="bg-white rounded-xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition">
-                                <div class="p-3 bg-blue-600 text-white rounded-lg inline-flex">
-                                    <i class="fa-solid fa-lightbulb text-xl"></i>
+                                class="backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl p-6 relative overflow-hidden">
+                                <div class="absolute inset-0 bg-gradient-to-br from-purple-500/10 to-blue-500/10 blur-xl">
                                 </div>
-                                <h3 class="text-xl font-bold mt-4">Our Vision</h3>
-                                <p class="text-gray-600 text-sm mt-1">
-                                    Building the future with smart and scalable technologies.
-                                </p>
+                                <div class="relative">
+                                    <h3 class="text-lg font-semibold mb-2">Growth Strategy</h3>
+                                    <p class="text-3xl md:text-4xl font-bold text-[#FCDB66]">Top Rated</p>
+                                </div>
                             </div>
                             <div
-                                class="bg-white rounded-xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition">
-                                <div class="p-3 bg-green-600 text-white rounded-lg inline-flex">
-                                    <i class="fa-solid fa-users text-xl"></i>
-                                </div>
-                                <h3 class="text-xl font-bold mt-4">Team</h3>
-                                <p class="text-gray-600 text-sm mt-1">
-                                    A group of experienced and passionate professionals.
-                                </p>
+                                class="rounded-2xl p-6 bg-gradient-to-br from-blue-600/20 to-purple-600/20 border border-white/10 backdrop-blur-md">
+                                <h4 class="text-2xl font-bold mb-2">18+ Years</h4>
+                                <p class="opacity-80 text-sm">Experience in financial planning and strategy.</p>
                             </div>
                         </div>
-                        <div class="grid grid-cols-2 gap-6 mt-4">
-                            <div class="bg-white rounded-xl p-6 border border-gray-200 text-center shadow-sm">
-                                <h3 class="text-4xl font-bold text-blue-600">250+</h3>
-                                <p class="text-gray-500 text-sm mt-1">Projects Completed</p>
-                            </div>
-                            <div class="bg-white rounded-xl p-6 border border-gray-200 text-center shadow-sm">
-                                <h3 class="text-4xl font-bold text-blue-600">50+</h3>
-                                <p class="text-gray-500 text-sm mt-1">Active Clients</p>
-                            </div>
+                    </div>
+
+                    <div class="flex justify-center">
+                        <div class="rounded-3xl overflow-hidden shadow-2xl w-full max-w-md lg:max-w-none">
+                            <img class="w-full h-auto object-cover" src="{{ asset('assets/img/about/1.png') }}"
+                                alt="About Image">
                         </div>
                     </div>
                 </div>

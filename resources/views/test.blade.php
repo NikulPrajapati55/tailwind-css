@@ -2,9 +2,7 @@
     @section('meta')
         <title>test</title>
     @endsection
+
     @section('content')
-
-
-
-    @endsection
+@endsection
 </x-app-layout>

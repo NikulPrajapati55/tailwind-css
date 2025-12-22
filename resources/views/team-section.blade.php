@@ -51,7 +51,7 @@
             <span class="mb-2 block text-lg font-semibold text-primary">
               Our Team
             </span>
-            <h2 class="mb-3 text-3xl font-bold leading-[1.2] text-dark sm:text-4xl md:text-[40px] dark:text-white">
+            <h2 class="mb-3 text-3xl font-bold leading-[1.2] text-dark sm:text-4xl md:text-[40px]">
               Our Awesome Team
             </h2>
             <p class="text-base text-body-color dark:text-dark-6">
@@ -69,7 +69,7 @@
               <img src="https://cdn.tailgrids.com/assets/images/marketing/team/team-01/image-01.jpg" alt="image" class="w-full" />
               <div class="absolute bottom-5 left-0 w-full text-center">
                 <div class="relative mx-5 overflow-hidden rounded-lg bg-white px-3 py-5 dark:bg-dark-2">
-                  <h3 class="text-base font-semibold text-dark dark:text-white">
+                  <h3 class="text-base font-semibold text-dark ">
                     Coriss Ambady
                   </h3>
                   <p class="text-xs text-body-color dark:text-dark-6">
@@ -137,7 +137,7 @@
               <img src="https://cdn.tailgrids.com/assets/images/marketing/team/team-01/image-02.jpg" alt="image" class="w-full" />
               <div class="absolute bottom-5 left-0 w-full text-center">
                 <div class="relative mx-5 overflow-hidden rounded-lg bg-white px-3 py-5 dark:bg-dark-2">
-                  <h3 class="text-base font-semibold text-dark dark:text-white">
+                  <h3 class="text-base font-semibold text-dark ">
                     Glorius Cristian
                   </h3>
                   <p class="text-xs text-body-color dark:text-dark-6">
@@ -205,7 +205,7 @@
               <img src="https://cdn.tailgrids.com/assets/images/marketing/team/team-01/image-03.jpg" alt="image" class="w-full" />
               <div class="absolute bottom-5 left-0 w-full text-center">
                 <div class="relative mx-5 overflow-hidden rounded-lg bg-white px-3 py-5 dark:bg-dark-2">
-                  <h3 class="text-base font-semibold text-dark dark:text-white">
+                  <h3 class="text-base font-semibold text-dark ">
                     Jackie Sanders
                   </h3>
                   <p class="text-xs text-body-color dark:text-dark-6">
@@ -273,7 +273,7 @@
               <img src="https://cdn.tailgrids.com/assets/images/marketing/team/team-01/image-04.jpg" alt="image" class="w-full" />
               <div class="absolute bottom-5 left-0 w-full text-center">
                 <div class="relative mx-5 overflow-hidden rounded-lg bg-white px-3 py-5 dark:bg-dark-2">
-                  <h3 class="text-base font-semibold text-dark dark:text-white">
+                  <h3 class="text-base font-semibold text-dark ">
                     Nikolas Brooten
                   </h3>
                   <p class="text-xs text-body-color dark:text-dark-6">
