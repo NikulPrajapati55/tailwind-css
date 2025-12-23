@@ -52,9 +52,12 @@
                         <textarea placeholder="Tell us about your requirements..." rows="4"
                             class="w-full bg-white/5 border border-white/10 rounded-2xl px-2 py-2 text-white placeholder-gray-500 outline-none focus:border-[#C47E6D]/50 focus:bg-white/10 transition-all resize-none"></textarea>
 
-                        <button type="submit" href="#"
-                            class="text-decoration-none primary_btn d-inline-block mt-3">Submit<span>
-                            </span></button>
+                        <button type="submit"
+                            class="w-full mt-4 bg-[#C47E6D] text-black font-semibold py-3 rounded-xl
+         hover:bg-[#d58f7c] transition">
+                            Submit
+                        </button>
+
                     </form>
                 </div>
             </div>
