@@ -120,8 +120,8 @@
                                 </svg>
                             </div>
                             <div class="flex-auto">
-                                <a href="#" class="block font-semibold text-white">
-                                    Automations
+                                <a href="{{ route('popup') }}" class="block font-semibold text-white">
+                                    Popup Section
                                     <span class="absolute inset-0"></span>
                                 </a>
                             </div>

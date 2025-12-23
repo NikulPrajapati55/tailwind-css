@@ -320,4 +320,8 @@ var swiperCube = new Swiper(".cubeswiper", {
                 requestAnimationFrame(animate);
             }
             animate();
+
+
+
+
 });
