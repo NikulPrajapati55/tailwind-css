@@ -183,7 +183,7 @@
                                 <div class="-mx-3">
                                     <button type="button" command="--toggle" commandfor="products"
                                         class="flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base/7 font-semibold text-white hover:bg-white/5">
-                                        Product
+                                        Section
                                         <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon"
                                             aria-hidden="true" class="size-5 flex-none in-aria-expanded:rotate-180">
                                             <path
@@ -192,19 +192,18 @@
                                         </svg>
                                     </button>
                                     <el-disclosure id="products" hidden class="mt-2 block space-y-2">
-                                        <a href="#"
-                                            class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-white hover:bg-white/5">Analytics</a>
-                                        <a href="#"
-                                            class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-white hover:bg-white/5">Engagement</a>
-                                        <a href="#"
-                                            class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-white hover:bg-white/5">Security</a>
-                                        <a href="#"
-                                            class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-white hover:bg-white/5">Integrations</a>
-                                        <a href="#"
-                                            class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-white hover:bg-white/5">Automations</a>
-                                        <a href="#"
-                                            class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-white hover:bg-white/5">Watch
-                                            demo</a>
+                                        <a href="{{ route('aboutsection') }}"
+                                            class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-white hover:bg-white/5">About Section</a>
+                                        <a href="{{ route('teamsection') }}"
+                                            class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-white hover:bg-white/5">Team Section</a>
+                                        <a href="{{ route('cardsection') }}"
+                                            class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-white hover:bg-white/5">Card Section</a>
+                                        <a href="{{ route('formsection') }}"
+                                            class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-white hover:bg-white/5">Form Section</a>
+                                        <a href="{{ route('popup') }}"
+                                            class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-white hover:bg-white/5">Popup Section</a>
+                                        <a href="{{ route('swiper') }}"
+                                            class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-white hover:bg-white/5">Swiper Section</a>
                                         <a href="#"
                                             class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-white hover:bg-white/5">Contact
                                             sales</a>
