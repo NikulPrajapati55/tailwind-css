@@ -1,8 +1,86 @@
 <x-app-layout>
     @section('meta')
-        <title>About Section - Frontend</title>
+        <title>About Section | Tailwind CSS Frontend</title>
+
+        <meta name="description"
+            content="About section built using Tailwind CSS and Laravel. Clean UI components, modern frontend practices, and reusable layouts.">
+
+        <meta name="keywords" content="about section, tailwind css, frontend developer, laravel ui, web developer">
+
+        <meta name="author" content="Nikul Prajapati">
+        <meta name="robots" content="index, follow">
+
+        <meta property="og:title" content="About Section | Tailwind CSS Frontend">
+        <meta property="og:description"
+            content="Learn more about this Tailwind CSS frontend project and reusable UI components built with Laravel.">
+        <meta property="og:type" content="website">
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="About Section | Tailwind CSS Frontend">
+        <meta name="twitter:description"
+            content="Tailwind CSS based About section with modern UI and clean frontend structure.">
+        <meta name="author" content="Nikul Prajapati">
     @endsection
+
     @section('content')
+        <section id="about-banner"
+            class="relative min-h-[85vh] flex items-center justify-center px-6 pt-20 pb-20 overflow-hidden">
+
+            <div class="absolute inset-0 z-0">
+                <img src="{{ asset('assets/img/banner/banner-img-4.jpg') }}" alt="Professional Workspace Background"
+                    class="absolute inset-0 w-full h-full object-cover  opacity-90">
+
+                <div class="absolute inset-0 bg-gradient-to-b from-white via-white/80 to-white"></div>
+                <div
+                    class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-indigo-50/30 via-transparent to-transparent">
+                </div>
+
+                <div class="absolute top-20 right-[5%] w-80 h-80 bg-purple-300/30 rounded-full blur-[120px] animate-pulse">
+                </div>
+                <div class="absolute bottom-10 left-[5%] w-[500px] h-[500px] bg-indigo-200/40 rounded-full blur-[130px]">
+                </div>
+            </div>
+
+            <div class="container mx-auto text-center relative z-10">
+                <div
+                    class="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white/80 backdrop-blur-md border border-slate-200 shadow-xl mb-10 reveal hero-stagger">
+                    <span class="relative flex h-3 w-3">
+                        <span
+                            class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+                    </span>
+                    <span class="text-xs font-black text-slate-700 uppercase tracking-widest">Available for New
+                        Masterpieces</span>
+                </div>
+
+                <h1
+                    class="text-6xl lg:text-[110px] font-black text-slate-900 leading-[0.85] mb-12 reveal hero-stagger tracking-tighter">
+                    Engineering <br>
+                    <span class="gradient-text">Digital</span>
+                    Masterpieces.
+                </h1>
+
+                <div class="max-w-3xl mx-auto space-y-8 reveal hero-stagger">
+                    <p class="text-xl lg:text-2xl text-slate-900 leading-relaxed font-medium">
+                        We don't just build websites; we architect high-performance digital ecosystems. By merging
+                        <span
+                            class="text-indigo-900 font-bold underline decoration-indigo-200 decoration-4 underline-offset-4">Laravel's
+                            robust backend</span>
+                        with <span
+                            class="text-purple-900 font-bold underline decoration-purple-200 decoration-4 underline-offset-4">GSAP's
+                            cinematic motion</span>.
+                    </p>
+
+                    <p class="text-sm font-bold text-slate-700 uppercase tracking-[0.3em]">
+                        Trusted by 50+ Global Innovators
+                    </p>
+                </div>
+            </div>
+
+            <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-70">
+                <div class="w-1 h-12 bg-gradient-to-b from-indigo-600 to-transparent rounded-full"></div>
+            </div>
+        </section>
         <section class="py-12 md:py-20 bg-white">
             <div class="max-w-7xl mx-auto px-4 md:px-6">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 items-center">

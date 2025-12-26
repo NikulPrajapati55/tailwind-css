@@ -1,230 +1,154 @@
-<header class="bg-[#102030]">
-    <nav aria-label="Global" class="mx-auto flex max-w-10xl items-center justify-between p-6 lg:px-100">
-        <div class="flex lg:flex-1">
-            <a href="/" class="-m-1.5 p-1.5 ">
-                <img src="{{ asset('assets/img/logo/logo.jpg') }}" alt="" class="h-20  w-auto" />
-            </a>
-        </div>
-        <div class="flex lg:hidden">
-            <button type="button" command="show-modal" commandfor="mobile-menu"
-                class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-400">
-                <span class="sr-only">Open main menu</span>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
-                    aria-hidden="true" class="size-6">
-                    <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                </svg>
-            </button>
-        </div>
-        <el-popover-group class="hidden lg:flex lg:gap-x-12">
-            <div class="relative">
-                <button popovertarget="desktop-menu-product"
-                    class="flex items-center gap-x-1 text-sm/6 font-semibold text-white">
+<header class="bg-[#0f1b2c]">
+    <nav class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+
+        <!-- Logo -->
+        <a href="/" class="flex items-center gap-2">
+            <img src="{{ asset('assets/img/logo/logo.jpg') }}" class="h-12 rounded" />
+            <span class="text-white font-bold tracking-wider">Hi Codes</span>
+        </a>
+
+        <!-- Desktop Menu -->
+        <ul class="hidden lg:flex items-center gap-10 text-white font-semibold ">
+
+            <li class="group relative py-2">
+                <button class="flex items-center gap-1">
+                    <i class="fa-solid fa-layer-group text-indigo-400"></i>
                     Sections
-                    <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true"
-                        class="size-5 flex-none text-gray-500">
-                        <path
-                            d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
-                            clip-rule="evenodd" fill-rule="evenodd" />
-                    </svg>
+                    <i class="fa-solid fa-chevron-down text-gray-400 group-hover:rotate-180 duration-200"></i>
                 </button>
 
-                <el-popover id="desktop-menu-product" anchor="bottom" popover
-                    class="w-screen max-w-md overflow-hidden rounded-3xl bg-gray-800 outline-1 -outline-offset-1 outline-white/10 transition transition-discrete [--anchor-gap:--spacing(3)] backdrop:bg-transparent open:block data-closed:translate-y-1 data-closed:opacity-0 data-enter:duration-200 data-enter:ease-out data-leave:duration-150 data-leave:ease-in">
-                    <div class="p-4">
-                        <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-white/5">
-                            <div
-                                class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-700/50 group-hover:bg-gray-700">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                                    data-slot="icon" aria-hidden="true"
-                                    class="size-6 text-gray-400 group-hover:text-white">
-                                    <path d="M10.5 6a7.5 7.5 0 1 0 7.5 7.5h-7.5V6Z" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path d="M13.5 10.5H21A7.5 7.5 0 0 0 13.5 3v7.5Z" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </svg>
-                            </div>
-                            <div class="flex-auto">
-                                <a href="{{ route('aboutsection') }}" class="block font-semibold text-white">
-                                    About Section
-                                    <span class="absolute inset-0"></span>
-                                </a>
+                <!-- Dropdown -->
+                <div
+                    class="absolute z-[100] mt-3 hidden group-hover:block w-60 bg-gray-800 rounded-2xl shadow-2xl border border-white/10">
+                    <ul class="p-3 space-y-2">
 
-                            </div>
-                        </div>
-                        <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-white/5">
-                            <div
-                                class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-700/50 group-hover:bg-gray-700">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                                    data-slot="icon" aria-hidden="true"
-                                    class="size-6 text-gray-400 group-hover:text-white">
-                                    <path
-                                        d="M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672ZM12 2.25V4.5m5.834.166-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243-1.59-1.59"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                            </div>
-                            <div class="flex-auto">
-                                <a href="{{ route('teamsection') }}" class="block font-semibold text-white">
-                                    Team Section
-                                    <span class="absolute inset-0"></span>
-                                </a>
+                        <li>
+                            <a href="{{ route('aboutsection') }}"
+                                class="flex gap-3 items-center p-2 rounded-lg hover:bg-white/10">
+                                <i class="fa-solid fa-circle-info text-indigo-400"></i>
+                                About Section
+                            </a>
+                        </li>
 
-                            </div>
-                        </div>
-                        <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-white/5">
-                            <div
-                                class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-700/50 group-hover:bg-gray-700">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                                    data-slot="icon" aria-hidden="true"
-                                    class="size-6 text-gray-400 group-hover:text-white">
-                                    <path
-                                        d="M7.864 4.243A7.5 7.5 0 0 1 19.5 10.5c0 2.92-.556 5.709-1.568 8.268M5.742 6.364A7.465 7.465 0 0 0 4.5 10.5a7.464 7.464 0 0 1-1.15 3.993m1.989 3.559A11.209 11.209 0 0 0 8.25 10.5a3.75 3.75 0 1 1 7.5 0c0 .527-.021 1.049-.064 1.565M12 10.5a14.94 14.94 0 0 1-3.6 9.75m6.633-4.596a18.666 18.666 0 0 1-2.485 5.33"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                            </div>
-                            <div class="flex-auto">
-                                <a href="{{ route('cardsection') }}" class="block font-semibold text-white">
-                                    card section
-                                    <span class="absolute inset-0"></span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-white/5">
-                            <div
-                                class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-700/50 group-hover:bg-gray-700">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                                    data-slot="icon" aria-hidden="true"
-                                    class="size-6 text-gray-400 group-hover:text-white">
-                                    <path
-                                        d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 0 0 2.25-2.25V6a2.25 2.25 0 0 0-2.25-2.25H6A2.25 2.25 0 0 0 3.75 6v2.25A2.25 2.25 0 0 0 6 10.5Zm0 9.75h2.25A2.25 2.25 0 0 0 10.5 18v-2.25a2.25 2.25 0 0 0-2.25-2.25H6a2.25 2.25 0 0 0-2.25 2.25V18A2.25 2.25 0 0 0 6 20.25Zm9.75-9.75H18a2.25 2.25 0 0 0 2.25-2.25V6A2.25 2.25 0 0 0 18 3.75h-2.25A2.25 2.25 0 0 0 13.5 6v2.25a2.25 2.25 0 0 0 2.25 2.25Z"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                            </div>
-                            <div class="flex-auto">
-                                <a href="{{ route('formsection') }}" class="block font-semibold text-white">
-                                    From Section
-                                    <span class="absolute inset-0"></span>
-                                </a>
-                            </div>
-                        </div>
-                        <div
-                            class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-white/5">
-                            <div
-                                class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-700/50 group-hover:bg-gray-700">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                                    data-slot="icon" aria-hidden="true"
-                                    class="size-6 text-gray-400 group-hover:text-white">
-                                    <path
-                                        d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                            </div>
-                            <div class="flex-auto">
-                                <a href="{{ route('popup') }}" class="block font-semibold text-white">
-                                    Popup Section
-                                    <span class="absolute inset-0"></span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </el-popover>
-            </div>
+                        <li>
+                            <a href="{{ route('teamsection') }}"
+                                class="flex gap-3 items-center p-2 rounded-lg hover:bg-white/10">
+                                <i class="fa-solid fa-users-gear text-indigo-400"></i>
+                                Team Section
+                            </a>
+                        </li>
 
-            <a href="{{ route('test') }}" class="text-sm/6 font-semibold text-white">Test</a>
-            <a href="{{ route('swiper') }}" class="text-sm/6 font-semibold text-white">Swiper</a>
-            <a href="#" class="text-sm/6 font-semibold text-white">Company</a>
-            <div
-                class="relative flex w-fit items-center rounded-full bg-white/5 p-1 px-4 ring-1 ring-white/10 backdrop-blur-md transition-all hover:bg-white/10 hover:ring-indigo-500/50 group">
+                        <li>
+                            <a href="{{ route('cardsection') }}"
+                                class="flex gap-3 items-center p-2 rounded-lg hover:bg-white/10">
+                                <i class="fa-regular fa-address-card text-indigo-400"></i>
+                                Card Section
+                            </a>
+                        </li>
 
-                <span class="mr-2 flex h-2 w-2">
-                    <span
-                        class="animate-ping absolute inline-flex h-2 w-2 rounded-full bg-indigo-400 opacity-75"></span>
-                    <span class="relative inline-flex rounded-full h-2 w-2 bg-indigo-500"></span>
-                </span>
+                        <li>
+                            <a href="{{ route('formsection') }}"
+                                class="flex gap-3 items-center p-2 rounded-lg hover:bg-white/10">
+                                <i class="fa-solid fa-file-lines text-indigo-400"></i>
+                                Form Section
+                            </a>
+                        </li>
 
-                <a href="{{ route('login') }}"
-                    class="relative z-10 py-1.5 text-[10px] font-bold tracking-[0.2em] text-white uppercase transition-colors">
-                    Login <span class="text-gray-500 mx-1 group-hover:text-indigo-400">/</span> Sign Up
-                </a>
+                        <li>
+                            <a href="{{ route('popup') }}"
+                                class="flex gap-3 items-center p-2 rounded-lg hover:bg-white/10">
+                                <i class="fa-solid fa-bell text-indigo-400"></i>
+                                Popup Section
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </li>
+
+            <li><a href="{{ route('swiper') }}">Swiper</a></li>
+            <li class="group relative py-2">
+                <button class="flex items-center gap-1 text-white font-semibold">
+                    <i class="fa-solid fa-palette text-indigo-400"></i>
+                    Themes
+                    <i class="fa-solid fa-chevron-down text-gray-400 group-hover:rotate-180 duration-200"></i>
+                </button>
 
                 <div
-                    class="absolute inset-0 rounded-full bg-indigo-500/10 blur-md opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
+                    class="absolute mt-3 z-10 hidden group-hover:block w-64 bg-gray-800 rounded-2xl border border-white/10 shadow-2xl">
+                    <ul class="p-3 space-y-2">
+
+                        <li>
+                            <a href="{{ route('theme1') }}"
+                                class="flex gap-3 items-center p-2 rounded-lg hover:bg-white/10">
+                                <i class="fa-solid fa-layer-group text-indigo-400"></i>
+                                Theme 1
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-        </el-popover-group>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/hii.codes/" target="_blank" class="flex items-center gap-2">
+                    <i class="fa-brands fa-instagram text-pink-400"></i>
+                    Follow
+                </a>
+            </li>
+
+            <!-- Login Button -->
+            <li>
+                <a href="{{ route('login') }}"
+                    class="px-4 py-2 rounded-full bg-indigo-600 hover:bg-indigo-500 shadow-lg">
+                    <i class="fa-solid fa-right-to-bracket mr-2"></i>
+                    Login / Sign Up
+                </a>
+            </li>
+
+        </ul>
+
+        <!-- Mobile Menu Button -->
+        <button id="menuBtn" class="lg:hidden text-white text-2xl">
+            <i class="fa-solid fa-bars"></i>
+        </button>
 
     </nav>
-    <el-dialog>
-        <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
-            <div tabindex="0" class="fixed inset-0 focus:outline-none">
-                <el-dialog-panel
-                    class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-[#102030] p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
-                    <div class="flex items-center justify-between">
-                        <a href="#" class="-m-1.5 p-1.5">
-                            <span class="sr-only">Your Company</span>
-                            <img src="{{ asset('assets/img/logo/logo.jpg') }}" alt="" class="h-8 w-auto" />
-                        </a>
-                        <a href="{{ route('login') }}"
-                            class="relative z-10 py-1.5 text-[10px] font-bold tracking-[0.2em] text-white uppercase transition-colors">
-                            Login <span class="text-gray-500 mx-1 group-hover:text-indigo-400">/</span> Sign Up
-                        </a>
-                        <button type="button" command="close" commandfor="mobile-menu"
-                            class="-m-2.5 rounded-md p-2.5 text-gray-400">
-                            <span class="sr-only">Close menu</span>
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                                data-slot="icon" aria-hidden="true" class="size-6">
-                                <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </button>
-                    </div>
-                    <div class="mt-6 flow-root">
-                        <div class="-my-6 divide-y divide-white/10">
-                            <div class="space-y-2 py-6">
-                                <div class="-mx-3">
-                                    <button type="button" command="--toggle" commandfor="products"
-                                        class="flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base/7 font-semibold text-white hover:bg-white/5">
-                                        Section
-                                        <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon"
-                                            aria-hidden="true" class="size-5 flex-none in-aria-expanded:rotate-180">
-                                            <path
-                                                d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
-                                                clip-rule="evenodd" fill-rule="evenodd" />
-                                        </svg>
-                                    </button>
-                                    <el-disclosure id="products" hidden class="mt-2 block space-y-2">
-                                        <a href="{{ route('aboutsection') }}"
-                                            class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-white hover:bg-white/5">About Section</a>
-                                        <a href="{{ route('teamsection') }}"
-                                            class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-white hover:bg-white/5">Team Section</a>
-                                        <a href="{{ route('cardsection') }}"
-                                            class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-white hover:bg-white/5">Card Section</a>
-                                        <a href="{{ route('formsection') }}"
-                                            class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-white hover:bg-white/5">Form Section</a>
-                                        <a href="{{ route('popup') }}"
-                                            class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-white hover:bg-white/5">Popup Section</a>
-                                        <a href="{{ route('swiper') }}"
-                                            class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-white hover:bg-white/5">Swiper Section</a>
-                                        <a href="#"
-                                            class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-white hover:bg-white/5">Contact
-                                            sales</a>
-                                    </el-disclosure>
-                                </div>
-                                <a href="#"
-                                    class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Features</a>
-                                <a href="#"
-                                    class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Marketplace</a>
-                                <a href="#"
-                                    class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Company</a>
-                            </div>
-                            <div class="py-6">
-                                <a href="#"
-                                    class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-white hover:bg-white/5">Log
-                                    in</a>
-                            </div>
-                        </div>
-                    </div>
-                </el-dialog-panel>
-            </div>
-        </dialog>
-    </el-dialog>
+
+    <!-- Mobile Drawer -->
+    <div id="mobileMenu"
+        class="fixed top-0 right-0 h-full w-72 bg-[#0f1b2c] border-l border-white/10 shadow-2xl translate-x-full duration-300 lg:hidden z-50 overflow-y-scroll">
+
+        <div class="flex justify-between items-center px-6 py-4">
+            <h2 class="text-white font-bold">Menu</h2>
+
+            <button id="closeMenu" class="text-2xl text-gray-300">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+        <ul class="px-4 space-y-2 text-white font-semibold">
+            <li class="mt-1">Sections</li>
+            <li><a href="{{ route('aboutsection') }}" class="block p-2 rounded hover:bg-white/10">About</a></li>
+            <li><a href="{{ route('teamsection') }}" class="block p-2 rounded hover:bg-white/10">Team</a></li>
+            <li><a href="{{ route('cardsection') }}" class="block p-2 rounded hover:bg-white/10">Card</a></li>
+            <li><a href="{{ route('formsection') }}" class="block p-2 rounded hover:bg-white/10">Form</a></li>
+            <li><a href="{{ route('popup') }}" class="block p-2 rounded hover:bg-white/10">Popup</a></li>
+            <li><a href="{{ route('swiper') }}" class="block p-2 rounded hover:bg-white/10">Swiper</a></li>
+            <li><a href="{{ route('theme1') }}" class="block p-2 rounded hover:bg-white/10">Theme 1</a></li>
+
+            <li class="pt-3">
+                <a href="https://www.instagram.com/hii.codes/" target="_blank" class="flex gap-2 items-center p-2">
+                    <i class="fa-brands fa-instagram text-pink-400"></i>
+                    Follow Us
+                </a>
+            </li>
+
+            <li class="pt-2">
+                <a href="{{ route('login') }}" class="block p-2 rounded bg-indigo-600 text-center hover:bg-indigo-500">
+                    Login / Sign Up
+                </a>
+            </li>
+
+        </ul>
+    </div>
+
 </header>

@@ -38,7 +38,45 @@
     width: 20px;
 }
 
-/* Custom Dropdown Hover Item */
 .dropdown-item:hover {
     transform: translateX(5px);
 }
+
+/** Reveal animation */
+
+
+.gradient-text {
+    background: linear-gradient(to right, #4f46e5, #9333ea, #ec4899);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+}
+
+@keyframes floatHero {
+
+    0%,
+    100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-15px) rotate(1deg);
+    }
+}
+
+.animate-float {
+    animation: floatHero 5s ease-in-out infinite;
+}
+
+  #bg-canvas {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+    opacity: 0.5;
+  }
+
+/**/
