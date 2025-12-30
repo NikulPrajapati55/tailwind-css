@@ -96,13 +96,40 @@
             </li>
 
             <!-- Login Button -->
-            <li>
-                <a href="{{ route('login') }}"
-                    class="px-4 py-2 rounded-full bg-indigo-600 hover:bg-indigo-500 shadow-lg">
-                    <i class="fa-solid fa-right-to-bracket mr-2"></i>
-                    Login / Sign Up
-                </a>
+            <li class="pt-2">
+
+                @if (\Illuminate\Support\Facades\Auth::check())
+
+                    @php
+                        $user = \Illuminate\Support\Facades\Auth::user();
+
+                        $tenantSlug = strtolower(
+                            \Illuminate\Support\Str::slug($user->name) . '-' . substr($user->tenant_id, 0, 4),
+                        );
+                    @endphp
+
+                    @if ($tenantSlug)
+                        <a href="{{ route('tenant.dashboard', ['tenant_slug' => $tenantSlug]) }}"
+                            class="block p-2 rounded bg-green-600 text-center hover:bg-green-500">
+                            Go to Dashboard
+                        </a>
+                    @else
+                        <a href="{{ route('signup') }}"
+                            class="block p-2 rounded bg-yellow-600 text-center hover:bg-yellow-500">
+                            Tenant Not Assigned — Complete Signup
+                        </a>
+                    @endif
+                @else
+                    <a href="{{ route('signup') }}"
+                        class="block p-2 rounded bg-indigo-600 text-center hover:bg-indigo-500">
+                        Login / Sign Up
+                    </a>
+
+                @endif
+
             </li>
+
+
 
         </ul>
 
@@ -143,10 +170,40 @@
             </li>
 
             <li class="pt-2">
-                <a href="{{ route('login') }}" class="block p-2 rounded bg-indigo-600 text-center hover:bg-indigo-500">
-                    Login / Sign Up
-                </a>
+
+                @if (\Illuminate\Support\Facades\Auth::check())
+
+                    @php
+                        $user = \Illuminate\Support\Facades\Auth::user();
+
+                        $tenantSlug = strtolower(
+                            \Illuminate\Support\Str::slug($user->name) . '-' . substr($user->tenant_id, 0, 4),
+                        );
+                    @endphp
+
+                    @if ($tenantSlug)
+                        <a href="{{ route('tenant.dashboard', ['tenant_slug' => $tenantSlug]) }}"
+                            class="block p-2 rounded bg-green-600 text-center hover:bg-green-500">
+                            Go to Dashboard
+                        </a>
+                    @else
+                        <a href="{{ route('signup') }}"
+                            class="block p-2 rounded bg-yellow-600 text-center hover:bg-yellow-500">
+                            Tenant Not Assigned — Complete Signup
+                        </a>
+                    @endif
+                @else
+                    <a href="{{ route('signup') }}"
+                        class="block p-2 rounded bg-indigo-600 text-center hover:bg-indigo-500">
+                        Login / Sign Up
+                    </a>
+
+                @endif
+
             </li>
+
+
+
 
         </ul>
     </div>

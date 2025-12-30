@@ -60,21 +60,51 @@
                     <p class="text-[10px] text-indigo-400 font-bold uppercase tracking-[0.3em] mt-2">Join our creative space
                     </p>
                 </div>
-
-                <form action="" method="POST" class="space-y-5">
+                <form action="{{ route('signup.create.user') }}" method="POST" class="space-y-5">
                     @csrf
+
+                    {{-- NAME --}}
                     <div>
-                        <label class="block text-[10px] text-gray-400 font-bold uppercase mb-1.5 ml-1">Full Name</label>
-                        <input class="input-field w-full px-5 py-3 rounded-2xl" type="text" placeholder="John Doe">
+                        <label class="block text-[10px] text-gray-400 font-bold uppercase mb-1.5 ml-1">
+                            Full Name
+                        </label>
+
+                        <input class="input-field w-full px-5 py-3 rounded-2xl @error('name') border-red-400 @enderror"
+                            type="text" name="name" value="{{ old('name') }}" placeholder="Neil Armstrong">
+
+                        @error('name')
+                            <p class="text-red-400 text-xs mt-1">{{ $message }}</p>
+                        @enderror
                     </div>
+
+                    {{-- EMAIL --}}
                     <div>
-                        <label class="block text-[10px] text-gray-400 font-bold uppercase mb-1.5 ml-1">Email Address</label>
-                        <input class="input-field w-full px-5 py-3 rounded-2xl" type="email"
-                            placeholder="email@example.com">
+                        <label class="block text-[10px] text-gray-400 font-bold uppercase mb-1.5 ml-1">
+                            Email Address
+                        </label>
+
+                        <input class="input-field w-full px-5 py-3 rounded-2xl @error('email') border-red-400 @enderror"
+                            type="email" name="email" value="{{ old('email') }}" placeholder="email@example.com">
+
+                        @error('email')
+                            <p class="text-red-400 text-xs mt-1">{{ $message }}</p>
+                        @enderror
                     </div>
+
+                    {{-- PASSWORD --}}
                     <div>
-                        <label class="block text-[10px] text-gray-400 font-bold uppercase mb-1.5 ml-1">Password</label>
-                        <input class="input-field w-full px-5 py-3 rounded-2xl" type="password" placeholder="••••••••">
+                        <label class="block text-[10px] text-gray-400 font-bold uppercase mb-1.5 ml-1">
+                            Password
+                        </label>
+
+                        <input class="input-field w-full px-5 py-3 rounded-2xl @error('password') border-red-400 @enderror"
+                            type="password" name="password" minlength="8" placeholder="••••••••">
+
+                        @error('password')
+                            <p class="text-red-400 text-xs mt-1">
+                                {{ $message ?? 'Password must be at least 8 characters' }}
+                            </p>
+                        @enderror
                     </div>
 
                     <button
@@ -82,6 +112,7 @@
                         SIGN UP
                     </button>
                 </form>
+
 
                 <div class="mt-8 text-center pt-5 border-t border-white/10">
                     <p class="text-gray-400 text-sm">
@@ -107,26 +138,44 @@
                         <p class="text-[10px] text-indigo-400 font-bold uppercase mt-1">Please enter your credentials</p>
                     </div>
 
-                    <form action="" method="POST" class="space-y-6">
+                    <form action="{{ route('login.process') }}" method="POST">
                         @csrf
-                        <div>
-                            <label class="block text-[10px] text-gray-400 font-bold uppercase mb-1.5">Email Address</label>
-                            <input class="input-field w-full px-5 py-3.5 rounded-2xl" type="email" required
+
+                        {{-- EMAIL --}}
+                        <div class="mb-5">
+                            <label class="block text-[10px] text-gray-400 font-bold uppercase">Email Address</label>
+
+                            <input
+                                class="input-field w-full px-5 py-3.5 rounded-2xl @error('email') border-red-400 @enderror"
+                                name="email" type="email" value="{{ old('email') }}" required
                                 placeholder="name@domain.com">
+
+                            @error('email')
+                                <p class="text-red-400 text-xs mt-1">{{ $message }}</p>
+                            @enderror
                         </div>
-                        <div>
-                            <label class="block text-[10px] text-gray-400 font-bold uppercase mb-1.5">Password</label>
-                            <input class="input-field w-full px-5 py-3.5 rounded-2xl" type="password" required
-                                placeholder="••••••••">
+
+                        {{-- PASSWORD --}}
+                        <div class="mb-8">
+                            <label class="block text-[10px] text-gray-400 font-bold uppercase">Password</label>
+
+                            <input
+                                class="input-field w-full px-5 py-3.5 rounded-2xl @error('password') border-red-400 @enderror"
+                                name="password" type="password" minlength="8" required placeholder="••••••••">
+
+                            @error('password')
+                                <p class="text-red-400 text-xs mt-1">{{ $message }}</p>
+                            @enderror
                         </div>
+
                         <button
                             class="w-full py-4 bg-white text-indigo-950 font-black rounded-2xl hover:bg-indigo-100 transition-all shadow-2xl">
                             LOGIN
                         </button>
                     </form>
+
                 </div>
             </div>
         </div>
-
     @endsection
 </x-app-layout>
