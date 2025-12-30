@@ -1,6 +1,19 @@
 <x-app-layout>
     @section('meta')
-        <title>Card Section - Frontend</title>
+        <title>Card Section | Tailwind CSS Frontend</title>
+        <meta name="description"
+            content="Reusable Tailwind CSS card components built in Laravel with a clean, modern UI and best frontend practices.">
+        <meta name="keywords"
+            content="tailwind css cards, laravel ui components, frontend developer, reusable ui, web developer portfolio">
+        <meta name="author" content="Nikul Prajapati">
+        <meta name="robots" content="index, follow">
+        <meta property="og:title" content="Card Section | Tailwind CSS Frontend">
+        <meta property="og:description"
+            content="Reusable Tailwind CSS card components built in Laravel with a clean and modern frontend design.">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Card Section | Tailwind CSS Frontend">
+        <meta name="twitter:description"
+            content="Modern Tailwind CSS card section with clean UI and reusable Laravel components.">
     @endsection
     @section('content')
         <section class="py-24 bg-[#0a0a0a] text-white overflow-hidden">
@@ -87,72 +100,75 @@
             </div>
         </section>
         <section class="bg-gray-50 py-24">
-    <div class="max-w-7xl mx-auto px-6">
+            <div class="max-w-7xl mx-auto px-6">
 
-        <!-- Header -->
-        <div class="max-w-2xl mb-20">
-            <h2 class="text-4xl md:text-5xl font-semibold text-gray-900 leading-tight">
-                Services designed to scale with your business
-            </h2>
-            <p class="text-gray-500 mt-6 text-lg">
-                Thoughtful digital solutions built with clarity, performance, and long-term value.
-            </p>
-        </div>
-
-        <!-- Services -->
-        <div class="grid gap-10 md:grid-cols-3">
-
-            <!-- Card -->
-            <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
-                <div class="aspect-[4/3] overflow-hidden">
-                    <img src="https://picsum.photos/600/450?random=31"
-                         class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                </div>
-                <div class="p-8 space-y-4">
-                    <h3 class="text-xl font-semibold text-gray-900">
-                        Web Applications
-                    </h3>
-                    <p class="text-gray-500">
-                        Robust Laravel-based applications focused on speed, security, and maintainability.
+                <!-- Header -->
+                <div class="max-w-2xl mb-20">
+                    <h2 class="text-4xl md:text-5xl font-semibold text-gray-900 leading-tight">
+                        Services designed to scale with your business
+                    </h2>
+                    <p class="text-gray-500 mt-6 text-lg">
+                        Thoughtful digital solutions built with clarity, performance, and long-term value.
                     </p>
                 </div>
-            </div>
 
-            <!-- Card -->
-            <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
-                <div class="aspect-[4/3] overflow-hidden">
-                    <img src="https://picsum.photos/600/450?random=32"
-                         class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                </div>
-                <div class="p-8 space-y-4">
-                    <h3 class="text-xl font-semibold text-gray-900">
-                        UI Systems
-                    </h3>
-                    <p class="text-gray-500">
-                        Design systems that bring consistency and clarity across your product.
-                    </p>
+                <!-- Services -->
+                <div class="grid gap-10 md:grid-cols-3">
+
+                    <!-- Card -->
+                    <div
+                        class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+                        <div class="aspect-[4/3] overflow-hidden">
+                            <img src="https://picsum.photos/600/450?random=31"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-8 space-y-4">
+                            <h3 class="text-xl font-semibold text-gray-900">
+                                Web Applications
+                            </h3>
+                            <p class="text-gray-500">
+                                Robust Laravel-based applications focused on speed, security, and maintainability.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card -->
+                    <div
+                        class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+                        <div class="aspect-[4/3] overflow-hidden">
+                            <img src="https://picsum.photos/600/450?random=32"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-8 space-y-4">
+                            <h3 class="text-xl font-semibold text-gray-900">
+                                UI Systems
+                            </h3>
+                            <p class="text-gray-500">
+                                Design systems that bring consistency and clarity across your product.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card -->
+                    <div
+                        class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+                        <div class="aspect-[4/3] overflow-hidden">
+                            <img src="https://picsum.photos/600/450?random=33"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-8 space-y-4">
+                            <h3 class="text-xl font-semibold text-gray-900">
+                                Product Engineering
+                            </h3>
+                            <p class="text-gray-500">
+                                Scalable architecture and clean code built for real-world growth.
+                            </p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-
-            <!-- Card -->
-            <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
-                <div class="aspect-[4/3] overflow-hidden">
-                    <img src="https://picsum.photos/600/450?random=33"
-                         class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                </div>
-                <div class="p-8 space-y-4">
-                    <h3 class="text-xl font-semibold text-gray-900">
-                        Product Engineering
-                    </h3>
-                    <p class="text-gray-500">
-                        Scalable architecture and clean code built for real-world growth.
-                    </p>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
+        </section>
         <section class="py-24 px-4 sm:px-6 lg:px-8 bg-white font-sans text-gray-900">
 
             <div class="max-w-7xl mx-auto mb-20 text-center">

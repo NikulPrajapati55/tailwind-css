@@ -1,6 +1,28 @@
 <x-app-layout>
     @section('meta')
-        <title>Swiper section</title>
+
+<title>Swiper Section | Tailwind CSS Frontend</title>
+
+<meta name="description"
+      content="Responsive Swiper slider section built with Tailwind CSS and Laravel. Clean animations, reusable UI components, and modern frontend design.">
+
+<meta name="keywords"
+      content="swiper slider, tailwind css swiper, laravel ui components, slider section, frontend developer, modern ui">
+
+<meta name="author" content="Nikul Prajapati">
+<meta name="robots" content="index, follow">
+
+
+<!-- Open Graph -->
+<meta property="og:title" content="Swiper Section | Tailwind CSS Frontend">
+<meta property="og:description"
+      content="Interactive Swiper slider section with Tailwind CSS and Laravel — clean UI, smooth animations, and reusable components.">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Swiper Section | Tailwind CSS Frontend">
+<meta name="twitter:description"
+      content="Tailwind CSS based Swiper slider with modern UI, smooth transitions, and reusable Laravel components.">
+
     @endsection
     @section('content')
         <section class="bg-[#212428] py-10 md:py-20 px-4 md:px-6">

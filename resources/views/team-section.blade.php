@@ -1,6 +1,25 @@
 <x-app-layout>
 @section('meta')
-<title>Team Section - Frontend</title>
+<title>Team Section | Frontend UI & Tailwind CSS</title>
+
+<meta name="description"
+      content="Modern Team Section built using Tailwind CSS and Laravel. Clean profile cards, responsive grid layout, and reusable frontend UI components.">
+
+<meta name="keywords"
+      content="team section, tailwind css team cards, team profiles ui, laravel frontend, responsive team layout, web developer portfolio">
+
+<meta name="author" content="Nikul Prajapati">
+<meta name="robots" content="index, follow">
+
+<meta property="og:title" content="Team Section | Frontend UI & Tailwind CSS">
+<meta property="og:description"
+      content="Responsive Team Section with Tailwind CSS and Laravel — clean profile cards, modern UI, and reusable frontend components.">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Team Section | Frontend UI & Tailwind CSS">
+<meta name="twitter:description"
+      content="Tailwind CSS powered Team Section with responsive profile cards and reusable Laravel UI components.">
+
 @endsection
 @section('content')
 
