@@ -30,9 +30,7 @@ class UserController extends Controller
         return view('login.login');
     }
 
-    /**
-     * Register / Signup User and Create Dynamic Table
-     */
+
     public function store(Request $request)
     {
         $request->validate([
@@ -41,17 +39,13 @@ class UserController extends Controller
             'password' => 'required|min:6',
         ]);
 
-        // Wrap in a transaction to ensure both user and table are created together
         return DB::transaction(function () use ($request) {
 
-            // 1. Generate Unique Tenant ID
             $tenantId = (string) Str::uuid();
 
-            // 2. IMPORTANT: Use the full UUID to prevent "4th user" naming conflicts
-            // We replace dashes with underscores because MySQL table names can't have dashes
+
             $tableName = 't_' . str_replace('-', '_', $tenantId);
 
-            // 3. Create the User record
             $user = Users::create([
                 'name'      => $request->name,
                 'email'     => $request->email,
@@ -59,22 +53,25 @@ class UserController extends Controller
                 'tenant_id' => $tenantId,
             ]);
 
-            // 4. Create Dynamic Table
             if (!Schema::hasTable($tableName)) {
                 Schema::create($tableName, function (Blueprint $table) {
                     $table->id();
                     $table->string('name');
+                    $table->string('email')->nullable();
+                    $table->string('phone')->nullable();
+                    $table->string('role')->default('admin');
+                    $table->string('document_1')->nullable();
+                    $table->string('document_2')->nullable();
+                    $table->string('document_3')->nullable();
+                    $table->string('password')->nullable();
                     $table->string('data_key')->nullable();
                     $table->text('data_value')->nullable();
                     $table->timestamps();
                 });
             }
-
-            // 5. Send Email
             try {
                 (new TenantEmailController())->sendTenantEmail($user, $tenantId);
             } catch (\Exception $e) {
-                // Keep going if email fails
             }
 
             Auth::login($user);

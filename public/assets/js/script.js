@@ -1,11 +1,10 @@
 $(document).ready(function () {
+    const menuBtn = document.getElementById("menuBtn");
+    const closeMenu = document.getElementById("closeMenu");
+    const mobileMenu = document.getElementById("mobileMenu");
 
-     const menuBtn = document.getElementById("menuBtn");
-  const closeMenu = document.getElementById("closeMenu");
-  const mobileMenu = document.getElementById("mobileMenu");
-
-  menuBtn.onclick = () => mobileMenu.classList.remove("translate-x-full");
-  closeMenu.onclick = () => mobileMenu.classList.add("translate-x-full");
+    menuBtn.onclick = () => mobileMenu.classList.remove("translate-x-full");
+    closeMenu.onclick = () => mobileMenu.classList.add("translate-x-full");
     // 1. DATE & TIME
     function updateDateTime() {
         const now = new Date();
@@ -287,7 +286,6 @@ $(document).ready(function () {
         window.addEventListener("resize", initCanvas2);
     }
 
-    // --- Modal 3 Variables ---
     const openBtn3 = document.getElementById("openModal3");
     const closeBtn3 = document.getElementById("closeModal3");
     const overlay3 = document.getElementById("modalOverlay3");
@@ -471,5 +469,41 @@ $(document).ready(function () {
         window.addEventListener("resize", initCanvas4);
     }
 
+
+
+gsap.timeline({
+    scrollTrigger: {
+        trigger: "#about-section",
+        start: "top 75%",
+    },
+})
+.to("#about-bg-blob", { opacity: 0.6, scale: 1.2, duration: 2 })
+.from(".about-stagger", {
+    y: 50,
+    opacity: 0,
+    stagger: 0.2,
+    duration: 1,
+    ease: "power3.out"
+}, "-=1.5")
+.from("#about-img-main", {
+    scale: 0.9,
+    opacity: 0,
+    duration: 1.5
+}, "-=1.2")
+.from("#about-img-sub", {
+    x: 40,
+    y: 40,
+    opacity: 0,
+    duration: 1.5
+}, "-=1");
+
+gsap.from(".dev-photo", {
+    opacity: 0,
+    y: 70,
+    scale: 0.94,
+    duration: 1.2,
+    ease: "power3.out",
+    scrollTrigger: { trigger: "#dev-profile", start: "top 70%" }
+});
 
 });

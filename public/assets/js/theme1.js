@@ -231,14 +231,6 @@ $(document).ready(function () {
                 });
             },
 
-            /* ───────────────────────────────
-           MOBILE / TABLET (≤ 1023px)
-           NEW — separate lighter animations
-        ─────────────────────────────── */
-            /* ───────────────────────────────
-   MOBILE / TABLET (≤ 1023px)
-   opacity same + new motion
-─────────────────────────────── */
             "(max-width: 1023px)": function () {
                 /************************************
                  * HERO — opacity + scale + lift

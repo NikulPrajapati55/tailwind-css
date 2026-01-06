@@ -22,7 +22,68 @@
 
 @endsection
 @section('content')
+<section id="dev-profile" class="relative py-10 lg:py-20 bg-white overflow-hidden px-6 lg:px-24">
+            <div class="container mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
 
+                    <div class="lg:col-span-5 relative">
+                        <div class="absolute -inset-10 bg-blue-50/50 rounded-full blur-3xl -z-10"></div>
+
+                        <div
+                            class="dev-photo relative rounded-[3rem] overflow-hidden shadow-[0_50px_100px_-20px_rgba(0,0,0,0.15)] border-4 border-white">
+                            <img src="{{ asset('assets/img/dev/dev.jpg') }}" alt="Nikul Prajapati Laravel Developer"
+                                class="w-full aspect-[4/5] object-cover" />
+
+                            <div
+                                class="dev-badge absolute top-8 -right-4 bg-blue-600 text-white p-6 rounded-2xl shadow-xl">
+                                <p class="text-2xl font-bold">10+</p>
+                                <p class="text-[10px] uppercase tracking-widest font-bold opacity-80">Years Exp.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-7 space-y-6">
+                        <div class="reveal">
+                            <span class="text-blue-600 font-bold uppercase tracking-[0.3em] text-xs">The Visionary</span>
+                            <h2 class="text-5xl lg:text-7xl font-bold text-slate-900 mt-4 leading-tight">
+                                Crafting pixels <br> with <span class="italic font-serif text-blue-500">Purpose.</span>
+                            </h2>
+                        </div>
+
+                        <p class="text-slate-600 text-xl lg:text-2xl leading-relaxed max-w-2xl">
+                            I'm a digital architect specializing in high-performance interfaces. My goal is to bridge the
+                            gap between complex backend logic and elegant front-end motion.
+                        </p>
+
+                        <div class="grid grid-cols-2 gap-6 pt-4">
+                            <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100">
+                                <h4 class="text-slate-900 font-bold text-lg mb-1">Architecture</h4>
+                                <p class="text-slate-500 text-sm">Clean, scalable Laravel & Node structures.</p>
+                            </div>
+                            <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100">
+                                <h4 class="text-slate-900 font-bold text-lg mb-1">Animation</h4>
+                                <p class="text-slate-500 text-sm">Complex GSAP timelines & Canvas physics.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-6 pt-6">
+                            <a href="#" class="text-slate-400 hover:text-blue-600 transition-colors text-2xl">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="text-slate-400 hover:text-blue-600 transition-colors text-2xl">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="#" class="text-slate-400 hover:text-blue-600 transition-colors text-2xl">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <div class="h-px w-20 bg-slate-200 ml-4"></div>
+                            <span class="text-slate-900 font-bold uppercase tracking-widest text-xs">Follow Story</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
 {{-- team section 1 --}}
 
 <h1 class="text-3xl font-medium text-slate-800 text-center">Meet Our Team</h1>

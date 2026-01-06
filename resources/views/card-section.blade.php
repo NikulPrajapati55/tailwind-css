@@ -16,6 +16,151 @@
             content="Modern Tailwind CSS card section with clean UI and reusable Laravel components.">
     @endsection
     @section('content')
+     <section id="glass-services" class="relative py-10 lg:py-20 bg-slate-50/30 overflow-hidden px-6 lg:px-24">
+
+            <div id="glass-blob-1"
+                class="absolute -top-20 -left-20 w-96 h-96 bg-blue-200/40 blur-[120px] rounded-full opacity-0"></div>
+            <div id="glass-blob-2"
+                class="absolute -bottom-20 -right-20 w-96 h-96 bg-indigo-200/40 blur-[120px] rounded-full opacity-0"></div>
+
+            <div class="container mx-auto relative z-10">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-20 items-end">
+                    <div class="lg:col-span-8">
+                        <span
+                            class="glass-stagger text-blue-600 font-bold uppercase tracking-[0.3em] text-xs">Expertise</span>
+                        <h2 class="glass-stagger text-5xl lg:text-7xl font-bold text-slate-900 mt-4 leading-tight">
+                            Solutions that <br> <span class="italic font-serif text-blue-500">Scale</span> with you.
+                        </h2>
+                    </div>
+                    <div class="lg:col-span-4 lg:text-right pb-4">
+                        <p class="glass-stagger text-slate-500 text-lg">
+                            Comprehensive digital services tailored for the modern web.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                    <div
+                        class="glass-card group bg-white/40 backdrop-blur-xl p-10 rounded-[2.5rem] border border-white/60 shadow-[0_20px_50px_rgba(0,0,0,0.05)] hover:bg-white/60 transition-all duration-500">
+                        <div
+                            class="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center text-white text-2xl mb-8 group-hover:scale-110 transition-transform duration-500 shadow-lg shadow-blue-200">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-slate-900 mb-4">UI/UX Design</h3>
+                        <p class="text-slate-600 leading-relaxed mb-6">
+                            Crafting immersive visual languages that prioritize user intuition and brand storytelling.
+                        </p>
+                        <ul class="space-y-3 text-sm font-medium text-slate-500">
+                            <li><i class="fas fa-check text-blue-500 mr-2"></i> User Research</li>
+                            <li><i class="fas fa-check text-blue-500 mr-2"></i> Interactive Prototyping</li>
+                        </ul>
+                    </div>
+
+                    <div
+                        class="glass-card group bg-white/40 backdrop-blur-xl p-10 rounded-[2.5rem] border border-white/60 shadow-[0_20px_50px_rgba(0,0,0,0.05)] hover:bg-white/60 transition-all duration-500">
+                        <div
+                            class="w-16 h-16 bg-indigo-600 rounded-2xl flex items-center justify-center text-white text-2xl mb-8 group-hover:scale-110 transition-transform duration-500 shadow-lg shadow-indigo-200">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-slate-900 mb-4">Web Development</h3>
+                        <p class="text-slate-600 leading-relaxed mb-6">
+                            Building high-performance, responsive websites using Laravel, Tailwind, and GSAP.
+                        </p>
+                        <ul class="space-y-3 text-sm font-medium text-slate-500">
+                            <li><i class="fas fa-check text-indigo-500 mr-2"></i> Custom API Integration</li>
+                            <li><i class="fas fa-check text-indigo-500 mr-2"></i> Performance Auditing</li>
+                        </ul>
+                    </div>
+
+                    <div
+                        class="glass-card group bg-white/40 backdrop-blur-xl p-10 rounded-[2.5rem] border border-white/60 shadow-[0_20px_50px_rgba(0,0,0,0.05)] hover:bg-white/60 transition-all duration-500">
+                        <div
+                            class="w-16 h-16 bg-slate-900 rounded-2xl flex items-center justify-center text-white text-2xl mb-8 group-hover:scale-110 transition-transform duration-500 shadow-lg shadow-slate-200">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-slate-900 mb-4">Digital Strategy</h3>
+                        <p class="text-slate-600 leading-relaxed mb-6">
+                            Data-driven approaches to maximize your online reach and conversion potential.
+                        </p>
+                        <ul class="space-y-3 text-sm font-medium text-slate-500">
+                            <li><i class="fas fa-check text-slate-900 mr-2"></i> SEO Optimization</li>
+                            <li><i class="fas fa-check text-slate-900 mr-2"></i> Conversion Tracking</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="why-choose" class="relative py-10 lg:py-20 bg-white overflow-hidden px-6 lg:px-24">
+            <div class="container mx-auto">
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-20 items-center">
+                    <div class="lg:col-span-8">
+                        <span class="why-stagger text-blue-600 font-bold uppercase tracking-[0.3em] text-xs">The
+                            Advantage</span>
+                        <h2 class="why-stagger text-5xl lg:text-7xl font-bold text-slate-900 mt-4 leading-tight">
+                            Why partners <br> <span class="italic font-serif text-blue-500">Choose</span> our studio.
+                        </h2>
+                    </div>
+                    <div class="lg:col-span-4">
+                        <p class="why-stagger text-slate-500 text-lg border-l-2 border-blue-500 pl-6">
+                            We don't just build websites; we engineer digital performance and emotional connections.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                    <div
+                        class="why-card p-8 rounded-[2rem] bg-slate-50 border border-slate-100 hover:bg-white hover:shadow-2xl hover:shadow-slate-200 transition-all duration-500">
+                        <div class="text-3xl text-blue-600 mb-6">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">Modern Stack</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed">
+                            Utilizing Laravel 11, Tailwind CSS, and GSAP for ultra-fast, future-proof applications.
+                        </p>
+                    </div>
+
+                    <div
+                        class="why-card p-8 rounded-[2rem] bg-slate-50 border border-slate-100 hover:bg-white hover:shadow-2xl hover:shadow-slate-200 transition-all duration-500 lg:mt-8">
+                        <div class="text-3xl text-indigo-600 mb-6">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">User Focused</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed">
+                            Every animation and interaction is designed to improve usability, not just for "show."
+                        </p>
+                    </div>
+
+                    <div
+                        class="why-card p-8 rounded-[2rem] bg-slate-50 border border-slate-100 hover:bg-white hover:shadow-2xl hover:shadow-slate-200 transition-all duration-500">
+                        <div class="text-3xl text-blue-500 mb-6">
+                            <i class="fas fa-wind"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">Fluid Motion</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed">
+                            Our specialized GSAP workflows ensure smooth 60fps transitions across all devices.
+                        </p>
+                    </div>
+
+                    <div
+                        class="why-card p-8 rounded-[2rem] bg-slate-50 border border-slate-100 hover:bg-white hover:shadow-2xl hover:shadow-slate-200 transition-all duration-500 lg:mt-8">
+                        <div class="text-3xl text-slate-900 mb-6">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">Result Driven</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed">
+                            We track engagement metrics to ensure your new UI actually converts visitors into leads.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
         <section class="py-24 bg-[#0a0a0a] text-white overflow-hidden">
             <div class="max-w-7xl mx-auto px-6">
                 <div class="grid grid-cols-12 gap-4">

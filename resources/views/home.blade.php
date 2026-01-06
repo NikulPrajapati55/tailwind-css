@@ -21,10 +21,46 @@
     @endsection
 
     @section('content')
-        <!-- HERO 1 -->
+    <section class="relative min-h-screen py-10 lg:py-20 bg-slate-900 flex items-center overflow-hidden px-6 lg:px-20">
 
+            <div class="container mx-auto grid lg:grid-cols-2 gap-12 items-center relative z-10">
 
-        <section class="section py-10 md:py-20 min-h-[70vh] md:h-[88vh] flex items-center justify-center bg-cover bg-center"
+                <div class="hero-content">
+                    <div
+                        class="inline-block px-4 py-1.5 mb-6 text-sm font-semibold tracking-wide text-blue-400 uppercase bg-blue-400/10 rounded-full">
+                        New Feature Released
+                    </div>
+                    <h1 class="text-5xl lg:text-7xl font-bold text-white leading-tight mb-6">
+                        Capture the <span class="text-blue-500">Moment</span> in Real-Time.
+                    </h1>
+                    <p class="text-slate-400 text-lg mb-8 max-w-lg">
+                        Using dynamic imagery and smooth motion to tell your story. This layout uses GSAP for sequencing and
+                        Tailwind for rapid UI styling.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <button
+                            class="cta-btn bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-semibold transition-all hover:scale-105 active:scale-95">
+                            Get Started
+                        </button>
+                    </div>
+                </div>
+
+                <div class="hero-image-wrapper relative group">
+                    <div
+                        class="absolute -inset-4 bg-blue-500/20 blur-2xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    </div>
+
+                    <div
+                        class="relative overflow-hidden rounded-3xl aspect-[4/5] lg:aspect-square shadow-2xl border border-white/10">
+                        <img id="random-hero-img" src="{{ asset('assets/img/about/about-img-11.jpg') }}" alt="Modern Tech"
+                            class="hero-img-element w-full h-full object-cover" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent"></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="section py-10 md:py-20 min-h-[70vh] md:h-[88vh] flex items-center justify-center bg-cover bg-center" loadi
             style="background-image: url('{{ asset('assets/img/banner/sample-1.webp') }}')">
             <div class="max-w-7xl mx-auto px-4 w-full">
                 <div class="grid grid-cols-1 md:grid-cols-2 place-items-center gap-10">
@@ -100,12 +136,12 @@
                 <div class="w-full lg:w-1/2 relative h-[400px] md:h-[600px] flex items-center justify-center">
                     <div
                         class="absolute right-0 bottom-0 w-48 h-[350px] md:w-80 md:h-[520px] bg-[#fddea6] rounded-t-full overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80"
+                        <img src="{{ asset('assets/img/about/about-img-10.jpg') }}"
                             class="w-full h-full object-cover mix-blend-multiply opacity-80" alt="">
                     </div>
                     <div
                         class="absolute top-10 left-4 md:left-20 lg:left-0 w-36 h-36 md:w-56 md:h-56 bg-[#fbcfe8] rounded-tl-[40px] md:rounded-tl-[80px] rounded-br-[40px] md:rounded-br-[80px] overflow-hidden border-2 md:border-4 border-[#111111] z-10">
-                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80"
+                        <img src="{{ asset('assets/img/about/about-img-8.jpg') }}"
                             class="w-full h-full object-cover mix-blend-multiply opacity-80" alt="">
                     </div>
                     <div
@@ -170,7 +206,7 @@
                 </div>
             </div>
             <div class="w-full lg:w-1/2 flex justify-center">
-                <img src="https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/hero/hero-section-showcase-4.png"
+                <img src="{{ asset('assets/img/hero/hero-section-showcase-4.png') }}"
                     class="w-full max-w-md lg:max-w-lg shadow-2xl rounded-2xl" alt="hero">
             </div>
         </section>
@@ -211,7 +247,7 @@
         </section>
 
         <section
-            class="py-20 bg-slate-50 bg-[url('https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/hero/bg-with-grid.png')] bg-cover">
+            class="py-20 bg-slate-50 bg-cover">
             <div class="max-w-7xl mx-auto px-6 flex flex-col-reverse lg:flex-row gap-16 items-center">
                 <div class="w-full lg:w-1/2 text-center lg:text-left">
                     <h1
@@ -248,7 +284,7 @@
                     </div>
                 </div>
                 <div class="w-full lg:w-1/2">
-                    <img src="https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/hero/users-group.png"
+                    <img src="{{ asset('assets/img/hero/users-group.png') }}"
                         class="w-full h-auto" alt="">
                 </div>
             </div>
@@ -282,7 +318,7 @@
             <div class="w-full lg:w-1/2 order-1 lg:order-2 relative">
                 <div
                     class="rounded-2xl overflow-hidden shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-500">
-                    <img src="https://images.unsplash.com/photo-1497032205916-ac775f0649ae" class="w-full object-cover"
+                    <img src="{{ asset('assets/img/about/about-img-9.jpg') }}" class="w-full object-cover"
                         alt="">
                 </div>
                 <div

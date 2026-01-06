@@ -23,6 +23,81 @@
     @endsection
 
     @section('content')
+     <section id="about-section" class="relative py-10 lg:py-20 bg-white overflow-hidden px-6 lg:px-24">
+            <div class="container mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+
+                    <div class="lg:col-span-5 relative">
+                        <div id="about-bg-blob"
+                            class="absolute -top-10 -left-10 w-72 h-72 bg-blue-100/50 blur-3xl rounded-full opacity-0">
+                        </div>
+
+                        <div id="about-img-main"
+                            class="relative z-10 rounded-[3rem] overflow-hidden shadow-2xl border-4 border-white">
+                            <img src="{{ asset('assets/img/about/about-img-13.jpg') }}" alt="Team working"
+                                class="w-full aspect-[4/5] object-cover" />
+                        </div>
+
+                        <div id="about-img-sub"
+                            class="absolute -bottom-10 -right-10 w-2/3 rounded-3xl overflow-hidden shadow-2xl border-4 border-white z-20 hidden lg:block">
+                            <img src="{{ asset('assets/img/about/about-img-12.jpg') }}" alt="Office space"
+                                class="w-full aspect-square object-cover" />
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-7 pl-0 lg:pl-10">
+                        <div class="about-stagger mb-6">
+                            <span class="text-blue-600 font-bold uppercase tracking-[0.3em] text-xs">Our Philosophy</span>
+                            <h2 class="text-5xl lg:text-7xl font-bold text-slate-900 mt-4 leading-tight">
+                                We believe in <span class="italic font-serif text-blue-500">meaningful</span> motion.
+                            </h2>
+                        </div>
+
+                        <p class="about-stagger text-slate-600 text-lg lg:text-xl leading-relaxed mb-10 max-w-2xl">
+                            Great design isn't just about how it looks; it's about how it feels in your hands. We combine
+                            technical precision with artistic movement to create digital stories that resonate.
+                        </p>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                            <div class="about-stagger flex items-start gap-4">
+                                <div
+                                    class="w-12 h-12 rounded-2xl bg-blue-50 flex items-center justify-center text-blue-600 shrink-0">
+                                    <i class="fas fa-bolt text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-slate-900 mb-1">Fast Performance</h4>
+                                    <p class="text-slate-500 text-sm leading-snug">Optimized GSAP workflows for 60fps
+                                        animations.</p>
+                                </div>
+                            </div>
+
+                            <div class="about-stagger flex items-start gap-4">
+                                <div
+                                    class="w-12 h-12 rounded-2xl bg-blue-50 flex items-center justify-center text-blue-600 shrink-0">
+                                    <i class="fas fa-fingerprint text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-slate-900 mb-1">Unique Identity</h4>
+                                    <p class="text-slate-500 text-sm leading-snug">Tailored UI components that match your
+                                        brand DNA.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="about-stagger">
+                            <button class="group flex items-center gap-4 text-slate-900 font-bold text-lg">
+                                Learn about our process
+                                <span
+                                    class="w-12 h-12 rounded-full border border-slate-200 flex items-center justify-center group-hover:bg-blue-600 group-hover:text-white group-hover:border-blue-600 transition-all duration-300">
+                                    <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
         <section id="about-banner"
             class="relative min-h-[85vh] flex items-center justify-center px-6 pt-20 pb-20 overflow-hidden">
 
@@ -71,7 +146,7 @@
                             cinematic motion</span>.
                     </p>
 
-                    <p class="text-sm font-bold text-slate-700 uppercase tracking-[0.3em]">
+                    <p class="text-sm font-bold text-white/90 uppercase tracking-[0.3em]">
                         Trusted by 50+ Global Innovators
                     </p>
                 </div>
