@@ -27,7 +27,6 @@ Route::view('/homepage-theme-1', 'theme.theme1')->name('theme1');
 
 Route::get('/signup', [UserController::class, 'index'])->name('signup');
 Route::post('/signup', [UserController::class, 'store'])->name('signup.create.user');
-
 Route::post('/login', [UserController::class, 'login'])->name('login.process');
 Route::post('/logout', [UserController::class, 'logout'])->name('logout');
 

@@ -16,7 +16,90 @@
             content="Modern Tailwind CSS card section with clean UI and reusable Laravel components.">
     @endsection
     @section('content')
-     <section id="glass-services" class="relative py-10 lg:py-20 bg-slate-50/30 overflow-hidden px-6 lg:px-24">
+        <section class="py-24 bg-[#0a0a0a] text-white overflow-hidden">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="grid grid-cols-12 gap-4">
+
+                    <div
+                        class="col-span-12 lg:col-span-8 bg-[#111] rounded-[40px] border border-white/5 relative group overflow-hidden min-h-[450px]">
+                        <img src="https://picsum.photos/seed/design/1200/800"
+                            class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:scale-105 transition-transform duration-700"
+                            alt="Random Design">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#111] via-[#111]/20 to-transparent"></div>
+
+                        <div class="relative p-12 h-full flex flex-col justify-end">
+                            <span class="text-[#FCDB66] font-mono tracking-widest text-sm uppercase mb-4 block">/ Mission
+                                2025</span>
+                            <h2 class="text-5xl lg:text-7xl font-black leading-[1.1] mb-6">
+                                Passion for design, <br>
+                                <span class="text-gray-400">vision realized.</span>
+                            </h2>
+                            <p class="text-gray-300 text-lg max-w-xl">
+                                Engineering digital legacies through brutalist honesty and creative expertise.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="col-span-12 lg:col-span-4 bg-[#FCDB66] p-10 rounded-[40px] flex flex-col justify-between text-black">
+                        <div class="flex justify-between items-start">
+                            <div class="w-16 h-16 bg-black rounded-full flex items-center justify-center">
+                                <span class="text-white text-2xl font-bold">15+</span>
+                            </div>
+                            <span
+                                class="font-bold text-xs uppercase tracking-widest bg-black text-white px-3 py-1 rounded-full">Top
+                                Rated</span>
+                        </div>
+                        <div>
+                            <h3 class="text-3xl font-black uppercase leading-none">Years Of<br>Pure Craft</h3>
+                            <p class="mt-4 text-sm font-medium opacity-80 italic">Since the dawn of digital art.</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="col-span-12 lg:col-span-5 bg-[#1a1a1a] p-2 rounded-full flex items-center pr-8 border border-white/10 group">
+                        <div class="bg-white h-16 w-16 rounded-full overflow-hidden border-2 border-[#FCDB66]">
+                            <img src="https://picsum.photos/seed/icon/200/200" class="w-full h-full object-cover"
+                                alt="icon">
+                        </div>
+                        <div class="ml-6 flex-1">
+                            <p class="text-sm font-bold uppercase tracking-tighter text-[#FCDB66]">30+ Industrial Awards</p>
+                            <p class="text-xs text-gray-500">Recognized for UI excellence globally.</p>
+                        </div>
+                        <div
+                            class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-[#FCDB66] group-hover:text-black transition-all">
+                            →
+                        </div>
+                    </div>
+
+                    <div class="col-span-12 lg:col-span-7 grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="bg-[#111] p-6 rounded-[30px] border border-white/5 flex items-center gap-4">
+                            <img src="https://i.pravatar.cc/150?u=leslie"
+                                class="w-16 h-16 rounded-2xl grayscale hover:grayscale-0 transition-all shadow-lg"
+                                alt="Founder">
+                            <div>
+                                <p class="text-xs text-[#FCDB66] uppercase font-bold">Leslie Alexander</p>
+                                <p class="text-sm font-medium text-gray-400">Chief Visionary</p>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-[#1a1a1a] p-6 rounded-[30px] border border-white/5 flex items-center justify-between group cursor-pointer hover:bg-[#FCDB66] transition-all">
+                            <span class="text-white font-black text-lg group-hover:text-black">LET'S CHAT</span>
+                            <div
+                                class="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center group-hover:bg-black/10">
+                                <svg class="w-5 h-5 group-hover:text-black" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="glass-services" class="relative py-10 lg:py-20 bg-slate-50/30 overflow-hidden px-6 lg:px-24">
 
             <div id="glass-blob-1"
                 class="absolute -top-20 -left-20 w-96 h-96 bg-blue-200/40 blur-[120px] rounded-full opacity-0"></div>
@@ -161,89 +244,7 @@
             </div>
         </section>
 
-        <section class="py-24 bg-[#0a0a0a] text-white overflow-hidden">
-            <div class="max-w-7xl mx-auto px-6">
-                <div class="grid grid-cols-12 gap-4">
 
-                    <div
-                        class="col-span-12 lg:col-span-8 bg-[#111] rounded-[40px] border border-white/5 relative group overflow-hidden min-h-[450px]">
-                        <img src="https://picsum.photos/seed/design/1200/800"
-                            class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:scale-105 transition-transform duration-700"
-                            alt="Random Design">
-                        <div class="absolute inset-0 bg-gradient-to-t from-[#111] via-[#111]/20 to-transparent"></div>
-
-                        <div class="relative p-12 h-full flex flex-col justify-end">
-                            <span class="text-[#FCDB66] font-mono tracking-widest text-sm uppercase mb-4 block">/ Mission
-                                2025</span>
-                            <h2 class="text-5xl lg:text-7xl font-black leading-[1.1] mb-6">
-                                Passion for design, <br>
-                                <span class="text-gray-400">vision realized.</span>
-                            </h2>
-                            <p class="text-gray-300 text-lg max-w-xl">
-                                Engineering digital legacies through brutalist honesty and creative expertise.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div
-                        class="col-span-12 lg:col-span-4 bg-[#FCDB66] p-10 rounded-[40px] flex flex-col justify-between text-black">
-                        <div class="flex justify-between items-start">
-                            <div class="w-16 h-16 bg-black rounded-full flex items-center justify-center">
-                                <span class="text-white text-2xl font-bold">15+</span>
-                            </div>
-                            <span
-                                class="font-bold text-xs uppercase tracking-widest bg-black text-white px-3 py-1 rounded-full">Top
-                                Rated</span>
-                        </div>
-                        <div>
-                            <h3 class="text-3xl font-black uppercase leading-none">Years Of<br>Pure Craft</h3>
-                            <p class="mt-4 text-sm font-medium opacity-80 italic">Since the dawn of digital art.</p>
-                        </div>
-                    </div>
-
-                    <div
-                        class="col-span-12 lg:col-span-5 bg-[#1a1a1a] p-2 rounded-full flex items-center pr-8 border border-white/10 group">
-                        <div class="bg-white h-16 w-16 rounded-full overflow-hidden border-2 border-[#FCDB66]">
-                            <img src="https://picsum.photos/seed/icon/200/200" class="w-full h-full object-cover"
-                                alt="icon">
-                        </div>
-                        <div class="ml-6 flex-1">
-                            <p class="text-sm font-bold uppercase tracking-tighter text-[#FCDB66]">30+ Industrial Awards</p>
-                            <p class="text-xs text-gray-500">Recognized for UI excellence globally.</p>
-                        </div>
-                        <div
-                            class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-[#FCDB66] group-hover:text-black transition-all">
-                            →
-                        </div>
-                    </div>
-
-                    <div class="col-span-12 lg:col-span-7 grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <div class="bg-[#111] p-6 rounded-[30px] border border-white/5 flex items-center gap-4">
-                            <img src="https://i.pravatar.cc/150?u=leslie"
-                                class="w-16 h-16 rounded-2xl grayscale hover:grayscale-0 transition-all shadow-lg"
-                                alt="Founder">
-                            <div>
-                                <p class="text-xs text-[#FCDB66] uppercase font-bold">Leslie Alexander</p>
-                                <p class="text-sm font-medium text-gray-400">Chief Visionary</p>
-                            </div>
-                        </div>
-                        <div
-                            class="bg-[#1a1a1a] p-6 rounded-[30px] border border-white/5 flex items-center justify-between group cursor-pointer hover:bg-[#FCDB66] transition-all">
-                            <span class="text-white font-black text-lg group-hover:text-black">LET'S CHAT</span>
-                            <div
-                                class="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center group-hover:bg-black/10">
-                                <svg class="w-5 h-5 group-hover:text-black" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z">
-                                    </path>
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
         <section class="bg-gray-50 py-24">
             <div class="max-w-7xl mx-auto px-6">
 
