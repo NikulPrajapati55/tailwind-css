@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
     /*************************************************
      * MOBILE MENU (SAFE)
      *************************************************/
@@ -8,13 +7,11 @@ $(document).ready(function () {
     const mobileMenu = document.getElementById("mobileMenu");
 
     if (menuBtn && mobileMenu) {
-        menuBtn.onclick = () =>
-            mobileMenu.classList.remove("translate-x-full");
+        menuBtn.onclick = () => mobileMenu.classList.remove("translate-x-full");
     }
 
     if (closeMenu && mobileMenu) {
-        closeMenu.onclick = () =>
-            mobileMenu.classList.add("translate-x-full");
+        closeMenu.onclick = () => mobileMenu.classList.add("translate-x-full");
     }
 
     /*************************************************
@@ -45,7 +42,6 @@ $(document).ready(function () {
      * SWIPER (SAFE)
      *************************************************/
     if (typeof Swiper !== "undefined") {
-
         if (document.querySelector(".multiple-slide-carousel")) {
             new Swiper(".multiple-slide-carousel", {
                 slidesPerView: 1,
@@ -100,7 +96,11 @@ $(document).ready(function () {
     if (openLogin && closeLogin && loginModal && loginContent) {
         openLogin.addEventListener("click", () => {
             loginModal.style.display = "flex";
-            gsap.fromTo(loginModal, { opacity: 0 }, { opacity: 1, duration: 0.3 });
+            gsap.fromTo(
+                loginModal,
+                { opacity: 0 },
+                { opacity: 1, duration: 0.3 }
+            );
             gsap.fromTo(
                 loginContent,
                 { scale: 0.5, y: 100, opacity: 0 },
@@ -129,7 +129,7 @@ $(document).ready(function () {
         canvas,
         init,
         animate,
-        closeDelay = 500
+        closeDelay = 500,
     }) {
         if (!openBtn || !closeBtn || !overlay || !card || !canvas) return;
 
@@ -176,24 +176,36 @@ $(document).ready(function () {
             },
         })
             .to("#about-bg-blob", { opacity: 0.6, scale: 1.2, duration: 2 })
-            .from(".about-stagger", {
-                y: 50,
-                opacity: 0,
-                stagger: 0.2,
-                duration: 1,
-                ease: "power3.out",
-            }, "-=1.5")
-            .from("#about-img-main", {
-                scale: 0.9,
-                opacity: 0,
-                duration: 1.5,
-            }, "-=1.2")
-            .from("#about-img-sub", {
-                x: 40,
-                y: 40,
-                opacity: 0,
-                duration: 1.5,
-            }, "-=1");
+            .from(
+                ".about-stagger",
+                {
+                    y: 50,
+                    opacity: 0,
+                    stagger: 0.2,
+                    duration: 1,
+                    ease: "power3.out",
+                },
+                "-=1.5"
+            )
+            .from(
+                "#about-img-main",
+                {
+                    scale: 0.9,
+                    opacity: 0,
+                    duration: 1.5,
+                },
+                "-=1.2"
+            )
+            .from(
+                "#about-img-sub",
+                {
+                    x: 40,
+                    y: 40,
+                    opacity: 0,
+                    duration: 1.5,
+                },
+                "-=1"
+            );
     }
 
     /*************************************************
@@ -212,4 +224,53 @@ $(document).ready(function () {
             },
         });
     }
+    function toggleModal(modalId, show) {
+        const modal = document.getElementById(modalId);
+        if (show) {
+            modal.classList.remove("hidden");
+            modal.classList.add("flex"); // Ensure flex is added to center the content
+        } else {
+            modal.classList.add("hidden");
+            modal.classList.remove("flex");
+        }
+    }
+
+    // Optional: Close modal when clicking on the dark background
+    window.onclick = function (event) {
+        if (event.target.classList.contains("fixed")) {
+            event.target.classList.add("hidden");
+            event.target.classList.remove("flex");
+        }
+    };
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            const id = this.getAttribute('href').substring(1);
+            const modal = document.getElementById(id);
+            if (modal && modal.hasAttribute('data-modal')) {
+                e.preventDefault();
+                openModal(modal);
+            }
+        });
+    });
+
+    function openModal(modal) {
+        modal.classList.remove('hidden');
+        setTimeout(() => {
+            const card = modal.querySelector('.glass-modal-card');
+            card.classList.replace('opacity-0', 'opacity-100');
+            card.classList.replace('scale-90', 'scale-100');
+            card.classList.replace('translate-y-5', 'translate-y-0');
+        }, 10);
+    }
+
+    document.querySelectorAll('[data-close-modal]').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const modal = btn.closest('[data-modal]');
+            const card = modal.querySelector('.glass-modal-card');
+            card.classList.replace('opacity-100', 'opacity-0');
+            modal.classList.add('hidden');
+        });
+    });
+
+
 });

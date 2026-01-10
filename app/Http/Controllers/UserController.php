@@ -155,8 +155,10 @@ class UserController extends Controller
 
         if (!$tenantSlug) {
             // Handle case where user isn't assigned to a tenant
-            return redirect()->route('signup')->with('error', 'No tenant found for this account.');
+            return redirect()->route('login')->with('error', 'No tenant found for this account.');
         }
+
         return redirect()->route('tenant.dashboard', ['tenant_slug' => $tenantSlug]);
     }
+
 }
