@@ -30,7 +30,7 @@
                         <div class="absolute -inset-10 bg-blue-50/50 rounded-full blur-3xl -z-10"></div>
 
                         <div
-                            class="dev-photo relative rounded-[3rem] overflow-hidden shadow-[0_50px_100px_-20px_rgba(0,0,0,0.15)] border-4 border-white">
+                            class="relative rounded-[3rem] overflow-hidden shadow-[0_50px_100px_-20px_rgba(0,0,0,0.15)] border-4 border-white">
                             <img src="{{ asset('assets/img/dev/dev.jpg') }}" alt="Nikul Prajapati Laravel Developer"
                                 class="w-full aspect-[4/5] object-cover" />
 

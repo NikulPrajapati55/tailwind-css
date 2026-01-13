@@ -35,6 +35,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="{{ asset('assets/js/script.js') }}"></script>
     <script src="{{ asset('assets/js/theme1.js') }}"></script>
+    <script src="{{ asset('assets/js/canvas.js') }}"></script>
     @if(session('success'))
     <div style="background: #d4edda; color: #155724; padding: 15px; margin-bottom: 20px; border-radius: 5px;">
         {{ session('success') }}
