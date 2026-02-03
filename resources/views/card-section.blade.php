@@ -99,6 +99,7 @@
                 </div>
             </div>
         </section>
+
         <section id="glass-services" class="relative py-10 lg:py-20 bg-slate-50/30 overflow-hidden px-6 lg:px-24">
 
             <div id="glass-blob-1"
@@ -238,6 +239,103 @@
                         <p class="text-slate-500 text-sm leading-relaxed">
                             We track engagement metrics to ensure your new UI actually converts visitors into leads.
                         </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-6">
+
+                <h2 class="text-4xl font-semibold text-center mb-16">
+                    Our <span class="text-cyan-500">Services</span>
+                </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+                    <!-- Card -->
+                    <div
+                        class="group relative rounded-2xl p-8 bg-white border border-gray-200 shadow-sm
+                  transition-all duration-300 hover:-translate-y-3 hover:shadow-xl">
+
+                        <div
+                            class="absolute inset-0 rounded-2xl bg-gradient-to-br from-cyan-400/10 to-transparent
+                    opacity-0 group-hover:opacity-100 transition">
+                        </div>
+
+                        <div class="relative z-10">
+                            <div
+                                class="w-14 h-14 mb-6 rounded-xl bg-cyan-100 text-cyan-500
+                      flex items-center justify-center text-2xl transition
+                      group-hover:scale-110">
+                                ⚙️
+                            </div>
+
+                            <h3 class="text-xl font-semibold mb-3 text-gray-900">
+                                Development
+                            </h3>
+
+                            <p class="text-gray-600 leading-relaxed">
+                                High-performance web applications built with modern, scalable technologies.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card -->
+                    <div
+                        class="group relative rounded-2xl p-8 bg-white border border-gray-200 shadow-sm
+                  transition-all duration-300 hover:-translate-y-3 hover:shadow-xl">
+
+                        <div
+                            class="absolute inset-0 rounded-2xl bg-gradient-to-br from-purple-400/10 to-transparent
+                    opacity-0 group-hover:opacity-100 transition">
+                        </div>
+
+                        <div class="relative z-10">
+                            <div
+                                class="w-14 h-14 mb-6 rounded-xl bg-purple-100 text-purple-500
+                      flex items-center justify-center text-2xl transition
+                      group-hover:scale-110">
+                                🎨
+                            </div>
+
+                            <h3 class="text-xl font-semibold mb-3 text-gray-900">
+                                UI / UX Design
+                            </h3>
+
+                            <p class="text-gray-600 leading-relaxed">
+                                Intuitive and visually appealing interfaces focused on user experience.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card -->
+                    <div
+                        class="group relative rounded-2xl p-8 bg-white border border-gray-200 shadow-sm
+                  transition-all duration-300 hover:-translate-y-3 hover:shadow-xl">
+
+                        <div
+                            class="absolute inset-0 rounded-2xl bg-gradient-to-br from-emerald-400/10 to-transparent
+                    opacity-0 group-hover:opacity-100 transition">
+                        </div>
+
+                        <div class="relative z-10">
+                            <div
+                                class="w-14 h-14 mb-6 rounded-xl bg-emerald-100 text-emerald-500
+                      flex items-center justify-center text-2xl transition
+                      group-hover:scale-110">
+                                🚀
+                            </div>
+
+                            <h3 class="text-xl font-semibold mb-3 text-gray-900">
+                                Optimization
+                            </h3>
+
+                            <p class="text-gray-600 leading-relaxed">
+                                Speed, SEO, and performance improvements to maximize reach and results.
+                            </p>
+                        </div>
                     </div>
 
                 </div>
