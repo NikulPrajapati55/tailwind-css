@@ -24,6 +24,7 @@ Route::view('/test-section', 'test')->name('test');
 Route::view('/swiper-section', 'swiper-section')->name('swiper');
 Route::view('/popup-section', 'popup-button')->name('popup');
 Route::view('/homepage-theme-1', 'theme.theme1')->name('theme1');
+Route::view('/homepage-theme-2', 'theme.theme2')->name('theme2');
 
 
 

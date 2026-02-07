@@ -76,6 +76,13 @@
                                 Theme 1
                             </a>
                         </li>
+                        <li>
+                            <a href="{{ route('theme2') }}"
+                                class="flex gap-3 items-center p-2 rounded-lg hover:bg-white/10">
+                                <i class="fa-solid fa-layer-group text-indigo-400"></i>
+                                Theme 2
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </li>
