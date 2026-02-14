@@ -9,16 +9,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://your-github-username.github.io/your-repo-name/" />
+<meta property="og:url" content="https://github.com/NikulPrajapati55/tailwind-css" />
 <meta property="og:title" content="SmileBright Dental | Modern UI/UX Theme" />
 <meta property="og:description" content="A creative, responsive dental clinic theme built with Tailwind CSS. Perfect for modern medical practices." />
-<meta property="og:image" content="https://github.com/NikulPrajapati55/tailwind-css/public/assets/img/theme/theme-2.jpg" />
+<meta property="og:image" content="https://github.com/NikulPrajapati55/tailwind-css/public/theme-2.jpg" />
 
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content="https://github.com/NikulPrajapati55/tailwind-css" />
 <meta property="twitter:title" content="SmileBright Dental | Modern Family Dentistry" />
 <meta property="twitter:description" content="Transforming smiles with modern technology and a gentle touch." />
-<meta property="twitter:image" content="https://github.com/NikulPrajapati55/tailwind-css/public/assets/img/theme/theme-2.jpg" />
+<meta property="twitter:image" content="https://github.com/NikulPrajapati55/tailwind-css/public/theme-2.jpg" />
     @endsection
     @section('content')
         <!-- Banner Section -->

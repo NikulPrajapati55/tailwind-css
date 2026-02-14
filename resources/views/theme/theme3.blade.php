@@ -12,13 +12,13 @@
 <meta property="og:url" content="https://your-github-username.github.io/your-repo-name/" />
 <meta property="og:title" content="SmileBright Dental | Modern UI/UX Theme" />
 <meta property="og:description" content="A creative, responsive dental clinic theme built with Tailwind CSS. Perfect for modern medical practices." />
-<meta property="og:image" content="https://github.com/NikulPrajapati55/tailwind-css/public/assets/img/theme/theme-3.jpg" />
+<meta property="og:image" content="https://github.com/NikulPrajapati55/tailwind-css/public/theme-3.jpg" />
 
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content="https://github.com/NikulPrajapati55/tailwind-css" />
 <meta property="twitter:title" content="SmileBright Dental | Modern Family Dentistry" />
 <meta property="twitter:description" content="Transforming smiles with modern technology and a gentle touch." />
-<meta property="twitter:image" content="https://github.com/NikulPrajapati55/tailwind-css/public/assets/img/theme/theme-3.jpg" />
+<meta property="twitter:image" content="https://github.com/NikulPrajapati55/tailwind-css/public/theme-3.jpg" />
         <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
         <style>
             body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
