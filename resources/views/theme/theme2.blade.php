@@ -2,30 +2,29 @@
     @section('meta')
         <title>Theme 2</title>
         <title>SmileBright Dental | Modern Family Dentistry & Cosmetic Care</title>
-        <meta name="title" content="SmileBright Dental | Modern Family Dentistry & Cosmetic Care" />
-        <meta name="description"
-            content="Experience gentle, professional dental care. Offering routine checkups, teeth whitening, and advanced restorative treatments in a comfortable environment." />
-        <meta name="keywords"
-            content="dentist near me, family dentistry, cosmetic dentist, teeth whitening, dental implants, emergency dentist, oral health care" />
+<meta name="title" content="SmileBright Dental | Modern Family Dentistry & Cosmetic Care" />
+<meta name="description" content="Premium dental care in Ahmedabad. Specializing in painless laser dentistry, Invisalign, and cosmetic veneers with a spa-like experience." />
+<meta name="keywords" content="dentist in ahmedabad, cosmetic dentist gujarat, dental implants ahmedabad, invisalign india, smile makeover, Nikul Prajapati, dental ui theme" />
+<meta name="author" content="Nikul Prajapati" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="SmileBright Dental | Modern Family Dentistry & Cosmetic Care" />
-        <meta property="og:description"
-            content="Affordable dental care for the whole family. Book your appointment online today!" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://your-github-username.github.io/your-repo-name/" />
+<meta property="og:title" content="SmileBright Dental | Modern UI/UX Theme" />
+<meta property="og:description" content="A creative, responsive dental clinic theme built with Tailwind CSS. Perfect for modern medical practices." />
+<meta property="og:image" content="https://github.com/NikulPrajapati55/tailwind-css/public/assets/img/theme/theme-2.jpg" />
 
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:title" content="SmileBright Dental | Modern Family Dentistry" />
-        <meta property="twitter:description" content="Transforming smiles with modern technology and a gentle touch." />
-
-        <meta name="author" content="Nikul Prajapati" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://github.com/NikulPrajapati55/tailwind-css" />
+<meta property="twitter:title" content="SmileBright Dental | Modern Family Dentistry" />
+<meta property="twitter:description" content="Transforming smiles with modern technology and a gentle touch." />
+<meta property="twitter:image" content="https://github.com/NikulPrajapati55/tailwind-css/public/assets/img/theme/theme-2.jpg" />
     @endsection
     @section('content')
         <!-- Banner Section -->
         <section class="relative bg-blue-600 text-white overflow-hidden">
             <div class="absolute inset-0">
-                <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=2068&auto=format&fit=crop"
+                <img src="{{ asset('assets/img/banner/banner-img-5.jpg') }}"
                     alt="Dental Clinic Background" class="w-full h-full object-cover opacity-20">
             </div>
             <div class="container mx-auto px-6 py-24 relative z-10">
@@ -77,7 +76,7 @@
                     <div class="relative">
                         <div class="absolute -top-4 -left-4 w-24 h-24 bg-blue-100 rounded-full -z-10"></div>
                         <div class="absolute -bottom-4 -right-4 w-32 h-32 bg-teal-100 rounded-full -z-10"></div>
-                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?q=80&w=2070&auto=format&fit=crop"
+                        <img src="{{ asset('assets/img/about/about-img-17.jpg') }}"
                             alt="Dental Team" class="rounded-2xl shadow-2xl w-full object-cover h-[500px]">
                         <div class="absolute bottom-8 left-8 bg-white p-6 rounded-xl shadow-lg max-w-xs hidden md:block">
                             <div class="flex items-center gap-4 mb-2">
@@ -333,7 +332,7 @@
                         <div
                             class="absolute -bottom-10 -left-10 w-40 h-40 bg-teal-100 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000">
                         </div>
-                        <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=1974&auto=format&fit=crop"
+                        <img src="{{ asset('assets/img/about/about-img-14.jpg') }}"
                             alt="Dental Consultation"
                             class="relative rounded-2xl shadow-2xl w-full object-cover h-[600px] z-10">
 

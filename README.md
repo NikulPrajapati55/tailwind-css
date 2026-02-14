@@ -1,81 +1,44 @@
-<p align="center">
-  <a href="https://laravel.com" target="_blank">
-    <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg"
-         width="400"
-         alt="Laravel Logo">
-  </a>
-</p>
+# 🚀 Tailwind UI & Dental Themes for Laravel
+### Created by **Nikul Prajapati**
 
-<p align="center">
-  <a href="https://github.com/laravel/framework/actions">
-    <img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status">
-  </a>
-  <a href="https://packagist.org/packages/laravel/framework">
-    <img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads">
-  </a>
-  <a href="https://packagist.org/packages/laravel/framework">
-    <img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version">
-  </a>
-  <a href="https://packagist.org/packages/laravel/framework">
-    <img src="https://img.shields.io/packagist/l/laravel/framework" alt="License">
-  </a>
-</p>
+A premium collection of **reusable Tailwind CSS UI components** and specialized **Industry Themes** built with **Laravel Blade**. Optimized for SEO, performance, and developer experience.
 
 ---
 
-# Tailwind UI Components for Laravel
+## 💎 Featured Themes & Sections
 
-A collection of **reusable Tailwind CSS UI components**
-built with **Laravel Blade**, designed for:
+### 🦷 Multi-Theme Architecture
+Based on the `resources/views/theme/` directory, this project includes:
+* **Theme 1 & Theme 2:** Ready-to-use layouts for diverse industries.
+* **Dental Care Ready:** Specialized sections for healthcare and dental clinics.
 
-- Multi-page websites  
-- SaaS products  
-- Dashboards & admin panels  
-
-This project focuses on **clean architecture**, **reusability**, and
-**real-world Laravel frontend practices**.
-
----
-
-## 🚀 Features
-
-- Glassmorphism popups
-- Canvas-based animations
-- Responsive layouts
-- Component-based Blade structure
-- SEO-ready pages with meta sections
-- Open-source & license-safe assets only
+### 🎨 Custom Tailwind Sections
+* **Interactive UI:** Card sections, form sections, and team sections.
+* **Modern Effects:** Glassmorphism popups and Swiper.js integrations.
+* **Animation:** Canvas-based background effects and smooth transitions.
 
 ---
 
+## 🤝 Support & Sponsorship
+I am open to **Sponsorships**, **Project Collaborations**, and **Custom UI Development**. If this project helps you, please consider supporting my work!
 
-## 📸 Follow on Instagram
+- **GitHub:** [Nikul Prajapati](https://github.com/NikulPrajapati55)
+- **Sponsor me:** [Support Nikul on GitHub](https://github.com/sponsors/NikulPrajapati55)
 
-I regularly share:
-- Tailwind CSS UI components
-- Laravel Blade structures
-- Popup & animation breakdowns
-- Open-source frontend practices
-
-Follow for updates & behind-the-scenes work 👇  
-👉 **Instagram:** https://www.instagram.com/hii.codes/
+---
 
 ## 🧩 Project Structure
+
+As seen in my recent updates:
 
 ```text
 resources/views/
 ├── layouts/
-│   └── app.blade.php
-├── components/
-│   ├── popup/
-│   ├── sections/
-│   └── ui/
-├── pages/
-│   ├── home.blade.php
-│   ├── about-section.blade.php
-│   └── popup-section.blade.php
-│   └── swiper-section.blade.php
-
-
-
-
+│   └── app.blade.php        <-- Main SEO Layout
+├── theme/                   <-- Industry Specific Themes
+│   ├── theme1.blade.php
+│   ├── theme2.blade.php
+│   └── dental-sections...
+├── components/              <-- Reusable UI Logic
+├── home.blade.php           <-- Main Landing Page
+└── swiper-section.blade.php <-- Slider Component

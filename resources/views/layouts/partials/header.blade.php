@@ -66,7 +66,7 @@
                 </button>
 
                 <div
-                    class="absolute mt-3 z-10 hidden group-hover:block w-64 bg-gray-800 rounded-2xl border border-white/10 shadow-2xl">
+                    class="absolute mt-3 z-1000 hidden group-hover:block w-64 bg-gray-800 rounded-2xl border border-white/10 shadow-2xl">
                     <ul class="p-3 space-y-2">
 
                         <li>
@@ -81,6 +81,13 @@
                                 class="flex gap-3 items-center p-2 rounded-lg hover:bg-white/10">
                                 <i class="fa-solid fa-layer-group text-indigo-400"></i>
                                 Theme 2
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ route('theme3') }}"
+                                class="flex gap-3 items-center p-2 rounded-lg hover:bg-white/10">
+                                <i class="fa-solid fa-layer-group text-indigo-400"></i>
+                                Theme 3
                             </a>
                         </li>
                     </ul>
@@ -118,6 +125,8 @@
             <li><a href="{{ route('popup') }}" class="block p-2 rounded hover:bg-white/10">Popup</a></li>
             <li><a href="{{ route('swiper') }}" class="block p-2 rounded hover:bg-white/10">Swiper</a></li>
             <li><a href="{{ route('theme1') }}" class="block p-2 rounded hover:bg-white/10">Theme 1</a></li>
+            <li><a href="{{ route('theme2') }}" class="block p-2 rounded hover:bg-white/10">Theme 2</a></li>
+            <li><a href="{{ route('theme3') }}" class="block p-2 rounded hover:bg-white/10">Theme 3</a></li>
             <li class="pt-3">
                 <a href="https://www.instagram.com/hii.codes/" target="_blank" class="flex gap-2 items-center p-2">
                     <i class="fa-brands fa-instagram text-pink-400"></i>
