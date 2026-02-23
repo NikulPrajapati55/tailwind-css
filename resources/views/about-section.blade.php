@@ -23,6 +23,90 @@
     @endsection
 
     @section('content')
+    <section class="relative py-12 bg-[#0e1422] overflow-hidden">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+
+        <div class="grid lg:grid-cols-2 gap-20 items-center">
+
+            <!-- IMAGE SIDE -->
+            <div class="relative">
+
+                <img src="{{ asset('assets/img/about/2.jpg') }}"
+                    class="rounded-3xl w-full shadow-[0_40px_80px_rgba(0,0,0,0.6)]"
+                    alt="Luxury Hotel">
+
+                <!-- Gold Badge -->
+                <div class="absolute -bottom-8 left-8
+                            bg-gradient-to-r from-amber-400 to-yellow-500
+                            text-black rounded-xl px-6 py-4 shadow-xl">
+
+                    <h3 class="text-2xl font-bold">15+</h3>
+                    <p class="text-xs font-medium">Years of Excellence</p>
+                </div>
+
+            </div>
+
+            <!-- CONTENT SIDE -->
+            <div>
+
+                <span class="text-amber-400 uppercase tracking-widest text-sm font-semibold">
+                    About Our Hotel
+                </span>
+
+                <h2 class="text-4xl md:text-5xl font-bold text-white mt-4 mb-6 leading-tight">
+                    Where Luxury Meets <span class="text-amber-400">Timeless Comfort</span>
+                </h2>
+
+                <p class="text-gray-300 text-lg leading-relaxed mb-8">
+                    Experience refined hospitality in an atmosphere crafted for elegance
+                    and relaxation. From premium suites to personalized service,
+                    we redefine what it means to stay in comfort.
+                </p>
+
+                <!-- Feature List -->
+                <div class="grid sm:grid-cols-2 gap-y-4 gap-x-10 mb-10">
+
+                    <div class="flex items-center gap-3 text-gray-300">
+                        <i class="fa-solid fa-bed text-amber-400"></i>
+                        Luxury Suites
+                    </div>
+
+                    <div class="flex items-center gap-3 text-gray-300">
+                        <i class="fa-solid fa-utensils text-amber-400"></i>
+                        Fine Dining
+                    </div>
+
+                    <div class="flex items-center gap-3 text-gray-300">
+                        <i class="fa-solid fa-spa text-amber-400"></i>
+                        Spa & Wellness
+                    </div>
+
+                    <div class="flex items-center gap-3 text-gray-300">
+                        <i class="fa-solid fa-water-ladder text-amber-400"></i>
+                        Infinity Pool
+                    </div>
+
+                </div>
+
+                 <a href="#booking"
+                            class="w-full sm:w-auto text-center
+                              px-6 sm:px-8 py-3
+                              rounded-full
+                              bg-amber-400/90
+                              text-black font-semibold
+                              shadow-lg
+                              hover:bg-amber-300
+                              transition duration-300">
+                            Book Your Stay
+                        </a>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
         <section id="about-section" class="relative py-10 lg:py-20 bg-white overflow-hidden px-6 lg:px-24">
             <div class="container mx-auto">
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">

@@ -16,6 +16,162 @@
             content="Modern Tailwind CSS card section with clean UI and reusable Laravel components.">
     @endsection
     @section('content')
+        <section class="relative py-12 bg-[#0b1220] overflow-hidden">
+
+            <!-- Subtle Gold Glow -->
+            <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-amber-500/10 blur-3xl rounded-full">
+            </div>
+
+            <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-12">
+
+                <!-- Section Header -->
+                <div class="text-center mb-20">
+                    <span class="text-amber-400 uppercase tracking-widest text-sm font-semibold">
+                        Why Choose Us
+                    </span>
+                    <h2 class="text-4xl md:text-5xl font-bold text-white mt-4">
+                        Experience Unmatched <span class="text-amber-400">Luxury & Comfort</span>
+                    </h2>
+                    <p class="text-gray-400 mt-6 max-w-2xl mx-auto">
+                        We combine elegance, personalized service, and world-class amenities
+                        to create unforgettable stays for every guest.
+                    </p>
+                </div>
+
+                <!-- Features Grid -->
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                    <!-- Card 1 -->
+                    <div
+                        class="group bg-white/5 backdrop-blur-xl border border-white/10
+                        rounded-2xl p-8 text-center
+                        hover:-translate-y-3 hover:border-amber-400/40
+                        transition duration-500">
+
+                        <div
+                            class="w-16 h-16 mx-auto mb-6 flex items-center justify-center
+                            rounded-full bg-amber-400/10 border border-amber-400/30">
+                            <i class="fa-solid fa-bed text-amber-400 text-2xl"></i>
+                        </div>
+
+                        <h4 class="text-white text-lg font-semibold mb-3">
+                            Premium Suites
+                        </h4>
+
+                        <p class="text-gray-400 text-sm">
+                            Elegant rooms designed for ultimate comfort and relaxation.
+                        </p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div
+                        class="group bg-white/5 backdrop-blur-xl border border-white/10
+                        rounded-2xl p-8 text-center
+                        hover:-translate-y-3 hover:border-amber-400/40
+                        transition duration-500">
+
+                        <div
+                            class="w-16 h-16 mx-auto mb-6 flex items-center justify-center
+                            rounded-full bg-amber-400/10 border border-amber-400/30">
+                            <i class="fa-solid fa-utensils text-amber-400 text-2xl"></i>
+                        </div>
+
+                        <h4 class="text-white text-lg font-semibold mb-3">
+                            Fine Dining
+                        </h4>
+
+                        <p class="text-gray-400 text-sm">
+                            Experience gourmet cuisine crafted by expert chefs.
+                        </p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div
+                        class="group bg-white/5 backdrop-blur-xl border border-white/10
+                        rounded-2xl p-8 text-center
+                        hover:-translate-y-3 hover:border-amber-400/40
+                        transition duration-500">
+
+                        <div
+                            class="w-16 h-16 mx-auto mb-6 flex items-center justify-center
+                            rounded-full bg-amber-400/10 border border-amber-400/30">
+                            <i class="fa-solid fa-spa text-amber-400 text-2xl"></i>
+                        </div>
+
+                        <h4 class="text-white text-lg font-semibold mb-3">
+                            Spa & Wellness
+                        </h4>
+
+                        <p class="text-gray-400 text-sm">
+                            Relax, refresh, and rejuvenate in our luxury spa.
+                        </p>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div
+                        class="group bg-white/5 backdrop-blur-xl border border-white/10
+                        rounded-2xl p-8 text-center
+                        hover:-translate-y-3 hover:border-amber-400/40
+                        transition duration-500">
+
+                        <div
+                            class="w-16 h-16 mx-auto mb-6 flex items-center justify-center
+                            rounded-full bg-amber-400/10 border border-amber-400/30">
+                            <i class="fa-solid fa-concierge-bell text-amber-400 text-2xl"></i>
+                        </div>
+
+                        <h4 class="text-white text-lg font-semibold mb-3">
+                            24/7 Concierge
+                        </h4>
+
+                        <p class="text-gray-400 text-sm">
+                            Personalized service ensuring a seamless stay.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        <section class="py-12 bg-[#0b1220]">
+
+            <div class="max-w-7xl mx-auto px-6 lg:px-12">
+
+                <div class="text-center mb-20">
+                    <h2 class="text-4xl md:text-5xl font-bold text-white">
+                        Our <span class="text-amber-400">Luxury Rooms</span>
+                    </h2>
+                </div>
+
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
+
+                    @foreach ([1, 2, 3] as $room)
+                        <div class="group relative overflow-hidden rounded-3xl">
+
+                            <img src="{{ asset('assets/img/about/2.jpg') }}"
+                                class="w-full h-80 object-cover group-hover:scale-110 transition duration-700">
+
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+
+                            <div class="absolute bottom-6 left-6">
+                                <h4 class="text-white text-xl font-semibold mb-2">
+                                    Deluxe Suite
+                                </h4>
+                                <p class="text-gray-300 text-sm mb-3">
+                                    Spacious luxury with modern elegance.
+                                </p>
+                                <span class="text-amber-400 font-bold">
+                                    ₹12,000 / Night
+                                </span>
+                            </div>
+
+                        </div>
+                    @endforeach
+
+                </div>
+            </div>
+        </section>
         <section class="py-24 bg-[#0a0a0a] text-white overflow-hidden">
             <div class="max-w-7xl mx-auto px-6">
                 <div class="grid grid-cols-12 gap-4">

@@ -21,6 +21,85 @@
     @endsection
 
     @section('content')
+    <section class="relative min-h-screen flex items-center overflow-hidden">
+
+            <!-- Background -->
+            <div class="absolute inset-0">
+                <img src="{{ asset('assets/img/banner/banner-img-2.jpg') }}" class="w-full h-full object-cover"
+                    alt="Luxury Hotel">
+                {{-- <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/40"></div> --}}
+            </div>
+
+            <!-- Container -->
+            <div class="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+
+                <!-- Glass Card -->
+                <div
+                    class="relative max-w-xl sm:max-w-2xl lg:max-w-3xl
+                        p-6 sm:p-10 lg:p-14
+                        rounded-2xl sm:rounded-3xl
+                        bg-white/10 backdrop-blur-2xl
+                        border border-white/30
+                        shadow-[0_8px_40px_rgba(0,0,0,0.6)]
+                        overflow-hidden">
+
+                    <!-- Gloss Effect -->
+                    <div
+                        class="absolute inset-0 bg-gradient-to-br
+                            from-white/30 via-transparent to-white/10
+                            opacity-40 pointer-events-none">
+                    </div>
+
+                    <!-- Heading -->
+                    <h1
+                        class="relative text-3xl sm:text-4xl md:text-5xl lg:text-6xl
+                           font-bold text-white leading-tight mb-4 sm:mb-6">
+                        Experience Luxury <br class="hidden sm:block">
+                        <span class="text-amber-300">Like Never Before</span>
+                    </h1>
+
+                    <!-- Paragraph -->
+                    <p
+                        class="relative text-base sm:text-lg md:text-xl
+                          text-gray-200 mb-6 sm:mb-8">
+                        Discover comfort, elegance, and world-class hospitality.
+                        Book your perfect stay and enjoy unforgettable memories.
+                    </p>
+
+                    <!-- Buttons -->
+                    <div class="relative flex flex-col sm:flex-row gap-3 sm:gap-4">
+
+                        <a href="#booking"
+                            class="w-full sm:w-auto text-center
+                              px-6 sm:px-8 py-3
+                              rounded-full
+                              bg-amber-400/90
+                              text-black font-semibold
+                              shadow-lg
+                              hover:bg-amber-300
+                              transition duration-300">
+                            Book Your Stay
+                        </a>
+
+                        <a href="#rooms"
+                            class="w-full sm:w-auto text-center
+                              px-6 sm:px-8 py-3
+                              rounded-full
+                              bg-white/20 backdrop-blur-xl
+                              border border-white/40
+                              text-white font-semibold
+                              hover:bg-white hover:text-black
+                              transition duration-300">
+                            Explore Rooms
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
     <section class="relative min-h-screen py-10 lg:py-20 bg-slate-900 flex items-center overflow-hidden px-6 lg:px-20">
 
             <div class="container mx-auto grid lg:grid-cols-2 gap-12 items-center relative z-10">
