@@ -1,6 +1,25 @@
 <x-app-layout>
     @section('meta')
         <title>From section </title>
+         <meta name="description"
+            content="Free open source Tailwind CSS UI kit featuring 3 responsive themes, banner, about, card, form, and popup sections. Support this project on GitHub!">
+        <meta name="keywords"
+            content="open source ui kit, tailwind css components, responsive web design, github repo, sponsorship, banner section, about section, card section, form section, popup modal">
+        <meta name="author" content="Nikul Prajapati">
+        <meta name="robots" content="index, follow">
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Open Source Tailwind CSS UI Kit | Responsive Themes & Components">
+        <meta property="og:description"
+            content="Explore a versatile collection of Tailwind CSS UI components including banners, cards, forms, and popups. Open source and ready for your next project.">
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Open Source Tailwind CSS UI Kit | Responsive Themes & Components">
+        <meta name="twitter:description"
+            content="Free open source Tailwind CSS UI kit featuring 3 responsive themes, banner, about, card, form, and popup sections. Support this project on GitHub!">
+
     @endsection
     @section('content')
         <section class="bg-black py-8 ">

@@ -21,7 +21,7 @@
     @endsection
 
     @section('content')
-    <section class="relative min-h-screen flex items-center overflow-hidden">
+        <section class="relative min-h-screen flex items-center overflow-hidden">
 
             <!-- Background -->
             <div class="absolute inset-0">
@@ -100,7 +100,71 @@
             </div>
 
         </section>
-    <section class="relative min-h-screen py-10 lg:py-20 bg-slate-900 flex items-center overflow-hidden px-6 lg:px-20">
+        <div class="bg-[#050510] text-white overflow-x-hidden">
+            <section class="relative min-h-screen flex items-center justify-center px-6 py-20">
+
+                <div class="max-w-7xl w-full grid lg:grid-cols-2 gap-14 items-center">
+
+                    <!-- LEFT CONTENT -->
+                    <div class="text-center lg:text-left">
+
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+                            Build <span class="text-indigo-400">Liquid Glass</span><br>
+                            Modern Websites
+                        </h1>
+
+                        <p class="text-gray-300 mb-8 text-lg max-w-xl mx-auto lg:mx-0">
+                            Create stunning UI experiences with modern design systems,
+                            glassmorphism effects and powerful frameworks like Laravel & Tailwind.
+                        </p>
+
+                        <div class="flex flex-wrap justify-center lg:justify-start gap-4 mb-8">
+
+                            <a href="#"
+                                class="px-7 py-3 bg-indigo-600 hover:bg-indigo-700 rounded-xl font-semibold transition shadow-lg shadow-indigo-500/30">
+                                Get Started
+                            </a>
+
+                            <a href="#"
+                                class="px-7 py-3 backdrop-blur-lg bg-white/10 border border-white/20 rounded-xl hover:bg-white/20 transition">
+                                Explore
+                            </a>
+
+                        </div>
+
+                        <div class="flex justify-center lg:justify-start gap-6 text-2xl text-gray-300">
+                            <i class="fa-brands fa-laravel hover:text-red-500 transition"></i>
+                            <i class="fa-brands fa-github hover:text-white transition"></i>
+                            <i class="fa-brands fa-js hover:text-yellow-400 transition"></i>
+                            <i class="fa-brands fa-html5 hover:text-orange-500 transition"></i>
+                        </div>
+
+                    </div>
+
+
+                    <!-- RIGHT CARD -->
+                    <div class="flex justify-center">
+
+                        <div
+                            class="relative backdrop-blur-xl bg-white/10 border border-white/20 rounded-3xl p-6 shadow-2xl max-w-md w-full">
+
+                            <img src="{{ asset('assets/img/about/about-img-18.jpg') }}"
+                                class="rounded-xl mb-4 w-full object-cover">
+
+                            <div class="flex justify-between items-center">
+
+                                <div>
+                                    <h3 class="font-semibold text-lg">Modern UI Design</h3>
+                                    <p class="text-gray-300 text-sm">Next-generation interface</p>
+                                </div>
+                                <i class="fa-solid fa-arrow-up-right-from-square text-indigo-400 text-xl"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section class="relative min-h-screen py-10 lg:py-20 bg-slate-900 flex items-center overflow-hidden px-6 lg:px-20">
 
             <div class="container mx-auto grid lg:grid-cols-2 gap-12 items-center relative z-10">
 
@@ -139,8 +203,8 @@
 
             </div>
         </section>
-        <section class="section py-10 md:py-20 min-h-[70vh] md:h-[88vh] flex items-center justify-center bg-cover bg-center" loadi
-            style="background-image: url('{{ asset('assets/img/banner/sample-1.webp') }}')">
+        <section class="section py-10 md:py-20 min-h-[70vh] md:h-[88vh] flex items-center justify-center bg-cover bg-center"
+            loadi style="background-image: url('{{ asset('assets/img/banner/sample-1.webp') }}')">
             <div class="max-w-7xl mx-auto px-4 w-full">
                 <div class="grid grid-cols-1 md:grid-cols-2 place-items-center gap-10">
                     <div class="section__content text-center md:text-left">
@@ -171,7 +235,6 @@
                 </div>
             </div>
         </section>
-
         <section class="bg-[#111111] text-white min-h-screen flex items-center relative overflow-hidden py-16 md:py-0">
             <div class="absolute top-10 right-10 opacity-10 pointer-events-none">
                 <svg width="80" height="80" viewBox="0 0 100 100" stroke="white" stroke-width="2">
@@ -231,7 +294,6 @@
                 </div>
             </div>
         </section>
-
         <section class="min-h-[60vh] md:h-[84vh] flex items-center bg-cover bg-center bg-fixed py-20"
             style="background-image: url('{{ asset('assets/img/banner/banner-img-1.jpg') }}')">
             <div class="max-w-7xl mx-auto px-6">
@@ -249,7 +311,6 @@
                 </div>
             </div>
         </section>
-
         <section
             class="flex flex-col lg:flex-row gap-12 lg:gap-20 py-20 px-6 lg:px-24 items-center justify-between bg-white">
             <div class="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left">
@@ -289,7 +350,6 @@
                     class="w-full max-w-md lg:max-w-lg shadow-2xl rounded-2xl" alt="hero">
             </div>
         </section>
-
         <section class="relative bg-cover bg-center py-20 px-6"
             style="background-image: url('{{ asset('assets/img/banner/banner-img-4.jpg') }}')">
             <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-32 items-center">
@@ -324,9 +384,7 @@
                 </div>
             </div>
         </section>
-
-        <section
-            class="py-20 bg-slate-50 bg-cover">
+        <section class="py-20 bg-slate-50 bg-cover">
             <div class="max-w-7xl mx-auto px-6 flex flex-col-reverse lg:flex-row gap-16 items-center">
                 <div class="w-full lg:w-1/2 text-center lg:text-left">
                     <h1
@@ -363,12 +421,10 @@
                     </div>
                 </div>
                 <div class="w-full lg:w-1/2">
-                    <img src="{{ asset('assets/img/hero/users-group.png') }}"
-                        class="w-full h-auto" alt="">
+                    <img src="{{ asset('assets/img/hero/users-group.png') }}" class="w-full h-auto" alt="">
                 </div>
             </div>
         </section>
-
         <section class="py-20 px-6 max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
             <div class="w-full lg:w-1/2 order-2 lg:order-1 text-center lg:text-left">
                 <h1 class="text-4xl md:text-6xl font-serif font-bold leading-tight mb-6">

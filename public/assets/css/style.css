@@ -69,7 +69,7 @@
     animation: floatHero 5s ease-in-out infinite;
 }
 
-  #bg-canvas {
+#bg-canvas {
     position: fixed;
     inset: 0;
     width: 100%;
@@ -77,8 +77,42 @@
     z-index: 1;
     pointer-events: none;
     opacity: 0.5;
-  }
+}
 
+.blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.6;
+    animation: float 12s infinite ease-in-out;
+}
 
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0)
+    }
+
+    50% {
+        transform: translateY(-40px)
+    }
+}
+
+.floating {
+    animation: floatCard 6s ease-in-out infinite;
+}
+
+@keyframes floatCard {
+
+    0%,
+    100% {
+        transform: translateY(0px)
+    }
+
+    50% {
+        transform: translateY(-15px)
+    }
+}
 
 /**/

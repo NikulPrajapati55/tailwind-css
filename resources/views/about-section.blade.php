@@ -23,6 +23,95 @@
     @endsection
 
     @section('content')
+
+    <section class="relative py-24 bg-[#050510] text-white overflow-hidden">
+
+            <div class="absolute inset-0 opacity-40">
+                <div
+                    class="absolute w-[600px] h-[600px] bg-indigo-600 rounded-full blur-[140px] top-[-200px] left-[-150px]">
+                </div>
+                <div
+                    class="absolute w-[500px] h-[500px] bg-purple-600 rounded-full blur-[140px] bottom-[-150px] right-[-150px]">
+                </div>
+            </div>
+
+            <div class="relative z-10 max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-14 items-center">
+
+                <!-- PROFILE CARD -->
+                <div class="flex justify-center">
+
+                    <div
+                        class="backdrop-blur-xl bg-white/10 border border-white/20 rounded-3xl p-6 shadow-2xl max-w-sm w-full text-center">
+
+                        <img src="https://avatars.githubusercontent.com/u/175287609?v=4" alt="Nikul Prajapati"
+                            class="rounded-2xl mb-4 w-100 h-auto mx-auto object-cover border border-white/20">
+
+                        <h3 class="text-2xl font-semibold">Nikul Prajapati</h3>
+
+                        <p class="text-gray-300 text-sm mb-4">
+                            Laravel Web Developer
+                        </p>
+
+                        <div class="flex justify-center gap-4 text-xl text-gray-300">
+                            <i class="fa-brands fa-github hover:text-white"></i>
+                            <i class="fa-brands fa-laravel hover:text-red-500"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ABOUT TEXT -->
+                <div class="text-center lg:text-left">
+
+                    <h2 class="text-4xl sm:text-5xl font-bold mb-6">
+                        About <span class="text-indigo-400">Me</span>
+                    </h2>
+
+                    <p class="text-gray-300 text-lg mb-6">
+                        Hello, I'm <span class="font-semibold text-white">Nikul Prajapati</span>, a professional
+                        <strong>Laravel Web Developer</strong> specializing in building modern, secure, and scalable
+                        <strong>web applications</strong> and high-performance websites.
+                    </p>
+
+                    <p class="text-gray-400 mb-8">
+                        I work with technologies like <strong>Laravel, Tailwind CSS, JavaScript, and MySQL</strong>
+                        to develop responsive websites, custom web applications, and clean user interfaces that
+                        deliver fast performance and great user experience.
+                    </p>
+
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-8">
+
+                        <div class="backdrop-blur-lg bg-white/10 border border-white/20 rounded-xl p-4 text-center">
+                            Laravel Development
+                        </div>
+
+                        <div class="backdrop-blur-lg bg-white/10 border border-white/20 rounded-xl p-4 text-center">
+                            Web Applications
+                        </div>
+
+                        <div class="backdrop-blur-lg bg-white/10 border border-white/20 rounded-xl p-4 text-center">
+                            Tailwind CSS
+                        </div>
+
+
+
+                        <div class="backdrop-blur-lg bg-white/10 border border-white/20 rounded-xl p-4 text-center">
+                            Backend Development
+                        </div>
+
+                        <div class="backdrop-blur-lg bg-white/10 border border-white/20 rounded-xl p-4 text-center">
+                            Responsive Web Design
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
     <section class="relative py-12 bg-[#0e1422] overflow-hidden">
 
     <div class="max-w-7xl mx-auto px-6 lg:px-12">
