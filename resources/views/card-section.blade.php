@@ -134,6 +134,91 @@
             </div>
 
         </section>
+        <section class="relative py-24 bg-[#050510] text-white overflow-hidden">
+
+            <!-- Background Glow -->
+            <div class="absolute inset-0 opacity-40">
+                <div
+                    class="absolute w-[600px] h-[600px] bg-indigo-600 rounded-full blur-[140px] top-[-200px] left-[-200px]">
+                </div>
+                <div
+                    class="absolute w-[500px] h-[500px] bg-purple-600 rounded-full blur-[140px] bottom-[-200px] right-[-200px]">
+                </div>
+            </div>
+
+            <div class="relative z-10 max-w-7xl mx-auto px-6">
+
+                <h2 class="text-4xl font-bold text-center mb-16">
+                    Premium <span class="text-indigo-400">Experience</span>
+                </h2>
+
+                <div class="grid md:grid-cols-3 gap-8">
+
+                    <!-- CARD -->
+                    <div
+                        class="group backdrop-blur-xl bg-white/10 border border-white/20 rounded-2xl p-8 hover:-translate-y-3 transition duration-500 shadow-xl">
+
+                        <div class="text-4xl mb-4">✨</div>
+
+                        <h3 class="text-xl font-semibold mb-3">
+                            Modern Interface
+                        </h3>
+
+                        <p class="text-gray-300 mb-6">
+                            Beautiful user interface with smooth animations, glass effects,
+                            and responsive layouts for modern websites.
+                        </p>
+
+                        <button
+                            class="px-6 py-3 rounded-xl backdrop-blur-lg bg-white/20 border border-white/40 text-white hover:bg-white/30 transition">
+                            Learn More
+                        </button>
+
+                    </div>
+
+
+                    <!-- CARD -->
+                    <div
+                        class="group backdrop-blur-xl bg-white/10 border border-white/20 rounded-2xl p-8 hover:-translate-y-3 transition duration-500 shadow-xl">
+
+                        <div class="text-4xl mb-4">⚡</div>
+
+                        <h3 class="text-xl font-semibold mb-3">
+                            High Performance
+                        </h3>
+
+                        <p class="text-gray-300 mb-6">
+                            Optimized architecture and modern technologies ensure
+                            fast loading and smooth performance.
+                        </p>
+
+                        <button
+                            class="px-6 py-3 rounded-xl backdrop-blur-lg bg-white/20 border border-white/40 text-white hover:bg-white/30 transition">
+                            Discover
+                        </button>
+
+                    </div>
+
+
+                    <!-- CARD -->
+                    <div
+                        class="group backdrop-blur-xl bg-white/10 border border-white/20 rounded-2xl p-8 hover:-translate-y-3 transition duration-500 shadow-xl">
+                        <div class="text-4xl mb-4">🔒</div>
+                        <h3 class="text-xl font-semibold mb-3">
+                            Secure Platform
+                        </h3>
+                        <p class="text-gray-300 mb-6">
+                            Built with modern security practices to keep
+                            data protected and systems reliable.
+                        </p>
+                        <button
+                            class="px-6 py-3 rounded-xl backdrop-blur-lg bg-white/20 border border-white/40 text-white hover:bg-white/30 transition">
+                            Explore
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="py-12 bg-[#0b1220]">
 
             <div class="max-w-7xl mx-auto px-6 lg:px-12">
@@ -255,7 +340,6 @@
                 </div>
             </div>
         </section>
-
         <section id="glass-services" class="relative py-10 lg:py-20 bg-slate-50/30 overflow-hidden px-6 lg:px-24">
 
             <div id="glass-blob-1"
@@ -332,7 +416,6 @@
                 </div>
             </div>
         </section>
-
         <section id="why-choose" class="relative py-10 lg:py-20 bg-white overflow-hidden px-6 lg:px-24">
             <div class="container mx-auto">
 
@@ -400,7 +483,6 @@
                 </div>
             </div>
         </section>
-
         <section class="py-20 bg-white">
             <div class="max-w-7xl mx-auto px-6">
 
@@ -497,8 +579,6 @@
                 </div>
             </div>
         </section>
-
-
         <section class="bg-gray-50 py-24">
             <div class="max-w-7xl mx-auto px-6">
 
@@ -1187,8 +1267,6 @@
 
             </div>
         </section>
-
-        <!-- Features Section -->
         <section class="py-20 bg-gray-50">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-16">
@@ -1255,7 +1333,6 @@
                 </div>
             </div>
         </section>
-
         <section class="py-16 bg-[#08090d]">
             <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
 
@@ -1344,9 +1421,6 @@
 
             </div>
         </section>
-
-
-
         <section class="py-16 bg-gray-100">
             <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
 
