@@ -1,7 +1,7 @@
 <x-app-layout>
     @section('meta')
         <title>Open Source Tailwind CSS UI Kit | Responsive Themes & Components</title>
-       <style>
+        <style>
             /* Liquid floating blobs */
         </style>
     @endsection
@@ -52,90 +52,57 @@
             </div>
         </section>
         <!-- FEATURE CARD SECTION -->
+
+        <!-- FEATURE CARD SECTION -->
         <section class="relative py-24 bg-[#050510] text-white overflow-hidden">
 
-            <!-- Background Glow -->
+            <!-- background glow -->
             <div class="absolute inset-0 opacity-40">
                 <div
-                    class="absolute w-[600px] h-[600px] bg-indigo-600 rounded-full blur-[140px] top-[-200px] left-[-200px]">
+                    class="absolute w-[600px] h-[600px] bg-indigo-600 blur-[140px] rounded-full top-[-200px] left-[-200px]">
                 </div>
                 <div
-                    class="absolute w-[500px] h-[500px] bg-purple-600 rounded-full blur-[140px] bottom-[-200px] right-[-200px]">
+                    class="absolute w-[500px] h-[500px] bg-purple-600 blur-[140px] rounded-full bottom-[-200px] right-[-200px]">
                 </div>
             </div>
 
-            <div class="relative z-10 max-w-7xl mx-auto px-6">
+            <div class="relative z-10 max-w-5xl mx-auto px-6 text-center">
 
-                <h2 class="text-4xl font-bold text-center mb-16">
-                    Premium <span class="text-indigo-400">Experience</span>
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                    Want to know <span class="text-indigo-400">about me?</span>
                 </h2>
 
-                <div class="grid md:grid-cols-3 gap-8">
+                <p class="text-gray-300 max-w-2xl mx-auto mb-10">
+                    I'm Nikul Prajapati, a Laravel web developer who builds modern,
+                    fast and scalable web applications using Laravel, Tailwind CSS
+                    and modern frontend technologies.
+                </p>
 
-                    <!-- CARD -->
-                    <div
-                        class="group backdrop-blur-xl bg-white/10 border border-white/20 rounded-2xl p-8 hover:-translate-y-3 transition duration-500 shadow-xl">
+                <a href="#about"
+                    class="relative inline-flex items-center justify-center
+px-10 py-4 rounded-full font-semibold text-black
 
-                        <div class="text-4xl mb-4">✨</div>
+bg-white/70 backdrop-blur-2xl
+border border-white/60
 
-                        <h3 class="text-xl font-semibold mb-3">
-                            Modern Interface
-                        </h3>
+shadow-[0_10px_30px_rgba(0,0,0,0.25)]
 
-                        <p class="text-gray-300 mb-6">
-                            Beautiful user interface with smooth animations, glass effects,
-                            and responsive layouts for modern websites.
-                        </p>
+before:absolute before:inset-0
+before:rounded-full
+before:bg-white/40
+before:blur-md
+before:opacity-40
 
-                        <button
-                            class="px-6 py-3 rounded-xl backdrop-blur-lg bg-white/20 border border-white/40 text-white hover:bg-white/30 transition">
-                            Learn More
-                        </button>
+hover:scale-105 transition duration-300">
 
-                    </div>
+                    About Me
 
+                </a>
 
-                    <!-- CARD -->
-                    <div
-                        class="group backdrop-blur-xl bg-white/10 border border-white/20 rounded-2xl p-8 hover:-translate-y-3 transition duration-500 shadow-xl">
-
-                        <div class="text-4xl mb-4">⚡</div>
-
-                        <h3 class="text-xl font-semibold mb-3">
-                            High Performance
-                        </h3>
-
-                        <p class="text-gray-300 mb-6">
-                            Optimized architecture and modern technologies ensure
-                            fast loading and smooth performance.
-                        </p>
-
-                        <button
-                            class="px-6 py-3 rounded-xl backdrop-blur-lg bg-white/20 border border-white/40 text-white hover:bg-white/30 transition">
-                            Discover
-                        </button>
-
-                    </div>
-
-
-                    <!-- CARD -->
-                    <div
-                        class="group backdrop-blur-xl bg-white/10 border border-white/20 rounded-2xl p-8 hover:-translate-y-3 transition duration-500 shadow-xl">
-                        <div class="text-4xl mb-4">🔒</div>
-                        <h3 class="text-xl font-semibold mb-3">
-                            Secure Platform
-                        </h3>
-                        <p class="text-gray-300 mb-6">
-                            Built with modern security practices to keep
-                            data protected and systems reliable.
-                        </p>
-                        <button
-                            class="px-6 py-3 rounded-xl backdrop-blur-lg bg-white/20 border border-white/40 text-white hover:bg-white/30 transition">
-                            Explore
-                        </button>
-                    </div>
-                </div>
             </div>
+
         </section>
+
+
     @endsection
 </x-app-layout>
