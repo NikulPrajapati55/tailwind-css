@@ -115,4 +115,148 @@
     }
 }
 
+.animate-gradient {
+    background-size: 200% 200%;
+    animation: gradientMove 6s ease infinite;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.reflection-1 {
+    background: radial-gradient(circle at var(--x) var(--y), rgba(255, 255, 255, .45), transparent 40%);
+}
+
+.card-animate-gradient {
+    transform-style: preserve-3d;
+    transition: transform .2s ease;
+}
+
+.crystal-bg {
+    background: url("{{ asset('assets/img/banner/banner-img-6.jpg') }}") no-repeat center;
+    background-size: cover;
+    animation: bgMove 18s ease-in-out infinite;
+}
+
+@keyframes bgMove {
+
+    0%,
+    100% {
+        background-position: center
+    }
+
+    50% {
+        background-position: 70% 30%
+    }
+
+}
+
+/* crystal card  */
+
+.crystal-bg {
+    background: url("../img/banner/banner-img-6.jpg") no-repeat center;
+    background-size: cover;
+    animation: bgMove 18s ease-in-out infinite;
+}
+
+@keyframes bgMove {
+
+    0%,
+    100% {
+        background-position: center
+    }
+
+    50% {
+        background-position: 70% 30%
+    }
+
+}
+
+
+
+/* card */
+
+.crystal-card {
+
+    position: relative;
+    border-radius: 26px;
+    overflow: hidden;
+    background: linear-gradient(135deg,
+            rgba(255, 255, 255, .18),
+            rgba(255, 255, 255, .05));
+    backdrop-filter: blur(18px);
+    border: 1px solid rgba(255, 255, 255, .25);
+    transition: all .6s ease;
+    cursor: pointer;
+}
+
+
+/* image */
+
+.crystal-img-wrap {
+    overflow: hidden;
+    height: 450px;
+}
+
+.crystal-img-wrap img {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .7s ease;
+}
+
+.crystal-card:hover img {
+    transform: scale(1.15);
+}
+
+
+/* content */
+
+.content {
+    padding: 22px;
+}
+
+.content h3 {
+    font-family: "Orbitron", sans-serif;
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+.content p {
+    color: #ddd;
+    font-size: 14px;
+}
+
+.crystal-card:hover {
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: 0 20px 80px rgba(0, 0, 0, .5);
+}
+
+.mouse-glow {
+    position: absolute;
+    inset: 0;
+    border-radius: 26px;
+    background: radial-gradient(circle at var(--x) var(--y), rgba(255, 255, 255, .35), transparent 40%);
+    opacity: 0;
+    transition: opacity .4s;
+
+}
+
+.crystal-card:hover .mouse-glow {}
+
+
+
+
 /**/

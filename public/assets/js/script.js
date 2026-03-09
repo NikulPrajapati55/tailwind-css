@@ -272,4 +272,32 @@ $(document).ready(function () {
         });
     });
 
+
+
+
+document.querySelectorAll(".card").forEach(card => {
+
+card.addEventListener("mousemove", e => {
+
+const rect = card.getBoundingClientRect()
+const x = e.clientX - rect.left
+const y = e.clientY - rect.top
+
+card.querySelector(".reflection").style.setProperty("--x", x+"px")
+card.querySelector(".reflection").style.setProperty("--y", y+"px")
+
+const rotateY = (x / rect.width - 0.5) * 16
+const rotateX = (y / rect.height - 0.5) * -16
+
+card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`
+
+})
+
+card.addEventListener("mouseleave", () => {
+card.style.transform = `rotateX(0) rotateY(0)`
+})
+
+})
+
+
 });
