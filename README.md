@@ -9,11 +9,7 @@ Perfect for developers building **landing pages, SaaS websites, and healthcare s
 
 ---
 
-# 🌐 Live Demo
 
-👉 https://your-demo-site.vercel.app
-
----
 
 # ✨ Features
 
