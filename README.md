@@ -44,11 +44,10 @@ This repo contains reusable UI sections such as:
 
 Add screenshots here:
 
-![Hero Section](preview/hero.png)
+![Theme 2](preview/theme-2.jpg)
 
-![Pricing Section](preview/pricing.png)
+![Theme 3](preview/theme-3.jpg)
 
-![Dental Theme](preview/dental-theme.png)
 
 ---
 
