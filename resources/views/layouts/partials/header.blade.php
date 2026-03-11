@@ -34,6 +34,13 @@
                             </a>
                         </li>
                         <li>
+                            <a href="{{ route('glass') }}"
+                                class="flex gap-3 items-center p-2 rounded-lg hover:bg-white/10">
+                                <i class="fa-solid fa-layer-group text-indigo-400"></i>
+                                Glass UI Kit
+                            </a>
+                        </li>
+                        <li>
                             <a href="{{ route('cardsection') }}"
                                 class="flex gap-3 items-center p-2 rounded-lg hover:bg-white/10">
                                 <i class="fa-regular fa-address-card text-indigo-400"></i>
@@ -122,6 +129,7 @@
             <li><a href="{{ route('teamsection') }}" class="block p-2 rounded hover:bg-white/10">Team</a></li>
             <li><a href="{{ route('cardsection') }}" class="block p-2 rounded hover:bg-white/10">Card</a></li>
             <li><a href="{{ route('formsection') }}" class="block p-2 rounded hover:bg-white/10">Form</a></li>
+            <li><a href="{{ route('glass') }}" class="block p-2 rounded hover:bg-white/10">Glass UI Kit </a></li>
             <li><a href="{{ route('popup') }}" class="block p-2 rounded hover:bg-white/10">Popup</a></li>
             <li><a href="{{ route('swiper') }}" class="block p-2 rounded hover:bg-white/10">Swiper</a></li>
             <li><a href="{{ route('theme1') }}" class="block p-2 rounded hover:bg-white/10">Theme 1</a></li>
